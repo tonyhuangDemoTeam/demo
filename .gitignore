@@ -10,11 +10,5 @@
 /demo-fos-persistence/target/
 /demo-fos-service/logs/
 /demo-fos-service/target/
-/demo-common/
-/demo-eureka/
-/demo-fos-common/
-/demo-fos-persistence/
-/demo-fos-service/
-/demo-sa-common/
-/demo-sa-persistence/
-/demo-sa-service/
+/demo-eureka/target/
+/demo-common/target/
