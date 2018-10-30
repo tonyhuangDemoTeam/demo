@@ -1,0 +1,66 @@
+
+	[
+		{
+			"customerNumber" : 8000123456,
+			"customerName" : "Tony HUANG",
+			"customerType" : "Individual",
+			"homeCountry" : "CN",
+			"bookingCenter" :"HK",
+			"rmCode" : "HKRM01",
+			"dateOfBirth" : "1983-01-01"
+		},
+		{
+			"customerNumber" : 9876123456,
+			"customerName" : "Jack MA",
+			"customerType" : "Individual",
+			"homeCountry" : "CN",
+			"bookingCenter" :"HK",
+			"rmCode" : "HKRM02",
+			"dateOfBirth" : "1970-01-01"	
+		},
+		{
+			"customerNumber" : 6888000001,
+			"customerName" : "Alibaba Group",
+			"customerType" : "Entity",
+			"homeCountry" : "CN",
+			"bookingCenter" :"HK",
+			"rmCode" : "HKRM03",
+			"dateOfBirth" : "1999-01-01"	
+		},
+		{
+			"customerNumber" : 6888800002,
+			"customerName" : "Tencent Group",
+			"customerType" : "Entity",
+			"homeCountry" : "CN",			
+			"bookingCenter" :"HK",
+			"rmCode" : "HKRM03",
+			"dateOfBirth" : "1999-01-01"	
+		},
+		{
+			"customerNumber" : 6888800003,
+			"customerName" : "HSBC Group",
+			"customerType" : "Entity",
+			"homeCountry" : "UK",	
+			"bookingCenter" :"HK",
+			"rmCode" : "HKRM03",
+			"dateOfBirth" : "1865-01-01"	
+		},
+		{
+			"customerNumber" : 8888123456,
+			"customerName" : "TANMASHI",
+			"customerType" : "Entity",
+			"homeCountry" : "SG",
+			"bookingCenter" :"SG",
+			"rmCode" : "SGRM01",
+			"dateOfBirth" : "1965-01-01"	
+		},
+		{
+			"customerNumber" : 8205333333,
+			"customerName" : "Jet LI",
+			"customerType" : "Individual",
+			"homeCountry" : "SG",
+			"bookingCenter" :"SG",
+			"rmCode" : "SGRM02",
+			"dateOfBirth" : "1966-01-01"	
+		}
+	]
