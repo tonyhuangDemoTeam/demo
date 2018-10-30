@@ -34,7 +34,7 @@ public class RMTeamController {
     }
     
     @RequestMapping(value="/get", params = "type=map", method=RequestMethod.GET)
-    public List<TeamRmMapDetail> getByTeam(String team) throws SystemException {
-        return CopyHelper.copy(teamRmMapRepository.findByTeam(team), TeamRmMapDetail.class); 
+    public List<TeamRmMapDetail> getAllMaps() throws SystemException {
+        return CopyHelper.copy(teamRmMapRepository.findAll(), TeamRmMapDetail.class); 
     }
 }
