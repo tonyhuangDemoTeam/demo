@@ -1,0 +1,38 @@
+
+	[
+		{
+			"rmCode" : "HKRM01",
+			"rmName" : "RM - Tony",
+			"phoneNumber" : "8630-38585312",
+			"homeCountry" : "CN",
+			"teamCode" : "HKTM01"
+		},
+		{
+			"rmCode" : "HKRM02",
+			"rmName" : "RM - Ray",
+			"phoneNumber" : "8630-38582222",			
+			"homeCountry" : "CN",
+			"teamCode" : "HKTM01"
+		},
+		{
+			"rmCode" : "HKRM03",
+			"rmName" : "RM - 003 Rachel",
+			"phoneNumber" : "852-22220000",			
+			"homeCountry" : "HK",
+			"teamCode" : "HKTM02"
+		},
+		{
+			"rmCode" : "SGRM01",
+			"rmName" : "RM - Smith",			
+			"phoneNumber" : "65-2270000",			
+			"homeCountry" : "SG",
+			"teamCode" : "SGTM05"
+		},
+		{
+			"rmCode" : "SGRM02",
+			"rmName" : "RM - CHINGMING",			
+			"phoneNumber" : "65-6760000",			
+			"homeCountry" : "SG",
+			"teamCode" : "SGTM99"
+		}
+	]

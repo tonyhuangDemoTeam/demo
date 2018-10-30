@@ -1,0 +1,68 @@
+//contains all customer's all the position (share, bond, structure product etc position)
+	[
+		{
+			"customerNumber" : 8000123456,
+			"accountNumber" : 0001
+			"assetClass" : "Equity",
+			"assetSubClass" : "Cash Equity",
+			"issueCode" : "0005.HK",
+			"holdingQuantity" : 80000,
+			"description" : "HSBC Holding Group Ltd, HKEX 0005.HK",
+			"currency" : "HKD",
+			"averagePrice" : 65.00,
+			"accruedInterest" : 0,
+			"valueAmount" : 5200000.00
+		},
+		{
+			"customerNumber" : 8000123456,
+			"accountNumber" : 0001
+			"assetClass" : "Equity",
+			"assetSubClass" : "Cash Equity",
+			"issueCode" : "0700.HK",
+			"holdingQuantity" : 100000,
+			"description" : "Tencent Group Ltd, HKEX 0700.HK",
+			"currency" : "HKD",
+			"averagePrice" : 300.00,
+			"accruedInterest" : 0,
+			"valueAmount" : 30000000.00
+		},
+		{
+			"customerNumber" : 8000123456,
+			"accountNumber" : 0001
+			"assetClass" : "Fixed Income",
+			"assetSubClass" : "Bond",
+			"issueCode" : "HKCD1002",
+			"holdingQuantity" : 100000000,
+			"description" : "HK(SAR) 30 YEARS TREASURY BOND",
+			"currency" : "HKD",
+			"averagePrice" : 1.00,
+			"accruedInterest" : 2000,
+			"valueAmount" : 100002000.00
+		},
+		{
+			"customerNumber" : 6888000001,
+			"accountNumber" : 0001
+			"assetClass" : "Fixed Income",
+			"assetSubClass" : "Bond",
+			"issueCode" : "UST30-A",
+			"holdingQuantity" : 2000000,
+			"description" : "US GOV. 30 YEARS TREASURY BOND",
+			"currency" : "USD",
+			"averagePrice" : 5.00,
+			"accruedInterest" : 6000,
+			"valueAmount" : 10006000.00
+		}
+		{
+			"customerNumber" : 6888000001,
+			"accountNumber" : 8000
+			"assetClass" : "Fixed Income",
+			"assetSubClass" : "Bond",
+			"issueCode" : "UST30-A",
+			"holdingQuantity" : 2000000,
+			"description" : "US GOV. 30 YEARS TREASURY BOND",
+			"currency" : "USD",
+			"averagePrice" : 5.00,
+			"accruedInterest" : 1000,
+			"valueAmount" : 10001000.00
+		}
+	]

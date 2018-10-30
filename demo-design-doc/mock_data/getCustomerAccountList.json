@@ -1,0 +1,63 @@
+
+	[
+		{
+			"customerNumber" : 8000123456,
+			"accountNumber" : 0001,
+			"accountName" : "Tony Huang Main Account",
+			"accountType" : "ADV"
+		},
+		{
+			"customerNumber" : 9876123456,
+			"accountNumber" : 0001,
+			"accountName" : "Jack MA Main Account",
+			"accountType" : "ADV"
+		},
+		{
+			"customerNumber" : 6888000001,
+			"accountNumber" : 0001,
+			"accountName" : "Alibaba Main Account",
+			"accountType" : "ADV"
+		},
+		{
+			"customerNumber" : 6888000001,
+			"accountNumber" : 8000,
+			"accountName" : "Alibaba Investment Account",
+			"accountType" : "DISC"
+		},
+		{
+			"customerNumber" : 6888800002,
+			"accountNumber" : 0001,
+			"accountName" : "Tencent Main Account",
+			"accountType" : "ADV"
+		},
+		{
+			"customerNumber" : 6888800002,
+			"accountNumber" : 8000,
+			"accountName" : "Tencent Investment Account",
+			"accountType" : "DISC"
+		},
+		{
+			"customerNumber" : 6888800003,
+			"accountNumber" : 0001,
+			"accountName" : "HSBC Group Main Account",
+			"accountType" : "ADV"
+		},
+		{
+			"customerNumber" : 6888800003,
+			"accountNumber" : 8000,
+			"accountName" : "HSBC Group Investment Account",
+			"accountType" : "DISC"
+		},
+		{
+			"customerNumber" : 8888123456,
+			"accountNumber" : 0001,
+			"accountName" : "TANMASHI Main Account",
+			"accountType" : "ADV"
+		},
+		{
+			"customerNumber" : 8205333333,
+			"accountNumber" : 0001,
+			"accountName" : "Jet LI Main Account",
+			"accountType" : "ADV"
+		}
+	]
