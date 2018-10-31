@@ -53,6 +53,8 @@ create table bond_position (
 create table customer (
 	customer_number int not null,
 	customer_name varchar(60),
+	type char(1),
+	age int,
 	home_country varchar(3),
 	constraint pk_customer primary key (customer_number)
 );

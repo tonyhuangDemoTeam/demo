@@ -2,6 +2,7 @@
 /.recommenders/
 
 /RemoteSystemsTempFiles/
+/demo-common/target/
 /demo-sa-persistence/logs/
 /demo-sa-persistence/target/
 /demo-sa-service/logs/
@@ -11,4 +12,4 @@
 /demo-fos-service/logs/
 /demo-fos-service/target/
 /demo-eureka/target/
-/demo-common/target/
+/demo-zuul/target/

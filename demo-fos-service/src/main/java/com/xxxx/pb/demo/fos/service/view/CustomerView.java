@@ -1,15 +1,17 @@
-package com.xxxx.pb.demo.fos.detail;
+package com.xxxx.pb.demo.fos.service.view;
 
-public class CustomerDetail {
-	private Integer customerNumber;
-	
-	private String customerName;
-	
-	private String type;
-	
-	private Integer age;
-	
-	private String homeCountry;
+public class CustomerView {
+    private Integer customerNumber;
+    
+    private String customerName;
+    
+    private String type;
+    
+    private Integer age;
+    
+    private String region;
+    
+    private String bookingEntity;
 
     public Integer getCustomerNumber() {
         return customerNumber;
@@ -43,11 +45,19 @@ public class CustomerDetail {
         this.age = age;
     }
 
-    public String getHomeCountry() {
-        return homeCountry;
+    public String getRegion() {
+        return region;
     }
 
-    public void setHomeCountry(String homeCountry) {
-        this.homeCountry = homeCountry;
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+    public String getBookingEntity() {
+        return bookingEntity;
+    }
+
+    public void setBookingEntity(String bookingEntity) {
+        this.bookingEntity = bookingEntity;
     }
 }

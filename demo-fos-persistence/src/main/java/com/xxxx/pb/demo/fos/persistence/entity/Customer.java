@@ -14,31 +14,53 @@ public class Customer {
 	
 	@Column(name = "CUSTOMER_NAME", length = 30)
 	private String customerName;
+    
+	@Column(name = "TYPE", length = 1)
+    private String type;
+    
+	@Column(name = "AGE")
+    private Integer age;
 	
 	@Column(name = "HOME_COUNTRY", length = 3)
 	private String homeCountry;
 
-	public Integer getCustomerNumber() {
-		return customerNumber;
-	}
+    public Integer getCustomerNumber() {
+        return customerNumber;
+    }
 
-	public void setCustomerNumber(Integer customerNumber) {
-		this.customerNumber = customerNumber;
-	}
+    public void setCustomerNumber(Integer customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 
-	public String getCustomerName() {
-		return customerName;
-	}
+    public String getCustomerName() {
+        return customerName;
+    }
 
-	public void setCustomerName(String customerName) {
-		this.customerName = customerName;
-	}
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
 
-	public String getHomeCountry() {
-		return homeCountry;
-	}
+    public String getType() {
+        return type;
+    }
 
-	public void setHomeCountry(String homeCountry) {
-		this.homeCountry = homeCountry;
-	}
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public String getHomeCountry() {
+        return homeCountry;
+    }
+
+    public void setHomeCountry(String homeCountry) {
+        this.homeCountry = homeCountry;
+    }
 }

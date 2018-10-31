@@ -29,7 +29,7 @@ public class CustomerController {
     }
     
     @RequestMapping(value="/get", params = "type=rm", method=RequestMethod.GET)
-    public List<CustomerDetail> getByCustAndAcct(String rm) throws SystemException {
+    public List<CustomerDetail> getByRm(String rm) throws SystemException {
         return CopyHelper.copy(customerRepository.findByRM(rm), CustomerDetail.class); 
     }
 }
