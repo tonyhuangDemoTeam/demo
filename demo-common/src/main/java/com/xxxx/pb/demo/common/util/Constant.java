@@ -7,7 +7,9 @@ public class Constant {
 	public static final String ERR_NOT_EXIST = "no record found";
 
 	public static final String STATUS_ENABLE = "E";
-	public static final String STATUS_DISABLE = "D";
+    public static final String STATUS_DISABLE = "D";
+    public static final String STATUS_PENDING = "P";
+    public static final String STATUS_MARKED = "M";
 	
 	public static final String NULL= "null";
 }

@@ -44,8 +44,8 @@ public class BondController {
     }
     
     @RequestMapping(value="/deal/get", params = "type=rm", method=RequestMethod.GET)
-    public List<BondDealDetail> getDealsByRM(String rm) throws SystemException {
-        return CopyHelper.copy(bondDealRepository.findByRM(rm), BondDealDetail.class);
+    public List<BondDealDetail> getDealsByRm(String rm) throws SystemException {
+        return CopyHelper.copy(bondDealRepository.findByRm(rm), BondDealDetail.class);
     }
 
     @RequestMapping(value="/issue/get", method=RequestMethod.GET)
@@ -69,7 +69,7 @@ public class BondController {
     }
     
     @RequestMapping(value="/position/get", params = "type=rm", method=RequestMethod.GET)
-    public List<BondPositionDetail> getPositionsByRM(String rm) throws SystemException {
-        return CopyHelper.copy(bondPositionRepository.findByRM(rm), BondPositionDetail.class);
+    public List<BondPositionDetail> getPositionsByRm(String rm) throws SystemException {
+        return CopyHelper.copy(bondPositionRepository.findByRm(rm), BondPositionDetail.class);
     }
 }

@@ -1,0 +1,90 @@
+package com.xxxx.pb.demo.fos.persistence.entity;
+
+import java.math.BigDecimal;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "FUND_ISSUE")
+public class FundIssue {
+	@Id
+    @Column(name = "FUND_ISSUE_CODE", nullable = false, length = 20)
+	private String fundIssueCode;
+	
+	@Column(name = "FUND_ISSUE_NAME", length = 200)
+	private String fundIssueName;
+	
+	@Column(name = "FUND_COUNTRY", length = 3)
+	private String fundCountry;
+	
+	@Column(name = "ISSUER_CODE", length = 30)
+	private String issueCode;
+	
+	@Column(name = "FUND_PRICE", precision = 10, scale = 2)
+	private BigDecimal fundPrice;
+	
+	@Column(name = "FUND_CURRENCY", length = 3)
+	private String fundCurrency;
+	
+	@Column(name = "RISK_LEVEL")
+	private Integer riskLevel;
+
+	public String getFundIssueCode() {
+		return fundIssueCode;
+	}
+
+	public void setFundIssueCode(String fundIssueCode) {
+		this.fundIssueCode = fundIssueCode;
+	}
+
+	public String getFundIssueName() {
+		return fundIssueName;
+	}
+
+	public void setFundIssueName(String fundIssueName) {
+		this.fundIssueName = fundIssueName;
+	}
+
+	public String getFundCountry() {
+		return fundCountry;
+	}
+
+	public void setFundCountry(String fundCountry) {
+		this.fundCountry = fundCountry;
+	}
+
+	public String getIssueCode() {
+		return issueCode;
+	}
+
+	public void setIssueCode(String issueCode) {
+		this.issueCode = issueCode;
+	}
+
+	public BigDecimal getFundPrice() {
+		return fundPrice;
+	}
+
+	public void setFundPrice(BigDecimal fundPrice) {
+		this.fundPrice = fundPrice;
+	}
+
+	public String getFundCurrency() {
+		return fundCurrency;
+	}
+
+	public void setFundCurrency(String fundCurrency) {
+		this.fundCurrency = fundCurrency;
+	}
+
+	public Integer getRiskLevel() {
+		return riskLevel;
+	}
+
+	public void setRiskLevel(Integer riskLevel) {
+		this.riskLevel = riskLevel;
+	}
+}

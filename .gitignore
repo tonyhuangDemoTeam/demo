@@ -3,10 +3,12 @@
 
 /RemoteSystemsTempFiles/
 /demo-common/target/
+/demo-sa-common/bin/
 /demo-sa-persistence/logs/
 /demo-sa-persistence/target/
 /demo-sa-service/logs/
 /demo-sa-service/target/
+/demo-fos-common/bin/
 /demo-fos-persistence/logs/
 /demo-fos-persistence/target/
 /demo-fos-service/logs/

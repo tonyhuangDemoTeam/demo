@@ -38,7 +38,7 @@ public class CustomerServiceImpl implements CustomerService{
         return prepareView(customerPersistenceClient.getByRm(rm), rmPersistenceClient.getAllCustMaps(), rmTeamPersistenceClient.getAllMaps(), rmTeamPersistenceClient.getAll());
     }
     
-    private List<CustomerView> prepareView(List<CustomerDetail> custs, List<RmCustomerMapDetail> rmCustMapList, List<TeamRmMapDetail> teamRMMapList, List<RmTeamDetail> teams){
+    private List<CustomerView> prepareView(List<CustomerDetail> custs, List<RmCustomerMapDetail> rmCustMapList, List<TeamRmMapDetail> teamRmMapList, List<RmTeamDetail> teams){
         List<CustomerView> result = new ArrayList<>();
         
         if(custs!=null && custs.size()>0) {
@@ -47,9 +47,9 @@ public class CustomerServiceImpl implements CustomerService{
                 rmCustMap.put(temp.getCustomerNumber(), temp.getRmCode());
             }
 
-            Map<String, String> teamRMMap = new HashMap<String, String>();
-            for(TeamRmMapDetail temp: teamRMMapList) {
-                teamRMMap.put(temp.getRmCode(), temp.getTeamCode());
+            Map<String, String> teamRmMap = new HashMap<String, String>();
+            for(TeamRmMapDetail temp: teamRmMapList) {
+                teamRmMap.put(temp.getRmCode(), temp.getTeamCode());
             }
             
             Map<String, String> teamMap = new HashMap<String, String>();
@@ -64,7 +64,7 @@ public class CustomerServiceImpl implements CustomerService{
                 view.setType(temp.getType());
                 view.setAge(temp.getAge());
                 view.setRegion(temp.getHomeCountry());
-                view.setBookingEntity(teamMap.get(teamRMMap.get(rmCustMap.get(temp.getCustomerNumber()))));
+                view.setBookingEntity(teamMap.get(teamRmMap.get(rmCustMap.get(temp.getCustomerNumber()))));
                 
                 result.add(view);
             }

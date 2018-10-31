@@ -13,5 +13,5 @@ public SharePosition getByCustomerNumberAndAccountNumber(Integer customerNumber,
     public List<SharePosition> getByCustomerNumber(Integer customerNumber);
     
     @Query(value = "select s from SharePosition s, RmCustomerMap m where s.customerNumber=m.customerNumber and m.rmCode=?1")
-    public List<SharePosition> findByRM(String rm);
+    public List<SharePosition> findByRm(String rm);
 }

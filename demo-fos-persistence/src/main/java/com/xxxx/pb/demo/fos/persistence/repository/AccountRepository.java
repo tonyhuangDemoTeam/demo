@@ -14,5 +14,5 @@ public interface AccountRepository extends JpaRepository<Account, Integer>{
 	public List<Account> getByCustomerNumber(Integer customerNumber);
 	
 	@Query(value = "select a from Account a, RmCustomerMap m where a.customerNumber=m.customerNumber and m.rmCode=?1")
-	List<Account> findByRM(String rm);
+	List<Account> findByRm(String rm);
 }

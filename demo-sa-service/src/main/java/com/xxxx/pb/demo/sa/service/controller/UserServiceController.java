@@ -29,7 +29,7 @@ public class UserServiceController {
         return result;
     }
     
-    @RequestMapping(value="/info", method=RequestMethod.GET)
+    @RequestMapping(value="/get", method=RequestMethod.GET)
     public Map<String, List<String>> authenticate(String id) throws Exception{    	
         return userService.getUserInfo(id);
     }

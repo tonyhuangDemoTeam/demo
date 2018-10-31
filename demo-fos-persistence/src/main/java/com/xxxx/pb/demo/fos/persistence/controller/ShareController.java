@@ -44,8 +44,8 @@ public class ShareController {
     }
     
     @RequestMapping(value="/deal/get", params = "type=rm", method=RequestMethod.GET)
-    public List<ShareDealDetail> getDealsByRM(String rm) throws SystemException {
-        return CopyHelper.copy(shareDealRepository.findByRM(rm), ShareDealDetail.class);
+    public List<ShareDealDetail> getDealsByRm(String rm) throws SystemException {
+        return CopyHelper.copy(shareDealRepository.findByRm(rm), ShareDealDetail.class);
     }
 
     @RequestMapping(value="/issue/get", method=RequestMethod.GET)
@@ -70,7 +70,7 @@ public class ShareController {
     }
     
     @RequestMapping(value="/position/get", params = "type=rm", method=RequestMethod.GET)
-    public List<SharePositionDetail> getPositionsByRM(String rm) throws SystemException {
-        return CopyHelper.copy(sharePositionRepository.findByRM(rm), SharePositionDetail.class);
+    public List<SharePositionDetail> getPositionsByRm(String rm) throws SystemException {
+        return CopyHelper.copy(sharePositionRepository.findByRm(rm), SharePositionDetail.class);
     }
 }

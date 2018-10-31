@@ -34,7 +34,7 @@ public class AccountController {
 	}
 	
 	@RequestMapping(value="/get", params = "type=rm", method=RequestMethod.GET)
-    public List<AccountDetail> getByRM(String rm) throws SystemException {
-        return CopyHelper.copy(accountRepository.findByRM(rm), AccountDetail.class);
+    public List<AccountDetail> getByRm(String rm) throws SystemException {
+        return CopyHelper.copy(accountRepository.findByRm(rm), AccountDetail.class);
     }
 }

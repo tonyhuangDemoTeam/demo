@@ -13,5 +13,5 @@ public interface BondPositionRepository extends JpaRepository<BondPosition, Inte
     public List<BondPosition> getByCustomerNumber(Integer customerNumber);
     
     @Query(value = "select p from BondPosition p, RmCustomerMap m where p.customerNumber=m.customerNumber and m.rmCode=?1")
-    public List<BondPosition> findByRM(String rm);
+    public List<BondPosition> findByRm(String rm);
 }

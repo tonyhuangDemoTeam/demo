@@ -13,5 +13,5 @@ public interface ShareDealRepository extends JpaRepository<ShareDeal, Integer>{
     public List<ShareDeal> getByCustomerNumber(Integer customerNumber);
     
     @Query(value = "select s from ShareDeal s, RmCustomerMap m where s.customerNumber=m.customerNumber and m.rmCode=?1")
-    public List<ShareDeal> findByRM(String rm);
+    public List<ShareDeal> findByRm(String rm);
 }

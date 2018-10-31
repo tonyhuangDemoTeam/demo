@@ -16,13 +16,13 @@ public class CustomerServiceController {
     @Autowired
     private CustomerService customerService;
     
-    @RequestMapping(value="/info", params="type=all", method=RequestMethod.GET)
+    @RequestMapping(value="/get", params="type=all", method=RequestMethod.GET)
     public List<CustomerView> getCustomers()
     {
         return customerService.getCustomers();
     }
     
-    @RequestMapping(value="/info", params="type=rm", method=RequestMethod.GET)
+    @RequestMapping(value="/get", params="type=rm", method=RequestMethod.GET)
     public List<CustomerView> getCustomers(String rm){
         return customerService.getCustomers(rm);
     }

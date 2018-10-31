@@ -135,3 +135,56 @@ create table team_rm_map (
 	rm_code varchar(6) not null,
 	constraint pk_team_rm_map primary key (id)
 );
+
+create table action (
+	id int not null,
+	type varchar(1),
+	rm_code varchar(6),
+	remarks varchar(256),
+	constraint pk_actions primary key (id)
+);
+
+create table rate (
+	ccy char(3) not null,
+	rate numeric(10,4),
+	constraint pk_rate primary key (ccy)
+);
+
+create table fund_deal (
+    id int not null,
+	deal_number int not null,
+	customer_number int not null,
+	account_number int not null,
+	fund_issue_code varchar(20),
+	transaction_type char(1),
+	fund_currency varchar(3),
+	fund_price numeric(10,2),
+	fund_quantity numeric(15,2),
+	consideration_amount numeric(15,2),
+	trade_date date,
+	value_date date,
+	constraint pk_fund_deal primary key (id)
+);
+
+create table fund_issue (
+	fund_issue_code varchar(20) NOT NULL,
+	fund_issue_name varchar(200),
+	fund_country varchar(3),
+	fund_code varchar(30),
+	fund_price numeric(10,2),
+	fund_currency varchar(3),
+	risk_level int,
+	constraint pk_fund_issue primary key (fund_issue_code)
+);
+
+create table fund_position (
+    id int not null,
+	customer_number int not null,
+	account_number int not null,
+	fund_issue_code varchar(20) not null,
+	fund_currency varchar(3),
+	average_price numeric(10,2),
+	holding_quantity numeric(15,2),
+	consideration_amount numeric(15,2),
+	constraint pk_fund_position primary key (id)
+);

@@ -16,7 +16,7 @@ import com.xxxx.pb.demo.fos.persistence.repository.TeamRmMapRepository;
 
 @RestController
 @RequestMapping(value="/team")
-public class RMTeamController {
+public class RmTeamController {
     @Autowired
     private RmTeamRepository rmTeamRepository;
     
