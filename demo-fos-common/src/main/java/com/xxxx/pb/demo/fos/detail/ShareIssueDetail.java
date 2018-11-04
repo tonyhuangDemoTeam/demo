@@ -15,7 +15,11 @@ public class ShareIssueDetail {
 
     private String shareCurrency;
 
-    private Integer riskLevel;
+    private String houseView;
+    
+    private String creditRating;
+    
+    private String solicite;
 
     public String getShareIssueCode() {
         return shareIssueCode;
@@ -65,11 +69,27 @@ public class ShareIssueDetail {
         this.shareCurrency = shareCurrency;
     }
 
-    public Integer getRiskLevel() {
-        return riskLevel;
+    public String getHouseView() {
+        return houseView;
     }
 
-    public void setRiskLevel(Integer riskLevel) {
-        this.riskLevel = riskLevel;
+    public void setHouseView(String houseView) {
+        this.houseView = houseView;
+    }
+
+    public String getCreditRating() {
+        return creditRating;
+    }
+
+    public void setCreditRating(String creditRating) {
+        this.creditRating = creditRating;
+    }
+
+    public String getSolicite() {
+        return solicite;
+    }
+
+    public void setSolicite(String solicite) {
+        this.solicite = solicite;
     }
 }

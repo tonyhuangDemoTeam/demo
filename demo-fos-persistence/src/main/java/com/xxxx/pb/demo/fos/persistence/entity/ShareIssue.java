@@ -28,9 +28,15 @@ public class ShareIssue {
 
     @Column(name = "SHARE_CURRENCY", length = 3)
     private String shareCurrency;
-
-    @Column(name = "RISK_LEVEL")
-    private Integer riskLevel;
+    
+    @Column(name = "HOUSE_VIEW", length = 8)
+    private String houseView;
+    
+    @Column(name = "CREDIT_RATING", length = 8)
+    private String creditRating;
+    
+    @Column(name = "SOLICITE", length = 1)
+    private String solicite;
 
     public String getShareIssueCode() {
         return shareIssueCode;
@@ -80,11 +86,27 @@ public class ShareIssue {
         this.shareCurrency = shareCurrency;
     }
 
-    public Integer getRiskLevel() {
-        return riskLevel;
+    public String getHouseView() {
+        return houseView;
     }
 
-    public void setRiskLevel(Integer riskLevel) {
-        this.riskLevel = riskLevel;
+    public void setHouseView(String houseView) {
+        this.houseView = houseView;
+    }
+
+    public String getCreditRating() {
+        return creditRating;
+    }
+
+    public void setCreditRating(String creditRating) {
+        this.creditRating = creditRating;
+    }
+
+    public String getSolicite() {
+        return solicite;
+    }
+
+    public void setSolicite(String solicite) {
+        this.solicite = solicite;
     }
 }
