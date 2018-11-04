@@ -112,7 +112,9 @@ create table share_issue (
 	issuer_code varchar(30),
 	share_price numeric(10,2),
 	share_currency varchar(3),
-	risk_level int,
+	house_view varchar(8),
+	credit_rating varchar(8),
+	solicite varchar(1),
 	constraint pk_share_issue primary key (share_issue_code)
 );
 
