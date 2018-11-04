@@ -5,17 +5,19 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "SHARE_DEAL")
 public class ShareDeal {
     @Id
-    @Column(name = "ID", nullable = false)
-    private Integer id;
-
     @Column(name = "DEAL_NUMBER", nullable = false)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SeqGenerator")
+    @SequenceGenerator(name = "SeqGenerator", sequenceName = "seq_share_deal")
     private Integer dealNumber;
 
     @Column(name = "CUSTOMER_NUMBER", nullable = false)
@@ -47,14 +49,6 @@ public class ShareDeal {
 
     @Column(name = "VALUE_DATE")
     private Date valueDate;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public Integer getDealNumber() {
         return dealNumber;

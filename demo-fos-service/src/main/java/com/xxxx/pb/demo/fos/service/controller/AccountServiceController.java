@@ -7,17 +7,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.xxxx.pb.demo.fos.service.impl.TeamService;
-import com.xxxx.pb.demo.fos.service.view.TeamXView;
+import com.xxxx.pb.demo.fos.detail.AccountDetail;
+import com.xxxx.pb.demo.fos.service.impl.AccountService;
 
 @RestController
-@RequestMapping(value = "/team")
-public class TeamServiceController {
+@RequestMapping(value = "/acct")
+public class AccountServiceController {
     @Autowired
-    private TeamService teamService;
+    private AccountService accountService;
 
     @RequestMapping(value = "/get", method = RequestMethod.GET)
-    public List<TeamXView> getAllTeamInfos() {
-        return teamService.getAllTeamInfos();
+    public List<AccountDetail> getAccountsByCustomer(Integer cust) {
+        return accountService.getAccountsByCustomer(cust);
     }
 }

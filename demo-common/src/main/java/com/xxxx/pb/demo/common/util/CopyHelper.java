@@ -10,12 +10,16 @@ import com.xxxx.pb.demo.common.exception.SystemException;
 
 public class CopyHelper<T, E> {
     public static <S, T> T copy(S src, Class<T> tClass) throws SystemException {
-        try {
-            T t = tClass.newInstance();
-            BeanUtils.copyProperties(src, t);
-            return t;
-        } catch (InstantiationException | IllegalAccessException e) {
-            throw new SystemException(e.getMessage(), e);
+        if (src != null) {
+            try {
+                T t = tClass.newInstance();
+                BeanUtils.copyProperties(src, t);
+                return t;
+            } catch (InstantiationException | IllegalAccessException e) {
+                throw new SystemException(e.getMessage(), e);
+            }
+        } else {
+            return null;
         }
     }
 

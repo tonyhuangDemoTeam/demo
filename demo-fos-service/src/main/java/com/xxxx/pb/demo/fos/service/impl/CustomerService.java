@@ -10,6 +10,6 @@ public interface CustomerService {
     public List<CustomerView> getCustomerView();
 
     public List<CustomerView> getCustomerView(String rm);
-    
+
     public Map<Integer, CustomerDetail> getCustomers();
 }

@@ -8,7 +8,9 @@ import org.springframework.data.jpa.repository.Query;
 import com.xxxx.pb.demo.fos.persistence.entity.SharePosition;
 
 public interface SharePositionRepository extends JpaRepository<SharePosition, Integer> {
-    public SharePosition getByCustomerNumberAndAccountNumber(Integer customerNumber, Integer accountNumber);
+    public SharePosition getByCustomerNumberAndAccountNumberAndShareIssueCode(Integer customerNumber, Integer accountNumber, String shareIssueCode);
+
+    public List<SharePosition> getByCustomerNumberAndAccountNumber(Integer customerNumber, Integer accountNumber);
 
     public List<SharePosition> getByCustomerNumber(Integer customerNumber);
 

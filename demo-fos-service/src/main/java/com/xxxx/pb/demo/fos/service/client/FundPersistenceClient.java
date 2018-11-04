@@ -30,13 +30,16 @@ public interface FundPersistenceClient {
     public List<FundIssueDetail> getAllIssues();
 
     @RequestMapping(value = "/position/get?type=all")
-    public List<FundPositionDetail> getAllPosition();
+    public List<FundPositionDetail> getPositions();
 
     @RequestMapping(value = "/position/get?type=cust")
-    public List<FundPositionDetail> getPositionsByCust(@RequestParam("cust") Integer cust);
+    public List<FundPositionDetail> getPositions(@RequestParam("cust") Integer cust);
 
     @RequestMapping(value = "/position/get?type=cust_acct")
-    public FundPositionDetail getPositionByCustAndAcct(@RequestParam("cust") Integer cust, @RequestParam("acct") Integer acct);
+    public List<FundPositionDetail> getPositions(@RequestParam("cust") Integer cust, @RequestParam("acct") Integer acct);
+
+    @RequestMapping(value = "/position/get?type=cust_acct_issue")
+    public FundPositionDetail getPosition(@RequestParam("cust") Integer cust, @RequestParam("acct") Integer acct, @RequestParam("issue") String issue);
 
     @RequestMapping(value = "/position/get?type=rm")
     public List<FundPositionDetail> getPositionsByRm(@RequestParam("rm") String rm);

@@ -48,7 +48,7 @@ public class UserController {
             BeanUtils.copyProperties(d, value);
             userRepository.save(value);
             return value;
-        }).orElseThrow(() -> new ValidationException(Constant.COED_NOT_EXIST, Constant.ERR_NOT_EXIST));
+        }).orElseThrow(() -> new ValidationException(Constant.CODE_NOT_EXIST, Constant.ERR_NOT_EXIST));
 
         return true;
     }

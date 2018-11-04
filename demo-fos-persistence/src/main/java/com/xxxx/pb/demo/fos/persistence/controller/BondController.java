@@ -54,18 +54,23 @@ public class BondController {
     }
 
     @RequestMapping(value = "/position/get", params = "type=all", method = RequestMethod.GET)
-    public List<BondPositionDetail> getAllPosition() throws SystemException {
+    public List<BondPositionDetail> getPositions() throws SystemException {
         return CopyHelper.copy(bondPositionRepository.findAll(), BondPositionDetail.class);
     }
 
     @RequestMapping(value = "/position/get", params = "type=cust", method = RequestMethod.GET)
-    public List<BondPositionDetail> getPositionsByCust(Integer cust) throws SystemException {
+    public List<BondPositionDetail> getPositions(Integer cust) throws SystemException {
         return CopyHelper.copy(bondPositionRepository.getByCustomerNumber(cust), BondPositionDetail.class);
     }
 
     @RequestMapping(value = "/position/get", params = "type=cust_acct", method = RequestMethod.GET)
-    public BondPositionDetail getPositionByCustAndAcct(Integer cust, Integer acct) throws SystemException {
+    public List<BondPositionDetail> getPositions(Integer cust, Integer acct) throws SystemException {
         return CopyHelper.copy(bondPositionRepository.getByCustomerNumberAndAccountNumber(cust, acct), BondPositionDetail.class);
+    }
+
+    @RequestMapping(value = "/position/get", params = "type=cust_acct_issue", method = RequestMethod.GET)
+    public BondPositionDetail getPosition(Integer cust, Integer acct, String issue) throws SystemException {
+        return CopyHelper.copy(bondPositionRepository.getByCustomerNumberAndAccountNumberAndBondIssueCode(cust, acct, issue), BondPositionDetail.class);
     }
 
     @RequestMapping(value = "/position/get", params = "type=rm", method = RequestMethod.GET)

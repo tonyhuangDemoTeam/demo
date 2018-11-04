@@ -8,7 +8,9 @@ import org.springframework.data.jpa.repository.Query;
 import com.xxxx.pb.demo.fos.persistence.entity.FundPosition;
 
 public interface FundPositionRepository extends JpaRepository<FundPosition, Integer> {
-    public FundPosition getByCustomerNumberAndAccountNumber(Integer customerNumber, Integer accountNumber);
+    public FundPosition getByCustomerNumberAndAccountNumberAndFundIssueCode(Integer customerNumber, Integer accountNumber, String fundIssueCode);
+
+    public List<FundPosition> getByCustomerNumberAndAccountNumber(Integer customerNumber, Integer accountNumber);
 
     public List<FundPosition> getByCustomerNumber(Integer customerNumber);
 

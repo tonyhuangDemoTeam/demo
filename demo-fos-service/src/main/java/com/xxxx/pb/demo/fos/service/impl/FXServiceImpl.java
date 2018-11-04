@@ -13,19 +13,24 @@ import com.xxxx.pb.demo.fos.service.client.RatePersistenceClient;
 
 @Service
 public class FXServiceImpl implements FXService {
-    
+
     @Autowired
     private RatePersistenceClient ratePersistenceClient;
 
+    private Map<String, BigDecimal> rates = null;
+
     @Override
     public Map<String, BigDecimal> getRates() {
-        Map<String, BigDecimal> result = new HashMap<String, BigDecimal>();
-        List<RateDetail> rates = ratePersistenceClient.getAll();
-        for (RateDetail rate : rates) {
-            result.put(rate.getCcy(), rate.getRate());
+        if (rates == null) {
+            rates = new HashMap<String, BigDecimal>();
+
+            List<RateDetail> temp = ratePersistenceClient.getAll();
+            for (RateDetail rate : temp) {
+                rates.put(rate.getCcy(), rate.getRate());
+            }
         }
 
-        return result;
+        return rates;
     }
 
     @Override

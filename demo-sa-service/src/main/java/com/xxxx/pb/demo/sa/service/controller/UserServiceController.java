@@ -23,7 +23,7 @@ public class UserServiceController {
     public Message authenticate(@RequestBody AuthRequest request) throws Exception {
         Message result = new Message();
         if (userService.authenticate(request.getId(), request.getPassword())) {
-            result.setCode(Constant.COED_SUCCESS);
+            result.setCode(Constant.CODE_SUCCESS);
         }
 
         return result;

@@ -37,7 +37,7 @@ public class ActionController {
             value.setType(Constant.STATUS_MARKED);
             actionRepository.save(value);
             return value;
-        }).orElseThrow(() -> new FunctionException(Constant.COED_NOT_EXIST, Constant.ERR_NOT_EXIST));
+        }).orElseThrow(() -> new FunctionException(Constant.CODE_NOT_EXIST, Constant.ERR_NOT_EXIST));
 
         return true;
     }

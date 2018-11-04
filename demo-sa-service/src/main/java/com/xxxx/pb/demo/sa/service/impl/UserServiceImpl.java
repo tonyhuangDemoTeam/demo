@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService {
         UserDetail u = userPersistenceClient.getUser(id);
 
         if (u == null) {
-            throw new ValidationException(Constant.COED_NOT_EXIST, String.format("user %s not found", id));
+            throw new ValidationException(Constant.CODE_NOT_EXIST, String.format("user %s not found", id));
         }
 
         if (Constant.STATUS_DISABLE.equals(u.getStatus())) {

@@ -19,18 +19,23 @@ public class DepositController {
     private DepositPositionRepository depositPositionRepository;
 
     @RequestMapping(value = "/position/get", params = "type=all", method = RequestMethod.GET)
-    public List<DepositPositionDetail> getAllPositions() throws SystemException {
+    public List<DepositPositionDetail> getPositions() throws SystemException {
         return CopyHelper.copy(depositPositionRepository.findAll(), DepositPositionDetail.class);
     }
 
     @RequestMapping(value = "/position/get", params = "type=cust", method = RequestMethod.GET)
-    public List<DepositPositionDetail> getPositionsByCust(Integer cust) throws SystemException {
+    public List<DepositPositionDetail> getPositions(Integer cust) throws SystemException {
         return CopyHelper.copy(depositPositionRepository.getByCustomerNumber(cust), DepositPositionDetail.class);
     }
 
     @RequestMapping(value = "/position/get", params = "type=cust_acct", method = RequestMethod.GET)
-    public DepositPositionDetail getPositionByCustAndAcct(Integer cust, Integer acct) throws SystemException {
+    public List<DepositPositionDetail> getPositions(Integer cust, Integer acct) throws SystemException {
         return CopyHelper.copy(depositPositionRepository.getByCustomerNumberAndAccountNumber(cust, acct), DepositPositionDetail.class);
+    }
+
+    @RequestMapping(value = "/position/get", params = "type=cust_acct_ccy", method = RequestMethod.GET)
+    public DepositPositionDetail getPosition(Integer cust, Integer acct, String ccy) throws SystemException {
+        return CopyHelper.copy(depositPositionRepository.getByCustomerNumberAndAccountNumberAndCurrency(cust, acct, ccy), DepositPositionDetail.class);
     }
 
     @RequestMapping(value = "/position/get", params = "type=rm", method = RequestMethod.GET)

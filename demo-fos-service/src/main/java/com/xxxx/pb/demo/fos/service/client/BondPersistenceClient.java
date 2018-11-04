@@ -30,13 +30,16 @@ public interface BondPersistenceClient {
     public List<BondIssueDetail> getAllIssues();
 
     @RequestMapping(value = "/position/get?type=all")
-    public List<BondPositionDetail> getAllPosition();
+    public List<BondPositionDetail> getPositions();
 
     @RequestMapping(value = "/position/get?type=cust")
-    public List<BondPositionDetail> getPositionsByCust(@RequestParam("cust") Integer cust);
+    public List<BondPositionDetail> getPositions(@RequestParam("cust") Integer cust);
 
     @RequestMapping(value = "/position/get?type=cust_acct")
-    public BondPositionDetail getPositionByCustAndAcct(@RequestParam("cust") Integer cust, @RequestParam("acct") Integer acct);
+    public List<BondPositionDetail> getPositions(@RequestParam("cust") Integer cust, @RequestParam("acct") Integer acct);
+
+    @RequestMapping(value = "/position/get?type=cust_acct_issue")
+    public BondPositionDetail getPosition(@RequestParam("cust") Integer cust, @RequestParam("acct") Integer acct, @RequestParam("issue") Integer issue);
 
     @RequestMapping(value = "/position/get?type=rm")
     public List<BondPositionDetail> getPositionsByRm(@RequestParam("rm") String rm);

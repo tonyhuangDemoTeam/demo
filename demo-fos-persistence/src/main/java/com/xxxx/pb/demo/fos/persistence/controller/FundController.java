@@ -54,18 +54,23 @@ public class FundController {
     }
 
     @RequestMapping(value = "/position/get", params = "type=all", method = RequestMethod.GET)
-    public List<FundPositionDetail> getAllPosition() throws SystemException {
+    public List<FundPositionDetail> getPositions() throws SystemException {
         return CopyHelper.copy(fundPositionRepository.findAll(), FundPositionDetail.class);
     }
 
     @RequestMapping(value = "/position/get", params = "type=cust", method = RequestMethod.GET)
-    public List<FundPositionDetail> getPositionsByCust(Integer cust) throws SystemException {
+    public List<FundPositionDetail> getPositions(Integer cust) throws SystemException {
         return CopyHelper.copy(fundPositionRepository.getByCustomerNumber(cust), FundPositionDetail.class);
     }
 
     @RequestMapping(value = "/position/get", params = "type=cust_acct", method = RequestMethod.GET)
-    public FundPositionDetail getPositionByCustAndAcct(Integer cust, Integer acct) throws SystemException {
+    public List<FundPositionDetail> getPositions(Integer cust, Integer acct) throws SystemException {
         return CopyHelper.copy(fundPositionRepository.getByCustomerNumberAndAccountNumber(cust, acct), FundPositionDetail.class);
+    }
+
+    @RequestMapping(value = "/position/get", params = "type=cust_acct_issue", method = RequestMethod.GET)
+    public FundPositionDetail getPosition(Integer cust, Integer acct, String issue) throws SystemException {
+        return CopyHelper.copy(fundPositionRepository.getByCustomerNumberAndAccountNumberAndFundIssueCode(cust, acct, issue), FundPositionDetail.class);
     }
 
     @RequestMapping(value = "/position/get", params = "type=rm", method = RequestMethod.GET)

@@ -16,7 +16,7 @@ import com.xxxx.pb.demo.fos.service.client.RmPersistenceClient;
 public class RmServiceImpl implements RmService {
     @Autowired
     private RmPersistenceClient rmPersistenceClient;
-    
+
     @Override
     public Map<String, RelationshipManagerDetail> getAllRelationshipManagers() {
         List<RelationshipManagerDetail> rms = rmPersistenceClient.getAll();
@@ -24,7 +24,7 @@ public class RmServiceImpl implements RmService {
         for (RelationshipManagerDetail rm : rms) {
             rmMap.put(rm.getRmCode(), rm);
         }
-        
+
         return rmMap;
     }
 
@@ -40,7 +40,7 @@ public class RmServiceImpl implements RmService {
             }
             temp.add(rmCustRelationship);
         }
-        
+
         return rmCustMap;
     }
 

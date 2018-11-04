@@ -1,5 +1,6 @@
 package com.xxxx.pb.demo.fos.service.impl;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -11,13 +12,16 @@ import org.springframework.stereotype.Service;
 import com.xxxx.pb.demo.common.util.Constant;
 import com.xxxx.pb.demo.fos.detail.DepositPositionDetail;
 import com.xxxx.pb.demo.fos.service.client.DepositPersistenceClient;
+import com.xxxx.pb.demo.fos.service.view.DepositPositionXView;
 
 @Service
-public class DepositServiceImpl implements DepositService{
+public class DepositServiceImpl implements DepositService {
+    @Autowired
+    private FXService fxService;
 
     @Autowired
     private DepositPersistenceClient depositPersistenceClient;
-    
+
     @Override
     public Map<String, List<DepositPositionDetail>> getAllPositions() {
         List<DepositPositionDetail> depositPositions = depositPersistenceClient.getAllPositions();
@@ -31,8 +35,35 @@ public class DepositServiceImpl implements DepositService{
             }
             temp.add(depositPosition);
         }
-        
+
         return depositPositionMap;
     }
 
+    @Override
+    public List<DepositPositionXView> getAccountPositions(Integer cust, Integer acct) {
+        return prepareView(depositPersistenceClient.getPositions(cust, acct));
+    }
+
+    @Override
+    public List<DepositPositionXView> prepareView(List<DepositPositionDetail> deposits) {
+        List<DepositPositionXView> result = new ArrayList<>();
+
+        Map<String, BigDecimal> rates = fxService.getRates();
+
+        if (deposits != null && deposits.size() > 0) {
+            for (DepositPositionDetail depoist : deposits) {
+                DepositPositionXView view = new DepositPositionXView();
+                result.add(view);
+
+                view.setId(depoist.getId());
+                view.setCustomerNumber(depoist.getCustomerNumber());
+                view.setAccountNumber(depoist.getAccountNumber());
+                view.setCurrency(depoist.getCurrency());
+                view.setHoldingQuantity(depoist.getHoldingQuantity());
+                view.setPosition(depoist.getHoldingQuantity().multiply(rates.get(depoist.getCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP).toPlainString());
+            }
+        }
+
+        return result;
+    }
 }

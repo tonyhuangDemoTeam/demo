@@ -8,6 +8,6 @@ import com.xxxx.pb.demo.fos.service.view.TeamXView;
 
 public interface TeamService {
     public List<TeamXView> getAllTeamInfos();
-    
+
     public Map<String, List<TeamRmMapDetail>> getAllRelationshipManagers();
 }

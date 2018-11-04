@@ -76,7 +76,7 @@ public class BondPositionDetail {
     public void setAveragePrice(BigDecimal averagePrice) {
         this.averagePrice = averagePrice;
     }
-    
+
     public BigDecimal getHoldingQuantity() {
         return holdingQuantity;
     }

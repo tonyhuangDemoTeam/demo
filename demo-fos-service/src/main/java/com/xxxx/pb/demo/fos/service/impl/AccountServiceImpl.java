@@ -12,11 +12,11 @@ import com.xxxx.pb.demo.fos.detail.AccountDetail;
 import com.xxxx.pb.demo.fos.service.client.AccountPersistenceClient;
 
 @Service
-public class AccountServiceImpl implements AccountService{
+public class AccountServiceImpl implements AccountService {
 
     @Autowired
     private AccountPersistenceClient accountPersistenceClient;
-    
+
     @Override
     public Map<Integer, List<AccountDetail>> getAllAccounts() {
         List<AccountDetail> accounts = accountPersistenceClient.getAll();
@@ -29,8 +29,13 @@ public class AccountServiceImpl implements AccountService{
             }
             temp.add(account);
         }
-        
+
         return accountMap;
+    }
+
+    @Override
+    public List<AccountDetail> getAccountsByCustomer(Integer cust) {
+        return accountPersistenceClient.getByCust(cust);
     }
 
 }

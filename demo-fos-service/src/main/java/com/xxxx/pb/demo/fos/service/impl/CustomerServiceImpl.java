@@ -37,15 +37,15 @@ public class CustomerServiceImpl implements CustomerService {
     public List<CustomerView> getCustomerView(String rm) {
         return prepareView(customerPersistenceClient.getByRm(rm), rmPersistenceClient.getAllCustMaps(), rmTeamPersistenceClient.getAllMaps(), rmTeamPersistenceClient.getAll());
     }
-    
+
     @Override
-    public Map<Integer, CustomerDetail> getCustomers(){
+    public Map<Integer, CustomerDetail> getCustomers() {
         List<CustomerDetail> customers = customerPersistenceClient.getAll();
         Map<Integer, CustomerDetail> custMap = new HashMap<Integer, CustomerDetail>();
         for (CustomerDetail cust : customers) {
             custMap.put(cust.getCustomerNumber(), cust);
         }
-        
+
         return custMap;
     }
 

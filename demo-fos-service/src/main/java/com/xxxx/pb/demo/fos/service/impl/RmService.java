@@ -8,6 +8,6 @@ import com.xxxx.pb.demo.fos.detail.RmCustomerMapDetail;
 
 public interface RmService {
     public Map<String, RelationshipManagerDetail> getAllRelationshipManagers();
-    
+
     public Map<String, List<RmCustomerMapDetail>> getAllCustomers();
 }

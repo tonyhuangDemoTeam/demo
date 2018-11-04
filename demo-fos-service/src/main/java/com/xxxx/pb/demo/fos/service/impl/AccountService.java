@@ -7,4 +7,6 @@ import com.xxxx.pb.demo.fos.detail.AccountDetail;
 
 public interface AccountService {
     Map<Integer, List<AccountDetail>> getAllAccounts();
+
+    List<AccountDetail> getAccountsByCustomer(Integer cust);
 }

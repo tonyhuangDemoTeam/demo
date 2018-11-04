@@ -4,7 +4,10 @@ import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
@@ -12,6 +15,8 @@ import javax.persistence.Table;
 public class SharePosition {
     @Id
     @Column(name = "ID", nullable = false)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SeqGenerator")
+    @SequenceGenerator(name = "SeqGenerator", sequenceName = "seq_share_position")
     private Integer id;
 
     @Column(name = "CUSTOMER_NUMBER", nullable = false)

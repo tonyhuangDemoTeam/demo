@@ -3,9 +3,9 @@ package com.xxxx.pb.demo.fos.detail;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class ShareDealDetail {
-    private Integer id;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
+public class ShareDealDetail {
     private Integer dealNumber;
 
     private Integer customerNumber;
@@ -24,17 +24,11 @@ public class ShareDealDetail {
 
     private BigDecimal considerationAmount;
 
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date tradeDate;
 
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date valueDate;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public Integer getDealNumber() {
         return dealNumber;

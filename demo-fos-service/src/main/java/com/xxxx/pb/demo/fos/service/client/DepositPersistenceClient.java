@@ -16,10 +16,13 @@ public interface DepositPersistenceClient {
     public List<DepositPositionDetail> getAllPositions();
 
     @RequestMapping(value = "/position/get?type=cust")
-    public List<DepositPositionDetail> getPositionsByCust(@RequestParam("cust") Integer cust);
+    public List<DepositPositionDetail> getPositions(@RequestParam("cust") Integer cust);
 
     @RequestMapping(value = "/position/get?type=cust_acct")
-    public DepositPositionDetail getPositionByCustAndAcct(@RequestParam("cust") Integer cust, @RequestParam("acct") Integer acct);
+    public List<DepositPositionDetail> getPositions(@RequestParam("cust") Integer cust, @RequestParam("acct") Integer acct);
+
+    @RequestMapping(value = "/position/get?type=cust_acct_ccy")
+    public DepositPositionDetail getPosition(@RequestParam("cust") Integer cust, @RequestParam("acct") Integer acct, @RequestParam("ccy") String ccy);
 
     @RequestMapping(value = "/position/get?type=rm")
     public List<DepositPositionDetail> getPositionsByRm(@RequestParam("rm") String rm);

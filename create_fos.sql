@@ -3,7 +3,7 @@ create table account (
 	customer_number int not null,
 	account_number int not null,
 	account_name varchar(60),
-	account_type varchar(10),
+	create_date date,
 	constraint pk_account primary key (id)
 );
 
@@ -91,7 +91,6 @@ create table rm_team (
 );
 
 create table share_deal (
-    id int not null,
 	deal_number int not null,
 	customer_number int not null,
 	account_number int not null,
@@ -103,7 +102,7 @@ create table share_deal (
 	consideration_amount numeric(15,2),
 	trade_date date,
 	value_date date,
-	constraint pk_share_deal primary key (id)
+	constraint pk_share_deal primary key (deal_number)
 );
 
 create table share_issue (
@@ -197,3 +196,6 @@ create table deposit_position (
 	holding_quantity numeric(15,2),
 	constraint pk_deposit_position primary key (id)
 );
+
+create sequence seq_share_deal increment 1 start 1 minvalue 1 maxvalue 99999999 cache 1;
+create sequence seq_share_position increment 1 start 1 minvalue 1 maxvalue 99999999 cache 1;
