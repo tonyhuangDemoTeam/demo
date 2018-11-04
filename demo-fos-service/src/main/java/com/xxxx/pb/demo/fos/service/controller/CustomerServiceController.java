@@ -11,19 +11,18 @@ import com.xxxx.pb.demo.fos.service.impl.CustomerService;
 import com.xxxx.pb.demo.fos.service.view.CustomerView;
 
 @RestController
-@RequestMapping(value="/cust")
+@RequestMapping(value = "/cust")
 public class CustomerServiceController {
     @Autowired
     private CustomerService customerService;
-    
-    @RequestMapping(value="/get", params="type=all", method=RequestMethod.GET)
-    public List<CustomerView> getCustomers()
-    {
-        return customerService.getCustomers();
+
+    @RequestMapping(value = "/get", params = "type=all", method = RequestMethod.GET)
+    public List<CustomerView> getCustomers() {
+        return customerService.getCustomerView();
     }
-    
-    @RequestMapping(value="/get", params="type=rm", method=RequestMethod.GET)
-    public List<CustomerView> getCustomers(String rm){
-        return customerService.getCustomers(rm);
+
+    @RequestMapping(value = "/get", params = "type=rm", method = RequestMethod.GET)
+    public List<CustomerView> getCustomers(String rm) {
+        return customerService.getCustomerView(rm);
     }
 }

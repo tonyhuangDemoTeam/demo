@@ -10,13 +10,14 @@ import com.xxxx.pb.demo.fos.detail.RmTeamDetail;
 import com.xxxx.pb.demo.fos.detail.TeamRmMapDetail;
 
 @FeignClient("fos-persistence")
+@RequestMapping(value = "/team")
 public interface RmTeamPersistenceClient {
-    @RequestMapping(value="/team/get?type=all")
+    @RequestMapping(value = "/get?type=all")
     public List<RmTeamDetail> getAll();
-    
-    @RequestMapping(value="/team/get?type=team")
+
+    @RequestMapping(value = "/get?type=team")
     public RmTeamDetail getByCode(@RequestParam("code") String code);
-    
-    @RequestMapping(value="/team/get?type=map")
+
+    @RequestMapping(value = "/get?type=map")
     public List<TeamRmMapDetail> getAllMaps();
 }

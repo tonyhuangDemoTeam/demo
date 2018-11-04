@@ -11,125 +11,125 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "BOND_DEAL")
 public class BondDeal {
-	@Id
+    @Id
     @Column(name = "ID", nullable = false)
-	private Integer dealNumber;
-	
+    private Integer dealNumber;
+
     @Column(name = "CUSTOMER_NUMBER")
-	private Integer customerNumber;
+    private Integer customerNumber;
 
     @Column(name = "ACCOUNT_NUMBER")
-	private Integer accountNumber;
-	
+    private Integer accountNumber;
+
     @Column(name = "BOND_ISSUE_CODE", length = 20)
-	private String bondIssueCode;
+    private String bondIssueCode;
 
     @Column(name = "TRANSACTION", length = 1)
-	private String transactionType;
+    private String transactionType;
 
     @Column(name = "BOND_CURRENCY", length = 3)
-	private String bondCurrency;
-	
+    private String bondCurrency;
+
     @Column(name = "BOND_PRICE", precision = 10, scale = 2)
-	private BigDecimal bondPrice;
-	
+    private BigDecimal bondPrice;
+
     @Column(name = "BOND_QUANTITY", precision = 15, scale = 2)
-	private BigDecimal bondQuantity;
-	
+    private BigDecimal bondQuantity;
+
     @Column(name = "CONSIDERATION_AMOUNT", precision = 15, scale = 2)
-	private BigDecimal considerationAmount;
-	
+    private BigDecimal considerationAmount;
+
     @Column(name = "TRADE_DATE")
-	private Date tradeDate;
-	
+    private Date tradeDate;
+
     @Column(name = "VALUE_DATE")
-	private Date valueDate;
+    private Date valueDate;
 
-	public Integer getDealNumber() {
-		return dealNumber;
-	}
+    public Integer getDealNumber() {
+        return dealNumber;
+    }
 
-	public void setDealNumber(Integer dealNumber) {
-		this.dealNumber = dealNumber;
-	}
+    public void setDealNumber(Integer dealNumber) {
+        this.dealNumber = dealNumber;
+    }
 
-	public Integer getCustomerNumber() {
-		return customerNumber;
-	}
+    public Integer getCustomerNumber() {
+        return customerNumber;
+    }
 
-	public void setCustomerNumber(Integer customerNumber) {
-		this.customerNumber = customerNumber;
-	}
+    public void setCustomerNumber(Integer customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 
-	public Integer getAccountNumber() {
-		return accountNumber;
-	}
+    public Integer getAccountNumber() {
+        return accountNumber;
+    }
 
-	public void setAccountNumber(Integer accountNumber) {
-		this.accountNumber = accountNumber;
-	}
+    public void setAccountNumber(Integer accountNumber) {
+        this.accountNumber = accountNumber;
+    }
 
-	public String getBondIssueCode() {
-		return bondIssueCode;
-	}
+    public String getBondIssueCode() {
+        return bondIssueCode;
+    }
 
-	public void setBondIssueCode(String bondIssueCode) {
-		this.bondIssueCode = bondIssueCode;
-	}
+    public void setBondIssueCode(String bondIssueCode) {
+        this.bondIssueCode = bondIssueCode;
+    }
 
-	public String getTransactionType() {
-		return transactionType;
-	}
+    public String getTransactionType() {
+        return transactionType;
+    }
 
-	public void setTransactionType(String transactionType) {
-		this.transactionType = transactionType;
-	}
+    public void setTransactionType(String transactionType) {
+        this.transactionType = transactionType;
+    }
 
-	public String getBondCurrency() {
-		return bondCurrency;
-	}
+    public String getBondCurrency() {
+        return bondCurrency;
+    }
 
-	public void setBondCurrency(String bondCurrency) {
-		this.bondCurrency = bondCurrency;
-	}
+    public void setBondCurrency(String bondCurrency) {
+        this.bondCurrency = bondCurrency;
+    }
 
-	public BigDecimal getBondPrice() {
-		return bondPrice;
-	}
+    public BigDecimal getBondPrice() {
+        return bondPrice;
+    }
 
-	public void setBondPrice(BigDecimal bondPrice) {
-		this.bondPrice = bondPrice;
-	}
+    public void setBondPrice(BigDecimal bondPrice) {
+        this.bondPrice = bondPrice;
+    }
 
-	public BigDecimal getBondQuantity() {
-		return bondQuantity;
-	}
+    public BigDecimal getBondQuantity() {
+        return bondQuantity;
+    }
 
-	public void setBondQuantity(BigDecimal bondQuantity) {
-		this.bondQuantity = bondQuantity;
-	}
-	
-	public BigDecimal getConsiderationAmount() {
-		return considerationAmount;
-	}
+    public void setBondQuantity(BigDecimal bondQuantity) {
+        this.bondQuantity = bondQuantity;
+    }
 
-	public void setConsiderationAmount(BigDecimal considerationAmount) {
-		this.considerationAmount = considerationAmount;
-	}
+    public BigDecimal getConsiderationAmount() {
+        return considerationAmount;
+    }
 
-	public Date getTradeDate() {
-		return tradeDate;
-	}
+    public void setConsiderationAmount(BigDecimal considerationAmount) {
+        this.considerationAmount = considerationAmount;
+    }
 
-	public void setTradeDate(Date tradeDate) {
-		this.tradeDate = tradeDate;
-	}
+    public Date getTradeDate() {
+        return tradeDate;
+    }
 
-	public Date getValueDate() {
-		return valueDate;
-	}
+    public void setTradeDate(Date tradeDate) {
+        this.tradeDate = tradeDate;
+    }
 
-	public void setValueDate(Date valueDate) {
-		this.valueDate = valueDate;
-	}
+    public Date getValueDate() {
+        return valueDate;
+    }
+
+    public void setValueDate(Date valueDate) {
+        this.valueDate = valueDate;
+    }
 }

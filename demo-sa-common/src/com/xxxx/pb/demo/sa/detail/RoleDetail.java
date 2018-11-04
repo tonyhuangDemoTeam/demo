@@ -10,11 +10,11 @@ public class RoleDetail {
     private String remark;
 
     private Date createTime;
-    
+
     private String createBy;
 
     private Date updateTime;
-    
+
     private String updateBy;
 
     public String getId() {

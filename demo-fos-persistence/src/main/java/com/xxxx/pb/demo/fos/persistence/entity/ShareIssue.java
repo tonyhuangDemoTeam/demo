@@ -10,81 +10,81 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "SHARE_ISSUE")
 public class ShareIssue {
-	@Id
+    @Id
     @Column(name = "SHARE_ISSUE_CODE", nullable = false, length = 20)
-	private String shareIssueCode;
-	
-	@Column(name = "SHARE_ISSUE_NAME", length = 200)
-	private String shareIssueName;
-	
-	@Column(name = "SHARE_COUNTRY", length = 3)
-	private String shareCountry;
-	
-	@Column(name = "ISSUER_CODE", length = 30)
-	private String issueCode;
-	
-	@Column(name = "SHARE_PRICE", precision = 10, scale = 2)
-	private BigDecimal sharePrice;
-	
-	@Column(name = "SHARE_CURRENCY", length = 3)
-	private String shareCurrency;
-	
-	@Column(name = "RISK_LEVEL")
-	private Integer riskLevel;
+    private String shareIssueCode;
 
-	public String getShareIssueCode() {
-		return shareIssueCode;
-	}
+    @Column(name = "SHARE_ISSUE_NAME", length = 200)
+    private String shareIssueName;
 
-	public void setShareIssueCode(String shareIssueCode) {
-		this.shareIssueCode = shareIssueCode;
-	}
+    @Column(name = "SHARE_COUNTRY", length = 3)
+    private String shareCountry;
 
-	public String getShareIssueName() {
-		return shareIssueName;
-	}
+    @Column(name = "ISSUER_CODE", length = 30)
+    private String issueCode;
 
-	public void setShareIssueName(String shareIssueName) {
-		this.shareIssueName = shareIssueName;
-	}
+    @Column(name = "SHARE_PRICE", precision = 10, scale = 2)
+    private BigDecimal sharePrice;
 
-	public String getShareCountry() {
-		return shareCountry;
-	}
+    @Column(name = "SHARE_CURRENCY", length = 3)
+    private String shareCurrency;
 
-	public void setShareCountry(String shareCountry) {
-		this.shareCountry = shareCountry;
-	}
+    @Column(name = "RISK_LEVEL")
+    private Integer riskLevel;
 
-	public String getIssueCode() {
-		return issueCode;
-	}
+    public String getShareIssueCode() {
+        return shareIssueCode;
+    }
 
-	public void setIssueCode(String issueCode) {
-		this.issueCode = issueCode;
-	}
+    public void setShareIssueCode(String shareIssueCode) {
+        this.shareIssueCode = shareIssueCode;
+    }
 
-	public BigDecimal getSharePrice() {
-		return sharePrice;
-	}
+    public String getShareIssueName() {
+        return shareIssueName;
+    }
 
-	public void setSharePrice(BigDecimal sharePrice) {
-		this.sharePrice = sharePrice;
-	}
+    public void setShareIssueName(String shareIssueName) {
+        this.shareIssueName = shareIssueName;
+    }
 
-	public String getShareCurrency() {
-		return shareCurrency;
-	}
+    public String getShareCountry() {
+        return shareCountry;
+    }
 
-	public void setShareCurrency(String shareCurrency) {
-		this.shareCurrency = shareCurrency;
-	}
+    public void setShareCountry(String shareCountry) {
+        this.shareCountry = shareCountry;
+    }
 
-	public Integer getRiskLevel() {
-		return riskLevel;
-	}
+    public String getIssueCode() {
+        return issueCode;
+    }
 
-	public void setRiskLevel(Integer riskLevel) {
-		this.riskLevel = riskLevel;
-	}
+    public void setIssueCode(String issueCode) {
+        this.issueCode = issueCode;
+    }
+
+    public BigDecimal getSharePrice() {
+        return sharePrice;
+    }
+
+    public void setSharePrice(BigDecimal sharePrice) {
+        this.sharePrice = sharePrice;
+    }
+
+    public String getShareCurrency() {
+        return shareCurrency;
+    }
+
+    public void setShareCurrency(String shareCurrency) {
+        this.shareCurrency = shareCurrency;
+    }
+
+    public Integer getRiskLevel() {
+        return riskLevel;
+    }
+
+    public void setRiskLevel(Integer riskLevel) {
+        this.riskLevel = riskLevel;
+    }
 }

@@ -14,23 +14,23 @@ import com.xxxx.pb.demo.common.util.Constant;
 import com.xxxx.pb.demo.sa.service.impl.UserService;
 
 @RestController
-@RequestMapping(value="/user")
+@RequestMapping(value = "/user")
 public class UserServiceController {
-	@Autowired
+    @Autowired
     private UserService userService;
-    
-    @RequestMapping(value="/authenticate", method=RequestMethod.POST)
-    public Message authenticate(@RequestBody AuthRequest request) throws Exception{
-    	Message result = new Message();
-    	if(userService.authenticate(request.getId(), request.getPassword())) {
-    		result.setCode(Constant.COED_SUCCESS);
-    	}
-        
+
+    @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
+    public Message authenticate(@RequestBody AuthRequest request) throws Exception {
+        Message result = new Message();
+        if (userService.authenticate(request.getId(), request.getPassword())) {
+            result.setCode(Constant.COED_SUCCESS);
+        }
+
         return result;
     }
-    
-    @RequestMapping(value="/get", method=RequestMethod.GET)
-    public Map<String, List<String>> authenticate(String id) throws Exception{    	
+
+    @RequestMapping(value = "/get", method = RequestMethod.GET)
+    public Map<String, List<String>> authenticate(String id) throws Exception {
         return userService.getUserInfo(id);
     }
 }

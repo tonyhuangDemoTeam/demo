@@ -3,93 +3,93 @@ package com.xxxx.pb.demo.fos.detail;
 import java.math.BigDecimal;
 
 public class BondPositionDetail {
-	private Integer id;
-	
-	private Integer customerNumber;
-	
-	private Integer accountNumber;
-	
-	private String bondIssueCode;
-	
-	private String bondCurrency;
-	
-	private BigDecimal accruedInterest;
-	
-	private BigDecimal averagePrice;
-	
-	private BigDecimal holdingQuanitity;
-	
-	private BigDecimal considerationAmount;
+    private Integer id;
 
-	public Integer getId() {
-		return id;
-	}
+    private Integer customerNumber;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    private Integer accountNumber;
 
-	public Integer getCustomerNumber() {
-		return customerNumber;
-	}
+    private String bondIssueCode;
 
-	public void setCustomerNumber(Integer customerNumber) {
-		this.customerNumber = customerNumber;
-	}
+    private String bondCurrency;
 
-	public Integer getAccountNumber() {
-		return accountNumber;
-	}
+    private BigDecimal accruedInterest;
 
-	public void setAccountNumber(Integer accountNumber) {
-		this.accountNumber = accountNumber;
-	}
+    private BigDecimal averagePrice;
 
-	public String getBondIssueCode() {
-		return bondIssueCode;
-	}
+    private BigDecimal holdingQuantity;
 
-	public void setBondIssueCode(String bondIssueCode) {
-		this.bondIssueCode = bondIssueCode;
-	}
+    private BigDecimal considerationAmount;
 
-	public String getBondCurrency() {
-		return bondCurrency;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public void setBondCurrency(String bondCurrency) {
-		this.bondCurrency = bondCurrency;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public BigDecimal getAccruedInterest() {
-		return accruedInterest;
-	}
+    public Integer getCustomerNumber() {
+        return customerNumber;
+    }
 
-	public void setAccruedInterest(BigDecimal accruedInterest) {
-		this.accruedInterest = accruedInterest;
-	}
+    public void setCustomerNumber(Integer customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 
-	public BigDecimal getAveragePrice() {
-		return averagePrice;
-	}
+    public Integer getAccountNumber() {
+        return accountNumber;
+    }
 
-	public void setAveragePrice(BigDecimal averagePrice) {
-		this.averagePrice = averagePrice;
-	}
+    public void setAccountNumber(Integer accountNumber) {
+        this.accountNumber = accountNumber;
+    }
 
-	public BigDecimal getHoldingQuanitity() {
-		return holdingQuanitity;
-	}
+    public String getBondIssueCode() {
+        return bondIssueCode;
+    }
 
-	public void setHoldingQuanitity(BigDecimal holdingQuanitity) {
-		this.holdingQuanitity = holdingQuanitity;
-	}
+    public void setBondIssueCode(String bondIssueCode) {
+        this.bondIssueCode = bondIssueCode;
+    }
 
-	public BigDecimal getConsiderationAmount() {
-		return considerationAmount;
-	}
+    public String getBondCurrency() {
+        return bondCurrency;
+    }
 
-	public void setConsiderationAmount(BigDecimal considerationAmount) {
-		this.considerationAmount = considerationAmount;
-	}
+    public void setBondCurrency(String bondCurrency) {
+        this.bondCurrency = bondCurrency;
+    }
+
+    public BigDecimal getAccruedInterest() {
+        return accruedInterest;
+    }
+
+    public void setAccruedInterest(BigDecimal accruedInterest) {
+        this.accruedInterest = accruedInterest;
+    }
+
+    public BigDecimal getAveragePrice() {
+        return averagePrice;
+    }
+
+    public void setAveragePrice(BigDecimal averagePrice) {
+        this.averagePrice = averagePrice;
+    }
+    
+    public BigDecimal getHoldingQuantity() {
+        return holdingQuantity;
+    }
+
+    public void setHoldingQuantity(BigDecimal holdingQuantity) {
+        this.holdingQuantity = holdingQuantity;
+    }
+
+    public BigDecimal getConsiderationAmount() {
+        return considerationAmount;
+    }
+
+    public void setConsiderationAmount(BigDecimal considerationAmount) {
+        this.considerationAmount = considerationAmount;
+    }
 }

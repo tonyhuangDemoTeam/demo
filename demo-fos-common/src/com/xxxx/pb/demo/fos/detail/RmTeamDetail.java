@@ -1,33 +1,33 @@
 package com.xxxx.pb.demo.fos.detail;
 
 public class RmTeamDetail {
-	private String teamCode;
-	
-	private String teamName;
-	
-	private String bookingEntity;
+    private String teamCode;
 
-	public String getTeamCode() {
-		return teamCode;
-	}
+    private String teamName;
 
-	public void setTeamCode(String teamCode) {
-		this.teamCode = teamCode;
-	}
+    private String bookingEntity;
 
-	public String getTeamName() {
-		return teamName;
-	}
+    public String getTeamCode() {
+        return teamCode;
+    }
 
-	public void setTeamName(String teamName) {
-		this.teamName = teamName;
-	}
+    public void setTeamCode(String teamCode) {
+        this.teamCode = teamCode;
+    }
 
-	public String getBookingEntity() {
-		return bookingEntity;
-	}
+    public String getTeamName() {
+        return teamName;
+    }
 
-	public void setBookingEntity(String bookingEntity) {
-		this.bookingEntity = bookingEntity;
-	}
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
+    }
+
+    public String getBookingEntity() {
+        return bookingEntity;
+    }
+
+    public void setBookingEntity(String bookingEntity) {
+        this.bookingEntity = bookingEntity;
+    }
 }

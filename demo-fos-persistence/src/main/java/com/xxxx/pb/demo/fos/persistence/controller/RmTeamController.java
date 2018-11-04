@@ -15,26 +15,26 @@ import com.xxxx.pb.demo.fos.persistence.repository.RmTeamRepository;
 import com.xxxx.pb.demo.fos.persistence.repository.TeamRmMapRepository;
 
 @RestController
-@RequestMapping(value="/team")
+@RequestMapping(value = "/team")
 public class RmTeamController {
     @Autowired
     private RmTeamRepository rmTeamRepository;
-    
+
     @Autowired
     private TeamRmMapRepository teamRmMapRepository;
-    
-    @RequestMapping(value="/get", params = "type=all", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/get", params = "type=all", method = RequestMethod.GET)
     public List<RmTeamDetail> getAll() throws SystemException {
-        return CopyHelper.copy(rmTeamRepository.findAll(), RmTeamDetail.class); 
+        return CopyHelper.copy(rmTeamRepository.findAll(), RmTeamDetail.class);
     }
-    
-    @RequestMapping(value="/get", params = "type=team", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/get", params = "type=team", method = RequestMethod.GET)
     public RmTeamDetail getByCode(String code) throws SystemException {
-        return CopyHelper.copy(rmTeamRepository.findById(code), RmTeamDetail.class); 
+        return CopyHelper.copy(rmTeamRepository.findById(code), RmTeamDetail.class);
     }
-    
-    @RequestMapping(value="/get", params = "type=map", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/get", params = "type=map", method = RequestMethod.GET)
     public List<TeamRmMapDetail> getAllMaps() throws SystemException {
-        return CopyHelper.copy(teamRmMapRepository.findAll(), TeamRmMapDetail.class); 
+        return CopyHelper.copy(teamRmMapRepository.findAll(), TeamRmMapDetail.class);
     }
 }

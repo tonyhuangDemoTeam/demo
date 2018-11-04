@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.xxxx.pb.demo.fos.detail.ActionDetail;
 
 @FeignClient("fos-persistence")
+@RequestMapping(value = "/action")
 public interface ActionPersistenceClient {
-    @RequestMapping(value="/action/get")
+    @RequestMapping(value = "/get")
     public List<ActionDetail> getByRm(@RequestParam("rm") String rm);
-    
-    @RequestMapping(value="/action/mark")
+
+    @RequestMapping(value = "/mark")
     public boolean mark(Map<String, Integer> map);
 }

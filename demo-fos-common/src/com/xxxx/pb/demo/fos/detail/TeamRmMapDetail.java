@@ -1,33 +1,33 @@
 package com.xxxx.pb.demo.fos.detail;
 
 public class TeamRmMapDetail {
-	private Integer id;
-	
-	private String teamCode;
-	
-	private String rmCode;
+    private Integer id;
 
-	public Integer getId() {
-		return id;
-	}
+    private String teamCode;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    private String rmCode;
 
-	public String getTeamCode() {
-		return teamCode;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public void setTeamCode(String teamCode) {
-		this.teamCode = teamCode;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public String getRmCode() {
-		return rmCode;
-	}
+    public String getTeamCode() {
+        return teamCode;
+    }
 
-	public void setRmCode(String rmCode) {
-		this.rmCode = rmCode;
-	}
+    public void setTeamCode(String teamCode) {
+        this.teamCode = teamCode;
+    }
+
+    public String getRmCode() {
+        return rmCode;
+    }
+
+    public void setRmCode(String rmCode) {
+        this.rmCode = rmCode;
+    }
 }

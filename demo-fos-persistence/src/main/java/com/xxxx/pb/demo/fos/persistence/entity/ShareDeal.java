@@ -11,136 +11,136 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "SHARE_DEAL")
 public class ShareDeal {
-	@Id
+    @Id
     @Column(name = "ID", nullable = false)
-	private Integer id;
-	
-	@Column(name = "DEAL_NUMBER", nullable = false)
-	private Integer dealNumber;
-	
-	@Column(name = "CUSTOMER_NUMBER", nullable = false)
-	private Integer customerNumber;
-	
-	@Column(name = "ACCOUNT_NUMBER", nullable = false)
-	private Integer accountNumber;
-	
-	@Column(name = "SHARE_ISSUE_CODE", length = 20)
-	private String shareIssueCode;
-	
-	@Column(name = "TRANSACTION_TYPE", length = 1)
-	private String transactionType;
-	
-	@Column(name = "SHARE_CURRENCY", length = 3)
-	private String shareCurrency;
-	
-	@Column(name = "SHARE_PRICE", precision = 10, scale = 2)
-	private BigDecimal sharePrice;
-	
-	@Column(name = "SHARE_QUANTITY", precision = 15, scale = 2)
-	private BigDecimal shareQuantity;
-	
-	@Column(name = "CONSIDERATION_AMOUNT", precision = 15, scale = 2)
-	private BigDecimal considerationAmount;
-	
-	@Column(name = "TRADE_DATE")
-	private Date tradeDate;
-	
-	@Column(name = "VALUE_DATE")
-	private Date valueDate;
+    private Integer id;
 
-	public Integer getId() {
-		return id;
-	}
+    @Column(name = "DEAL_NUMBER", nullable = false)
+    private Integer dealNumber;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    @Column(name = "CUSTOMER_NUMBER", nullable = false)
+    private Integer customerNumber;
 
-	public Integer getDealNumber() {
-		return dealNumber;
-	}
+    @Column(name = "ACCOUNT_NUMBER", nullable = false)
+    private Integer accountNumber;
 
-	public void setDealNumber(Integer dealNumber) {
-		this.dealNumber = dealNumber;
-	}
+    @Column(name = "SHARE_ISSUE_CODE", length = 20)
+    private String shareIssueCode;
 
-	public Integer getCustomerNumber() {
-		return customerNumber;
-	}
+    @Column(name = "TRANSACTION_TYPE", length = 1)
+    private String transactionType;
 
-	public void setCustomerNumber(Integer customerNumber) {
-		this.customerNumber = customerNumber;
-	}
+    @Column(name = "SHARE_CURRENCY", length = 3)
+    private String shareCurrency;
 
-	public Integer getAccountNumber() {
-		return accountNumber;
-	}
+    @Column(name = "SHARE_PRICE", precision = 10, scale = 2)
+    private BigDecimal sharePrice;
 
-	public void setAccountNumber(Integer accountNumber) {
-		this.accountNumber = accountNumber;
-	}
+    @Column(name = "SHARE_QUANTITY", precision = 15, scale = 2)
+    private BigDecimal shareQuantity;
 
-	public String getShareIssueCode() {
-		return shareIssueCode;
-	}
+    @Column(name = "CONSIDERATION_AMOUNT", precision = 15, scale = 2)
+    private BigDecimal considerationAmount;
 
-	public void setShareIssueCode(String shareIssueCode) {
-		this.shareIssueCode = shareIssueCode;
-	}
+    @Column(name = "TRADE_DATE")
+    private Date tradeDate;
 
-	public String getTransactionType() {
-		return transactionType;
-	}
+    @Column(name = "VALUE_DATE")
+    private Date valueDate;
 
-	public void setTransactionType(String transactionType) {
-		this.transactionType = transactionType;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public String getShareCurrency() {
-		return shareCurrency;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setShareCurrency(String shareCurrency) {
-		this.shareCurrency = shareCurrency;
-	}
+    public Integer getDealNumber() {
+        return dealNumber;
+    }
 
-	public BigDecimal getSharePrice() {
-		return sharePrice;
-	}
+    public void setDealNumber(Integer dealNumber) {
+        this.dealNumber = dealNumber;
+    }
 
-	public void setSharePrice(BigDecimal sharePrice) {
-		this.sharePrice = sharePrice;
-	}
+    public Integer getCustomerNumber() {
+        return customerNumber;
+    }
 
-	public BigDecimal getShareQuantity() {
-		return shareQuantity;
-	}
+    public void setCustomerNumber(Integer customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 
-	public void setShareQuantity(BigDecimal shareQuantity) {
-		this.shareQuantity = shareQuantity;
-	}
+    public Integer getAccountNumber() {
+        return accountNumber;
+    }
 
-	public BigDecimal getConsiderationAmount() {
-		return considerationAmount;
-	}
+    public void setAccountNumber(Integer accountNumber) {
+        this.accountNumber = accountNumber;
+    }
 
-	public void setConsiderationAmount(BigDecimal considerationAmount) {
-		this.considerationAmount = considerationAmount;
-	}
+    public String getShareIssueCode() {
+        return shareIssueCode;
+    }
 
-	public Date getTradeDate() {
-		return tradeDate;
-	}
+    public void setShareIssueCode(String shareIssueCode) {
+        this.shareIssueCode = shareIssueCode;
+    }
 
-	public void setTradeDate(Date tradeDate) {
-		this.tradeDate = tradeDate;
-	}
+    public String getTransactionType() {
+        return transactionType;
+    }
 
-	public Date getValueDate() {
-		return valueDate;
-	}
+    public void setTransactionType(String transactionType) {
+        this.transactionType = transactionType;
+    }
 
-	public void setValueDate(Date valueDate) {
-		this.valueDate = valueDate;
-	}
+    public String getShareCurrency() {
+        return shareCurrency;
+    }
+
+    public void setShareCurrency(String shareCurrency) {
+        this.shareCurrency = shareCurrency;
+    }
+
+    public BigDecimal getSharePrice() {
+        return sharePrice;
+    }
+
+    public void setSharePrice(BigDecimal sharePrice) {
+        this.sharePrice = sharePrice;
+    }
+
+    public BigDecimal getShareQuantity() {
+        return shareQuantity;
+    }
+
+    public void setShareQuantity(BigDecimal shareQuantity) {
+        this.shareQuantity = shareQuantity;
+    }
+
+    public BigDecimal getConsiderationAmount() {
+        return considerationAmount;
+    }
+
+    public void setConsiderationAmount(BigDecimal considerationAmount) {
+        this.considerationAmount = considerationAmount;
+    }
+
+    public Date getTradeDate() {
+        return tradeDate;
+    }
+
+    public void setTradeDate(Date tradeDate) {
+        this.tradeDate = tradeDate;
+    }
+
+    public Date getValueDate() {
+        return valueDate;
+    }
+
+    public void setValueDate(Date valueDate) {
+        this.valueDate = valueDate;
+    }
 }

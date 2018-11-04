@@ -10,16 +10,17 @@ import com.xxxx.pb.demo.fos.detail.RelationshipManagerDetail;
 import com.xxxx.pb.demo.fos.detail.RmCustomerMapDetail;
 
 @FeignClient("fos-persistence")
+@RequestMapping(value = "/rm")
 public interface RmPersistenceClient {
-    @RequestMapping(value="/rm/get?type=all")
+    @RequestMapping(value = "/get?type=all")
     public List<RelationshipManagerDetail> getAll();
-    
-    @RequestMapping(value="/rm/get?type=rm")
+
+    @RequestMapping(value = "/get?type=rm")
     public RelationshipManagerDetail getByCode(@RequestParam("code") String code);
-    
-    @RequestMapping(value="/rm/get?type=map")
+
+    @RequestMapping(value = "/get?type=map")
     public List<RmCustomerMapDetail> getAllCustMaps();
-    
-    @RequestMapping(value="/get?type=cust")
+
+    @RequestMapping(value = "/get?type=cust")
     public List<RmCustomerMapDetail> getCustMaps(@RequestParam("code") String rm);
 }

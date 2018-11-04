@@ -9,14 +9,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.xxxx.pb.demo.fos.detail.CustomerDetail;
 
 @FeignClient("fos-persistence")
+@RequestMapping(value = "/customer")
 public interface CustomerPersistenceClient {
-    
-    @RequestMapping(value="/customer/get?type=all")
+
+    @RequestMapping(value = "/get?type=all")
     public List<CustomerDetail> getAll();
-    
-    @RequestMapping(value="/customer/get?type=cust")
+
+    @RequestMapping(value = "/get?type=cust")
     public CustomerDetail getByCode(@RequestParam("code") Integer code);
-    
-    @RequestMapping(value="/customer/get?type=rm")
+
+    @RequestMapping(value = "/get?type=rm")
     public List<CustomerDetail> getByRm(@RequestParam("rm") String rm);
 }

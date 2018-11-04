@@ -3,73 +3,73 @@ package com.xxxx.pb.demo.fos.detail;
 import java.math.BigDecimal;
 
 public class FundIssueDetail {
-	private String fundIssueCode;
-	
-	private String fundIssueName;
-	
-	private String fundCountry;
-	
-	private String issueCode;
-	
-	private BigDecimal fundPrice;
-	
-	private String fundCurrency;
-	
-	private Integer riskLevel;
+    private String fundIssueCode;
 
-	public String getFundIssueCode() {
-		return fundIssueCode;
-	}
+    private String fundIssueName;
 
-	public void setFundIssueCode(String fundIssueCode) {
-		this.fundIssueCode = fundIssueCode;
-	}
+    private String fundCountry;
 
-	public String getFundIssueName() {
-		return fundIssueName;
-	}
+    private String issueCode;
 
-	public void setFundIssueName(String fundIssueName) {
-		this.fundIssueName = fundIssueName;
-	}
+    private BigDecimal fundPrice;
 
-	public String getFundCountry() {
-		return fundCountry;
-	}
+    private String fundCurrency;
 
-	public void setFundCountry(String fundCountry) {
-		this.fundCountry = fundCountry;
-	}
+    private Integer riskLevel;
 
-	public String getIssueCode() {
-		return issueCode;
-	}
+    public String getFundIssueCode() {
+        return fundIssueCode;
+    }
 
-	public void setIssueCode(String issueCode) {
-		this.issueCode = issueCode;
-	}
+    public void setFundIssueCode(String fundIssueCode) {
+        this.fundIssueCode = fundIssueCode;
+    }
 
-	public BigDecimal getFundPrice() {
-		return fundPrice;
-	}
+    public String getFundIssueName() {
+        return fundIssueName;
+    }
 
-	public void setFundPrice(BigDecimal fundPrice) {
-		this.fundPrice = fundPrice;
-	}
+    public void setFundIssueName(String fundIssueName) {
+        this.fundIssueName = fundIssueName;
+    }
 
-	public String getFundCurrency() {
-		return fundCurrency;
-	}
+    public String getFundCountry() {
+        return fundCountry;
+    }
 
-	public void setFundCurrency(String fundCurrency) {
-		this.fundCurrency = fundCurrency;
-	}
+    public void setFundCountry(String fundCountry) {
+        this.fundCountry = fundCountry;
+    }
 
-	public Integer getRiskLevel() {
-		return riskLevel;
-	}
+    public String getIssueCode() {
+        return issueCode;
+    }
 
-	public void setRiskLevel(Integer riskLevel) {
-		this.riskLevel = riskLevel;
-	}
+    public void setIssueCode(String issueCode) {
+        this.issueCode = issueCode;
+    }
+
+    public BigDecimal getFundPrice() {
+        return fundPrice;
+    }
+
+    public void setFundPrice(BigDecimal fundPrice) {
+        this.fundPrice = fundPrice;
+    }
+
+    public String getFundCurrency() {
+        return fundCurrency;
+    }
+
+    public void setFundCurrency(String fundCurrency) {
+        this.fundCurrency = fundCurrency;
+    }
+
+    public Integer getRiskLevel() {
+        return riskLevel;
+    }
+
+    public void setRiskLevel(Integer riskLevel) {
+        this.riskLevel = riskLevel;
+    }
 }

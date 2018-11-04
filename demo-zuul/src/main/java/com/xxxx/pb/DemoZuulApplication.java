@@ -11,12 +11,12 @@ import com.xxxx.pb.demo.zuul.filter.AccessFilter;
 @SpringBootApplication
 public class DemoZuulApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoZuulApplication.class, args);
-	}
-	
-	@Bean
-	public AccessFilter accessFilter() {
-	    return new AccessFilter();
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DemoZuulApplication.class, args);
+    }
+
+    @Bean
+    public AccessFilter accessFilter() {
+        return new AccessFilter();
+    }
 }

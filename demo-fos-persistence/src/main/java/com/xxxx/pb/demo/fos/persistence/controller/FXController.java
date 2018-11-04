@@ -13,13 +13,13 @@ import com.xxxx.pb.demo.fos.detail.RateDetail;
 import com.xxxx.pb.demo.fos.persistence.repository.RateRepository;
 
 @RestController
-@RequestMapping(value="/fx")
+@RequestMapping(value = "/fx")
 public class FXController {
     @Autowired
     private RateRepository rateRepository;
-    
-    @RequestMapping(value="/rate/get", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/rate/get", method = RequestMethod.GET)
     public List<RateDetail> getAll() throws SystemException {
-        return CopyHelper.copy(rateRepository.findAll(), RateDetail.class); 
+        return CopyHelper.copy(rateRepository.findAll(), RateDetail.class);
     }
 }

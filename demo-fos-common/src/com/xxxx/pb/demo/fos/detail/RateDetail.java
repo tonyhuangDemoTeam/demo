@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class RateDetail {
     private String ccy;
-    
+
     private BigDecimal rate;
 
     public String getCcy() {

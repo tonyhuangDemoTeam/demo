@@ -10,15 +10,15 @@ public class AccessFilter extends ZuulFilter {
 
     private static String TYPE_PRE = "pre";
     private static String SESSION_ID = "user";
-    
+
     @Override
     public Object run() throws ZuulException {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest req = ctx.getRequest();
         req.getSession().getAttribute(SESSION_ID);
-        
-        //TODO: apply access checking
-        
+
+        // TODO: apply access checking
+
         return null;
     }
 

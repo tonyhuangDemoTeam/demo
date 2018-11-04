@@ -8,37 +8,37 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "RM_CUSTOMER_MAP")
 public class RmCustomerMap {
-	@Id
+    @Id
     @Column(name = "ID", nullable = false)
-	private Integer id;
-	
-	@Column(name = "RM_CODE", nullable = false, length = 6)
-	private String rmCode;
-	
-	@Column(name = "CUSTOMER_NUMBER", nullable = false)
-	private Integer customerNumber;
+    private Integer id;
 
-	public Integer getId() {
-		return id;
-	}
+    @Column(name = "RM_CODE", nullable = false, length = 6)
+    private String rmCode;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    @Column(name = "CUSTOMER_NUMBER", nullable = false)
+    private Integer customerNumber;
 
-	public String getRmCode() {
-		return rmCode;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public void setRmCode(String rmCode) {
-		this.rmCode = rmCode;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public Integer getCustomerNumber() {
-		return customerNumber;
-	}
+    public String getRmCode() {
+        return rmCode;
+    }
 
-	public void setCustomerNumber(Integer customerNumber) {
-		this.customerNumber = customerNumber;
-	}
+    public void setRmCode(String rmCode) {
+        this.rmCode = rmCode;
+    }
+
+    public Integer getCustomerNumber() {
+        return customerNumber;
+    }
+
+    public void setCustomerNumber(Integer customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 }

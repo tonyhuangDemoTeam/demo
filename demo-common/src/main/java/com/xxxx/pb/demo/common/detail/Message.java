@@ -1,29 +1,31 @@
 package com.xxxx.pb.demo.common.detail;
 
 public class Message {
-	public Message() {}
-	public Message(int code, String msg) {
-		this.code = code;
-		this.msg = msg;
-	}
-	
-	private int code;
-	
-	private String msg;
+    public Message() {
+    }
 
-	public int getCode() {
-		return code;
-	}
+    public Message(int code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
 
-	public void setCode(int code) {
-		this.code = code;
-	}
+    private int code;
 
-	public String getMsg() {
-		return msg;
-	}
+    private String msg;
 
-	public void setMsg(String msg) {
-		this.msg = msg;
-	}
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
 }

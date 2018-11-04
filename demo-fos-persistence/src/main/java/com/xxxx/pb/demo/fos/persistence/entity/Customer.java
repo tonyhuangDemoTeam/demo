@@ -8,21 +8,21 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "CUSTOMER")
 public class Customer {
-	@Id
+    @Id
     @Column(name = "CUSTOMER_NUMBER", nullable = false)
-	private Integer customerNumber;
-	
-	@Column(name = "CUSTOMER_NAME", length = 30)
-	private String customerName;
-    
-	@Column(name = "TYPE", length = 1)
+    private Integer customerNumber;
+
+    @Column(name = "CUSTOMER_NAME", length = 30)
+    private String customerName;
+
+    @Column(name = "TYPE", length = 1)
     private String type;
-    
-	@Column(name = "AGE")
+
+    @Column(name = "AGE")
     private Integer age;
-	
-	@Column(name = "HOME_COUNTRY", length = 3)
-	private String homeCountry;
+
+    @Column(name = "HOME_COUNTRY", length = 3)
+    private String homeCountry;
 
     public Integer getCustomerNumber() {
         return customerNumber;

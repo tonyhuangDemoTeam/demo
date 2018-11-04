@@ -4,123 +4,123 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class FundDealDetail {
-	private Integer id;
-	
-	private Integer dealNumber;
-	
-	private Integer customerNumber;
-	
-	private Integer accountNumber;
-	
-	private String fundIssueCode;
-	
-	private String transactionType;
-	
-	private String fundCurrency;
-	
-	private BigDecimal fundPrice;
-	
-	private BigDecimal fundQuantity;
-	
-	private BigDecimal considerationAmount;
-	
-	private Date tradeDate;
-	
-	private Date valueDate;
+    private Integer id;
 
-	public Integer getId() {
-		return id;
-	}
+    private Integer dealNumber;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    private Integer customerNumber;
 
-	public Integer getDealNumber() {
-		return dealNumber;
-	}
+    private Integer accountNumber;
 
-	public void setDealNumber(Integer dealNumber) {
-		this.dealNumber = dealNumber;
-	}
+    private String fundIssueCode;
 
-	public Integer getCustomerNumber() {
-		return customerNumber;
-	}
+    private String transactionType;
 
-	public void setCustomerNumber(Integer customerNumber) {
-		this.customerNumber = customerNumber;
-	}
+    private String fundCurrency;
 
-	public Integer getAccountNumber() {
-		return accountNumber;
-	}
+    private BigDecimal fundPrice;
 
-	public void setAccountNumber(Integer accountNumber) {
-		this.accountNumber = accountNumber;
-	}
+    private BigDecimal fundQuantity;
 
-	public String getFundIssueCode() {
-		return fundIssueCode;
-	}
+    private BigDecimal considerationAmount;
 
-	public void setFundIssueCode(String fundIssueCode) {
-		this.fundIssueCode = fundIssueCode;
-	}
+    private Date tradeDate;
 
-	public String getTransactionType() {
-		return transactionType;
-	}
+    private Date valueDate;
 
-	public void setTransactionType(String transactionType) {
-		this.transactionType = transactionType;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public String getFundCurrency() {
-		return fundCurrency;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setFundCurrency(String fundCurrency) {
-		this.fundCurrency = fundCurrency;
-	}
+    public Integer getDealNumber() {
+        return dealNumber;
+    }
 
-	public BigDecimal getFundPrice() {
-		return fundPrice;
-	}
+    public void setDealNumber(Integer dealNumber) {
+        this.dealNumber = dealNumber;
+    }
 
-	public void setFundPrice(BigDecimal fundPrice) {
-		this.fundPrice = fundPrice;
-	}
+    public Integer getCustomerNumber() {
+        return customerNumber;
+    }
 
-	public BigDecimal getFundQuantity() {
-		return fundQuantity;
-	}
+    public void setCustomerNumber(Integer customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 
-	public void setFundQuantity(BigDecimal fundQuantity) {
-		this.fundQuantity = fundQuantity;
-	}
+    public Integer getAccountNumber() {
+        return accountNumber;
+    }
 
-	public BigDecimal getConsiderationAmount() {
-		return considerationAmount;
-	}
+    public void setAccountNumber(Integer accountNumber) {
+        this.accountNumber = accountNumber;
+    }
 
-	public void setConsiderationAmount(BigDecimal considerationAmount) {
-		this.considerationAmount = considerationAmount;
-	}
+    public String getFundIssueCode() {
+        return fundIssueCode;
+    }
 
-	public Date getTradeDate() {
-		return tradeDate;
-	}
+    public void setFundIssueCode(String fundIssueCode) {
+        this.fundIssueCode = fundIssueCode;
+    }
 
-	public void setTradeDate(Date tradeDate) {
-		this.tradeDate = tradeDate;
-	}
+    public String getTransactionType() {
+        return transactionType;
+    }
 
-	public Date getValueDate() {
-		return valueDate;
-	}
+    public void setTransactionType(String transactionType) {
+        this.transactionType = transactionType;
+    }
 
-	public void setValueDate(Date valueDate) {
-		this.valueDate = valueDate;
-	}
+    public String getFundCurrency() {
+        return fundCurrency;
+    }
+
+    public void setFundCurrency(String fundCurrency) {
+        this.fundCurrency = fundCurrency;
+    }
+
+    public BigDecimal getFundPrice() {
+        return fundPrice;
+    }
+
+    public void setFundPrice(BigDecimal fundPrice) {
+        this.fundPrice = fundPrice;
+    }
+
+    public BigDecimal getFundQuantity() {
+        return fundQuantity;
+    }
+
+    public void setFundQuantity(BigDecimal fundQuantity) {
+        this.fundQuantity = fundQuantity;
+    }
+
+    public BigDecimal getConsiderationAmount() {
+        return considerationAmount;
+    }
+
+    public void setConsiderationAmount(BigDecimal considerationAmount) {
+        this.considerationAmount = considerationAmount;
+    }
+
+    public Date getTradeDate() {
+        return tradeDate;
+    }
+
+    public void setTradeDate(Date tradeDate) {
+        this.tradeDate = tradeDate;
+    }
+
+    public Date getValueDate() {
+        return valueDate;
+    }
+
+    public void setValueDate(Date valueDate) {
+        this.valueDate = valueDate;
+    }
 }

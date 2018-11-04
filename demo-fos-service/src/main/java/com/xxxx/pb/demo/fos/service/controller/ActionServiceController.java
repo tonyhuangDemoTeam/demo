@@ -13,18 +13,18 @@ import com.xxxx.pb.demo.fos.detail.ActionDetail;
 import com.xxxx.pb.demo.fos.service.impl.ActionService;
 
 @RestController
-@RequestMapping(value="/action")
+@RequestMapping(value = "/action")
 public class ActionServiceController {
 
     @Autowired
     private ActionService actionService;
-    
-    @RequestMapping(value="/get", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/get", method = RequestMethod.GET)
     public List<ActionDetail> getActionsByRm(String rm) {
         return actionService.getActionsByRm(rm);
     }
 
-    @RequestMapping(value="/mark", method=RequestMethod.POST)
+    @RequestMapping(value = "/mark", method = RequestMethod.POST)
     public boolean markAction(@RequestBody Map<String, Integer> map) {
         return actionService.markAction(map.get("code"));
     }

@@ -8,48 +8,48 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "ISSUER")
 public class Issuer {
-	@Id
+    @Id
     @Column(name = "ISSUER_CODE", nullable = false, length = 20)
-	private String issuerCode;
-	
+    private String issuerCode;
+
     @Column(name = "ISSUER_NAME", length = 200)
-	private String issuerName;
-	
+    private String issuerName;
+
     @Column(name = "DOMICILE_COUNTRY", length = 3)
-	private String domicileCountry;
-	
+    private String domicileCountry;
+
     @Column(name = "INDUSTRY_SECTOR", length = 3)
-	private String industrySector;
+    private String industrySector;
 
-	public String getIssuerCode() {
-		return issuerCode;
-	}
+    public String getIssuerCode() {
+        return issuerCode;
+    }
 
-	public void setIssuerCode(String issuerCode) {
-		this.issuerCode = issuerCode;
-	}
+    public void setIssuerCode(String issuerCode) {
+        this.issuerCode = issuerCode;
+    }
 
-	public String getIssuerName() {
-		return issuerName;
-	}
+    public String getIssuerName() {
+        return issuerName;
+    }
 
-	public void setIssuerName(String issuerName) {
-		this.issuerName = issuerName;
-	}
+    public void setIssuerName(String issuerName) {
+        this.issuerName = issuerName;
+    }
 
-	public String getDomicileCountry() {
-		return domicileCountry;
-	}
+    public String getDomicileCountry() {
+        return domicileCountry;
+    }
 
-	public void setDomicileCountry(String domicileCountry) {
-		this.domicileCountry = domicileCountry;
-	}
+    public void setDomicileCountry(String domicileCountry) {
+        this.domicileCountry = domicileCountry;
+    }
 
-	public String getIndustrySector() {
-		return industrySector;
-	}
+    public String getIndustrySector() {
+        return industrySector;
+    }
 
-	public void setIndustrySector(String industrySector) {
-		this.industrySector = industrySector;
-	}
+    public void setIndustrySector(String industrySector) {
+        this.industrySector = industrySector;
+    }
 }

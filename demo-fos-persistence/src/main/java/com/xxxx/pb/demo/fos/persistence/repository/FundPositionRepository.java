@@ -7,11 +7,11 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.xxxx.pb.demo.fos.persistence.entity.FundPosition;
 
-public interface FundPositionRepository extends JpaRepository<FundPosition, Integer>{
-public FundPosition getByCustomerNumberAndAccountNumber(Integer customerNumber, Integer accountNumber);
-    
+public interface FundPositionRepository extends JpaRepository<FundPosition, Integer> {
+    public FundPosition getByCustomerNumberAndAccountNumber(Integer customerNumber, Integer accountNumber);
+
     public List<FundPosition> getByCustomerNumber(Integer customerNumber);
-    
+
     @Query(value = "select f from FundPosition f, RmCustomerMap m where f.customerNumber=m.customerNumber and m.rmCode=?1")
     public List<FundPosition> findByRm(String rm);
 }

@@ -17,59 +17,58 @@ import com.xxxx.pb.demo.fos.persistence.repository.FundIssueRepository;
 import com.xxxx.pb.demo.fos.persistence.repository.FundPositionRepository;
 
 @RestController
-@RequestMapping(value="/fund")
+@RequestMapping(value = "/fund")
 public class FundController {
     @Autowired
     private FundDealRepository fundDealRepository;
-    
+
     @Autowired
     private FundIssueRepository fundIssueRepository;
 
     @Autowired
     private FundPositionRepository fundPositionRepository;
 
-    @RequestMapping(value="/deal/get", params = "type=all", method=RequestMethod.GET)
+    @RequestMapping(value = "/deal/get", params = "type=all", method = RequestMethod.GET)
     public List<FundDealDetail> getAllDeals() throws SystemException {
-        return CopyHelper.copy(fundDealRepository.findAll(), FundDealDetail.class); 
+        return CopyHelper.copy(fundDealRepository.findAll(), FundDealDetail.class);
     }
 
-    @RequestMapping(value="/deal/get", params = "type=cust", method=RequestMethod.GET)
+    @RequestMapping(value = "/deal/get", params = "type=cust", method = RequestMethod.GET)
     public List<FundDealDetail> getDealsByCust(Integer cust) throws SystemException {
-        return CopyHelper.copy(fundDealRepository.getByCustomerNumber(cust), FundDealDetail.class); 
+        return CopyHelper.copy(fundDealRepository.getByCustomerNumber(cust), FundDealDetail.class);
     }
-    
-    @RequestMapping(value="/deal/get", params = "type=cust_acct", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/deal/get", params = "type=cust_acct", method = RequestMethod.GET)
     public List<FundDealDetail> getDealsByCustAndAcct(Integer cust, Integer acct) throws SystemException {
-        return CopyHelper.copy(fundDealRepository.getByCustomerNumberAndAccountNumber(cust, acct), FundDealDetail.class); 
+        return CopyHelper.copy(fundDealRepository.getByCustomerNumberAndAccountNumber(cust, acct), FundDealDetail.class);
     }
-    
-    @RequestMapping(value="/deal/get", params = "type=rm", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/deal/get", params = "type=rm", method = RequestMethod.GET)
     public List<FundDealDetail> getDealsByRm(String rm) throws SystemException {
         return CopyHelper.copy(fundDealRepository.findByRm(rm), FundDealDetail.class);
     }
 
-    @RequestMapping(value="/issue/get", method=RequestMethod.GET)
-    public List<FundIssueDetail> getDealsAllIssue() throws SystemException {
-        return CopyHelper.copy(fundIssueRepository.findAll(), FundIssueDetail.class); 
+    @RequestMapping(value = "/issue/get", method = RequestMethod.GET)
+    public List<FundIssueDetail> getAllIssues() throws SystemException {
+        return CopyHelper.copy(fundIssueRepository.findAll(), FundIssueDetail.class);
     }
-    
 
-    @RequestMapping(value="/position/get", params = "type=all", method=RequestMethod.GET)
+    @RequestMapping(value = "/position/get", params = "type=all", method = RequestMethod.GET)
     public List<FundPositionDetail> getAllPosition() throws SystemException {
-        return CopyHelper.copy(fundPositionRepository.findAll(), FundPositionDetail.class); 
+        return CopyHelper.copy(fundPositionRepository.findAll(), FundPositionDetail.class);
     }
 
-    @RequestMapping(value="/position/get", params = "type=cust", method=RequestMethod.GET)
+    @RequestMapping(value = "/position/get", params = "type=cust", method = RequestMethod.GET)
     public List<FundPositionDetail> getPositionsByCust(Integer cust) throws SystemException {
-        return CopyHelper.copy(fundPositionRepository.getByCustomerNumber(cust), FundPositionDetail.class); 
+        return CopyHelper.copy(fundPositionRepository.getByCustomerNumber(cust), FundPositionDetail.class);
     }
-    
-    @RequestMapping(value="/position/get", params = "type=cust_acct", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/position/get", params = "type=cust_acct", method = RequestMethod.GET)
     public FundPositionDetail getPositionByCustAndAcct(Integer cust, Integer acct) throws SystemException {
-        return CopyHelper.copy(fundPositionRepository.getByCustomerNumberAndAccountNumber(cust, acct), FundPositionDetail.class); 
+        return CopyHelper.copy(fundPositionRepository.getByCustomerNumberAndAccountNumber(cust, acct), FundPositionDetail.class);
     }
-    
-    @RequestMapping(value="/position/get", params = "type=rm", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/position/get", params = "type=rm", method = RequestMethod.GET)
     public List<FundPositionDetail> getPositionsByRm(String rm) throws SystemException {
         return CopyHelper.copy(fundPositionRepository.findByRm(rm), FundPositionDetail.class);
     }

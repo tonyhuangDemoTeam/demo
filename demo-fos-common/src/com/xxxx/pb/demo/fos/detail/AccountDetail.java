@@ -1,53 +1,55 @@
 package com.xxxx.pb.demo.fos.detail;
 
+import java.util.Date;
+
 public class AccountDetail {
     private Integer id;
-	
+
     private Integer customerNumber;
 
     private Integer accountNumber;
 
     private String accountName;
 
-    private String accountType;
-    
-	public Integer getId() {
-		return id;
-	}
+    private Date createDate;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public Integer getCustomerNumber() {
-		return customerNumber;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setCustomerNumber(Integer customerNumber) {
-		this.customerNumber = customerNumber;
-	}
+    public Integer getCustomerNumber() {
+        return customerNumber;
+    }
 
-	public Integer getAccountNumber() {
-		return accountNumber;
-	}
+    public void setCustomerNumber(Integer customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 
-	public void setAccountNumber(Integer accountNumber) {
-		this.accountNumber = accountNumber;
-	}
+    public Integer getAccountNumber() {
+        return accountNumber;
+    }
 
-	public String getAccountName() {
-		return accountName;
-	}
+    public void setAccountNumber(Integer accountNumber) {
+        this.accountNumber = accountNumber;
+    }
 
-	public void setAccountName(String accountName) {
-		this.accountName = accountName;
-	}
+    public String getAccountName() {
+        return accountName;
+    }
 
-	public String getAccountType() {
-		return accountType;
-	}
+    public void setAccountName(String accountName) {
+        this.accountName = accountName;
+    }
 
-	public void setAccountType(String accountType) {
-		this.accountType = accountType;
-	}
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
 }

@@ -8,59 +8,59 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "RELATIONSHIP_MANAGER")
 public class RelationshipManager {
-	@Id
+    @Id
     @Column(name = "RM_CODE", nullable = false, length = 6)
-	private String rmCode;
-	
-	@Column(name = "RM_NAME", length = 60)
-	private String rmName;
-	
-	@Column(name = "PHONE_NUMBER", length = 60)
-	private String phoneName;
-	
-	@Column(name = "EMAIL_ADDRESS", length = 60)
-	private String emailAddress;
-	
-	@Column(name = "HOME_COUNTRY", length = 3)
-	private String homeCountry;
+    private String rmCode;
 
-	public String getRmCode() {
-		return rmCode;
-	}
+    @Column(name = "RM_NAME", length = 60)
+    private String rmName;
 
-	public void setRmCode(String rmCode) {
-		this.rmCode = rmCode;
-	}
+    @Column(name = "PHONE_NUMBER", length = 60)
+    private String phoneNumber;
 
-	public String getRmName() {
-		return rmName;
-	}
+    @Column(name = "EMAIL_ADDRESS", length = 60)
+    private String emailAddress;
 
-	public void setRmName(String rmName) {
-		this.rmName = rmName;
-	}
+    @Column(name = "HOME_COUNTRY", length = 3)
+    private String homeCountry;
 
-	public String getPhoneName() {
-		return phoneName;
-	}
+    public String getRmCode() {
+        return rmCode;
+    }
 
-	public void setPhoneName(String phoneName) {
-		this.phoneName = phoneName;
-	}
+    public void setRmCode(String rmCode) {
+        this.rmCode = rmCode;
+    }
 
-	public String getEmailAddress() {
-		return emailAddress;
-	}
+    public String getRmName() {
+        return rmName;
+    }
 
-	public void setEmailAddress(String emailAddress) {
-		this.emailAddress = emailAddress;
-	}
+    public void setRmName(String rmName) {
+        this.rmName = rmName;
+    }
 
-	public String getHomeCountry() {
-		return homeCountry;
-	}
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 
-	public void setHomeCountry(String homeCountry) {
-		this.homeCountry = homeCountry;
-	}
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public String getHomeCountry() {
+        return homeCountry;
+    }
+
+    public void setHomeCountry(String homeCountry) {
+        this.homeCountry = homeCountry;
+    }
 }

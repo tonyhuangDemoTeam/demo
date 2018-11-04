@@ -2,11 +2,11 @@ package com.xxxx.pb.demo.fos.detail;
 
 public class ActionDetail {
     private Integer id;
-    
+
     private String type;
-    
+
     private String rmCode;
-    
+
     private String remarks;
 
     public Integer getId() {

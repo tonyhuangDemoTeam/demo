@@ -3,83 +3,83 @@ package com.xxxx.pb.demo.fos.detail;
 import java.math.BigDecimal;
 
 public class SharePositionDetail {
-	private Integer id;
-	
-	private Integer customerNumber;
-	
-	private Integer accountNumber;
-	
-	private String shareIssueCode;
-	
-	private String shareCurrency;
-	
-	private BigDecimal averagePrice;
-	
-	private BigDecimal holdingQuantity;
-	
-	private BigDecimal considerationAmount;
+    private Integer id;
 
-	public Integer getId() {
-		return id;
-	}
+    private Integer customerNumber;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    private Integer accountNumber;
 
-	public Integer getCustomerNumber() {
-		return customerNumber;
-	}
+    private String shareIssueCode;
 
-	public void setCustomerNumber(Integer customerNumber) {
-		this.customerNumber = customerNumber;
-	}
+    private String shareCurrency;
 
-	public Integer getAccountNumber() {
-		return accountNumber;
-	}
+    private BigDecimal averagePrice;
 
-	public void setAccountNumber(Integer accountNumber) {
-		this.accountNumber = accountNumber;
-	}
+    private BigDecimal holdingQuantity;
 
-	public String getShareIssueCode() {
-		return shareIssueCode;
-	}
+    private BigDecimal considerationAmount;
 
-	public void setShareIssueCode(String shareIssueCode) {
-		this.shareIssueCode = shareIssueCode;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public String getShareCurrency() {
-		return shareCurrency;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setShareCurrency(String shareCurrency) {
-		this.shareCurrency = shareCurrency;
-	}
+    public Integer getCustomerNumber() {
+        return customerNumber;
+    }
 
-	public BigDecimal getAveragePrice() {
-		return averagePrice;
-	}
+    public void setCustomerNumber(Integer customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 
-	public void setAveragePrice(BigDecimal averagePrice) {
-		this.averagePrice = averagePrice;
-	}
+    public Integer getAccountNumber() {
+        return accountNumber;
+    }
 
-	public BigDecimal getHoldingQuantity() {
-		return holdingQuantity;
-	}
+    public void setAccountNumber(Integer accountNumber) {
+        this.accountNumber = accountNumber;
+    }
 
-	public void setHoldingQuantity(BigDecimal holdingQuantity) {
-		this.holdingQuantity = holdingQuantity;
-	}
+    public String getShareIssueCode() {
+        return shareIssueCode;
+    }
 
-	public BigDecimal getConsiderationAmount() {
-		return considerationAmount;
-	}
+    public void setShareIssueCode(String shareIssueCode) {
+        this.shareIssueCode = shareIssueCode;
+    }
 
-	public void setConsiderationAmount(BigDecimal considerationAmount) {
-		this.considerationAmount = considerationAmount;
-	}
+    public String getShareCurrency() {
+        return shareCurrency;
+    }
+
+    public void setShareCurrency(String shareCurrency) {
+        this.shareCurrency = shareCurrency;
+    }
+
+    public BigDecimal getAveragePrice() {
+        return averagePrice;
+    }
+
+    public void setAveragePrice(BigDecimal averagePrice) {
+        this.averagePrice = averagePrice;
+    }
+
+    public BigDecimal getHoldingQuantity() {
+        return holdingQuantity;
+    }
+
+    public void setHoldingQuantity(BigDecimal holdingQuantity) {
+        this.holdingQuantity = holdingQuantity;
+    }
+
+    public BigDecimal getConsiderationAmount() {
+        return considerationAmount;
+    }
+
+    public void setConsiderationAmount(BigDecimal considerationAmount) {
+        this.considerationAmount = considerationAmount;
+    }
 }

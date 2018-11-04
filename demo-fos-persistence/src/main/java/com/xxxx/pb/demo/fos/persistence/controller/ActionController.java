@@ -18,28 +18,27 @@ import com.xxxx.pb.demo.fos.detail.ActionDetail;
 import com.xxxx.pb.demo.fos.persistence.entity.Action;
 import com.xxxx.pb.demo.fos.persistence.repository.ActionRepository;
 
-
 @RestController
-@RequestMapping(value="/action")
+@RequestMapping(value = "/action")
 public class ActionController {
-    
-	@Autowired
+
+    @Autowired
     private ActionRepository actionRepository;
-	
-	@RequestMapping(value="/get", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/get", method = RequestMethod.GET)
     public List<ActionDetail> getByRm(String rm) throws SystemException {
         return CopyHelper.copy(actionRepository.getByRmCodeAndType(rm, Constant.STATUS_PENDING), ActionDetail.class);
     }
-	
-    @RequestMapping(value="/mark", method=RequestMethod.POST)
-    public boolean mark(@RequestBody Map<String, Integer> map) throws FunctionException{
+
+    @RequestMapping(value = "/mark", method = RequestMethod.POST)
+    public boolean mark(@RequestBody Map<String, Integer> map) throws FunctionException {
         Optional<Action> a = actionRepository.findById(map.get("code"));
         a.map((value) -> {
             value.setType(Constant.STATUS_MARKED);
             actionRepository.save(value);
             return value;
         }).orElseThrow(() -> new FunctionException(Constant.COED_NOT_EXIST, Constant.ERR_NOT_EXIST));
-        
+
         return true;
     }
 }

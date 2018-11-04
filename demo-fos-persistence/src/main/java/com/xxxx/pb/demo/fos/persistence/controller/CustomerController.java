@@ -13,23 +13,23 @@ import com.xxxx.pb.demo.fos.detail.CustomerDetail;
 import com.xxxx.pb.demo.fos.persistence.repository.CustomerRepository;
 
 @RestController
-@RequestMapping(value="/customer")
+@RequestMapping(value = "/customer")
 public class CustomerController {
     @Autowired
     private CustomerRepository customerRepository;
-    
-    @RequestMapping(value="/get", params = "type=all", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/get", params = "type=all", method = RequestMethod.GET)
     public List<CustomerDetail> getAll() throws SystemException {
-        return CopyHelper.copy(customerRepository.findAll(), CustomerDetail.class); 
+        return CopyHelper.copy(customerRepository.findAll(), CustomerDetail.class);
     }
-    
-    @RequestMapping(value="/get", params = "type=cust", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/get", params = "type=cust", method = RequestMethod.GET)
     public CustomerDetail getByCode(Integer code) throws SystemException {
-        return CopyHelper.copy(customerRepository.findById(code), CustomerDetail.class); 
+        return CopyHelper.copy(customerRepository.findById(code), CustomerDetail.class);
     }
-    
-    @RequestMapping(value="/get", params = "type=rm", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/get", params = "type=rm", method = RequestMethod.GET)
     public List<CustomerDetail> getByRm(String rm) throws SystemException {
-        return CopyHelper.copy(customerRepository.findByRm(rm), CustomerDetail.class); 
+        return CopyHelper.copy(customerRepository.findByRm(rm), CustomerDetail.class);
     }
 }

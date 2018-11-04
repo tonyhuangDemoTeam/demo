@@ -11,9 +11,9 @@ import javax.persistence.Table;
 @Table(name = "RATE")
 public class Rate {
     @Id
-    @Column(name = "ccy", nullable = false, length=3)
+    @Column(name = "ccy", nullable = false, length = 3)
     private String ccy;
-    
+
     @Column(name = "RATE", precision = 10, scale = 4)
     private BigDecimal rate;
 

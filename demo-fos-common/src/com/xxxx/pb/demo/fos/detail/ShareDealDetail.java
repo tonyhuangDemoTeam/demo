@@ -4,123 +4,123 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class ShareDealDetail {
-	private Integer id;
-	
-	private Integer dealNumber;
-	
-	private Integer customerNumber;
-	
-	private Integer accountNumber;
-	
-	private String shareIssueCode;
-	
-	private String transactionType;
-	
-	private String shareCurrency;
-	
-	private BigDecimal sharePrice;
-	
-	private BigDecimal shareQuantity;
-	
-	private BigDecimal considerationAmount;
-	
-	private Date tradeDate;
-	
-	private Date valueDate;
+    private Integer id;
 
-	public Integer getId() {
-		return id;
-	}
+    private Integer dealNumber;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    private Integer customerNumber;
 
-	public Integer getDealNumber() {
-		return dealNumber;
-	}
+    private Integer accountNumber;
 
-	public void setDealNumber(Integer dealNumber) {
-		this.dealNumber = dealNumber;
-	}
+    private String shareIssueCode;
 
-	public Integer getCustomerNumber() {
-		return customerNumber;
-	}
+    private String transactionType;
 
-	public void setCustomerNumber(Integer customerNumber) {
-		this.customerNumber = customerNumber;
-	}
+    private String shareCurrency;
 
-	public Integer getAccountNumber() {
-		return accountNumber;
-	}
+    private BigDecimal sharePrice;
 
-	public void setAccountNumber(Integer accountNumber) {
-		this.accountNumber = accountNumber;
-	}
+    private BigDecimal shareQuantity;
 
-	public String getShareIssueCode() {
-		return shareIssueCode;
-	}
+    private BigDecimal considerationAmount;
 
-	public void setShareIssueCode(String shareIssueCode) {
-		this.shareIssueCode = shareIssueCode;
-	}
+    private Date tradeDate;
 
-	public String getTransactionType() {
-		return transactionType;
-	}
+    private Date valueDate;
 
-	public void setTransactionType(String transactionType) {
-		this.transactionType = transactionType;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public String getShareCurrency() {
-		return shareCurrency;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setShareCurrency(String shareCurrency) {
-		this.shareCurrency = shareCurrency;
-	}
+    public Integer getDealNumber() {
+        return dealNumber;
+    }
 
-	public BigDecimal getSharePrice() {
-		return sharePrice;
-	}
+    public void setDealNumber(Integer dealNumber) {
+        this.dealNumber = dealNumber;
+    }
 
-	public void setSharePrice(BigDecimal sharePrice) {
-		this.sharePrice = sharePrice;
-	}
+    public Integer getCustomerNumber() {
+        return customerNumber;
+    }
 
-	public BigDecimal getShareQuantity() {
-		return shareQuantity;
-	}
+    public void setCustomerNumber(Integer customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 
-	public void setShareQuantity(BigDecimal shareQuantity) {
-		this.shareQuantity = shareQuantity;
-	}
+    public Integer getAccountNumber() {
+        return accountNumber;
+    }
 
-	public BigDecimal getConsiderationAmount() {
-		return considerationAmount;
-	}
+    public void setAccountNumber(Integer accountNumber) {
+        this.accountNumber = accountNumber;
+    }
 
-	public void setConsiderationAmount(BigDecimal considerationAmount) {
-		this.considerationAmount = considerationAmount;
-	}
+    public String getShareIssueCode() {
+        return shareIssueCode;
+    }
 
-	public Date getTradeDate() {
-		return tradeDate;
-	}
+    public void setShareIssueCode(String shareIssueCode) {
+        this.shareIssueCode = shareIssueCode;
+    }
 
-	public void setTradeDate(Date tradeDate) {
-		this.tradeDate = tradeDate;
-	}
+    public String getTransactionType() {
+        return transactionType;
+    }
 
-	public Date getValueDate() {
-		return valueDate;
-	}
+    public void setTransactionType(String transactionType) {
+        this.transactionType = transactionType;
+    }
 
-	public void setValueDate(Date valueDate) {
-		this.valueDate = valueDate;
-	}
+    public String getShareCurrency() {
+        return shareCurrency;
+    }
+
+    public void setShareCurrency(String shareCurrency) {
+        this.shareCurrency = shareCurrency;
+    }
+
+    public BigDecimal getSharePrice() {
+        return sharePrice;
+    }
+
+    public void setSharePrice(BigDecimal sharePrice) {
+        this.sharePrice = sharePrice;
+    }
+
+    public BigDecimal getShareQuantity() {
+        return shareQuantity;
+    }
+
+    public void setShareQuantity(BigDecimal shareQuantity) {
+        this.shareQuantity = shareQuantity;
+    }
+
+    public BigDecimal getConsiderationAmount() {
+        return considerationAmount;
+    }
+
+    public void setConsiderationAmount(BigDecimal considerationAmount) {
+        this.considerationAmount = considerationAmount;
+    }
+
+    public Date getTradeDate() {
+        return tradeDate;
+    }
+
+    public void setTradeDate(Date tradeDate) {
+        this.tradeDate = tradeDate;
+    }
+
+    public Date getValueDate() {
+        return valueDate;
+    }
+
+    public void setValueDate(Date valueDate) {
+        this.valueDate = valueDate;
+    }
 }

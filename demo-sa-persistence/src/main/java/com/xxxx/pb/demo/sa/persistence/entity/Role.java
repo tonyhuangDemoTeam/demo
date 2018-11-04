@@ -22,13 +22,13 @@ public class Role {
 
     @Column(name = "CREATE_TIME")
     private Date createTime;
-    
+
     @Column(name = "CREATE_BY", length = 32)
     private String createBy;
 
     @Column(name = "UPDATE_TIME")
     private Date updateTime;
-    
+
     @Column(name = "UPDATE_BY", length = 32)
     private String updateBy;
 

@@ -4,114 +4,114 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class BondIssueDetail {
-	
-	private String bondIssueCode;
-	
-	private String bondIssueName;
-	
-	private String bondCountry;
-	
-	private String issuerCode;
-	
-	private Date issueDate;
-	
-	private BigDecimal bondPrice;
-	
-	private String bondCurrency;
-	
-	private Date bondMaturityDate;
-	
-	private BigDecimal bondYield;
-	
-	private BigDecimal couponRate;
-	
-	private Integer riskLevel;
 
-	public String getBondIssueCode() {
-		return bondIssueCode;
-	}
+    private String bondIssueCode;
 
-	public void setBondIssueCode(String bondIssueCode) {
-		this.bondIssueCode = bondIssueCode;
-	}
+    private String bondIssueName;
 
-	public String getBondIssueName() {
-		return bondIssueName;
-	}
+    private String bondCountry;
 
-	public void setBondIssueName(String bondIssueName) {
-		this.bondIssueName = bondIssueName;
-	}
+    private String issuerCode;
 
-	public String getBondCountry() {
-		return bondCountry;
-	}
+    private Date issueDate;
 
-	public void setBondCountry(String bondCountry) {
-		this.bondCountry = bondCountry;
-	}
+    private BigDecimal bondPrice;
 
-	public String getIssuerCode() {
-		return issuerCode;
-	}
+    private String bondCurrency;
 
-	public void setIssuerCode(String issuerCode) {
-		this.issuerCode = issuerCode;
-	}
+    private Date bondMaturityDate;
 
-	public Date getIssueDate() {
-		return issueDate;
-	}
+    private BigDecimal bondYield;
 
-	public void setIssueDate(Date issueDate) {
-		this.issueDate = issueDate;
-	}
+    private BigDecimal couponRate;
 
-	public BigDecimal getBondPrice() {
-		return bondPrice;
-	}
+    private Integer riskLevel;
 
-	public void setBondPrice(BigDecimal bondPrice) {
-		this.bondPrice = bondPrice;
-	}
+    public String getBondIssueCode() {
+        return bondIssueCode;
+    }
 
-	public String getBondCurrency() {
-		return bondCurrency;
-	}
+    public void setBondIssueCode(String bondIssueCode) {
+        this.bondIssueCode = bondIssueCode;
+    }
 
-	public void setBondCurrency(String bondCurrency) {
-		this.bondCurrency = bondCurrency;
-	}
+    public String getBondIssueName() {
+        return bondIssueName;
+    }
 
-	public Date getBondMaturityDate() {
-		return bondMaturityDate;
-	}
+    public void setBondIssueName(String bondIssueName) {
+        this.bondIssueName = bondIssueName;
+    }
 
-	public void setBondMaturityDate(Date bondMaturityDate) {
-		this.bondMaturityDate = bondMaturityDate;
-	}
+    public String getBondCountry() {
+        return bondCountry;
+    }
 
-	public BigDecimal getBondYield() {
-		return bondYield;
-	}
+    public void setBondCountry(String bondCountry) {
+        this.bondCountry = bondCountry;
+    }
 
-	public void setBondYield(BigDecimal bondYield) {
-		this.bondYield = bondYield;
-	}
+    public String getIssuerCode() {
+        return issuerCode;
+    }
 
-	public BigDecimal getCouponRate() {
-		return couponRate;
-	}
+    public void setIssuerCode(String issuerCode) {
+        this.issuerCode = issuerCode;
+    }
 
-	public void setCouponRate(BigDecimal couponRate) {
-		this.couponRate = couponRate;
-	}
+    public Date getIssueDate() {
+        return issueDate;
+    }
 
-	public Integer getRiskLevel() {
-		return riskLevel;
-	}
+    public void setIssueDate(Date issueDate) {
+        this.issueDate = issueDate;
+    }
 
-	public void setRiskLevel(Integer riskLevel) {
-		this.riskLevel = riskLevel;
-	}
+    public BigDecimal getBondPrice() {
+        return bondPrice;
+    }
+
+    public void setBondPrice(BigDecimal bondPrice) {
+        this.bondPrice = bondPrice;
+    }
+
+    public String getBondCurrency() {
+        return bondCurrency;
+    }
+
+    public void setBondCurrency(String bondCurrency) {
+        this.bondCurrency = bondCurrency;
+    }
+
+    public Date getBondMaturityDate() {
+        return bondMaturityDate;
+    }
+
+    public void setBondMaturityDate(Date bondMaturityDate) {
+        this.bondMaturityDate = bondMaturityDate;
+    }
+
+    public BigDecimal getBondYield() {
+        return bondYield;
+    }
+
+    public void setBondYield(BigDecimal bondYield) {
+        this.bondYield = bondYield;
+    }
+
+    public BigDecimal getCouponRate() {
+        return couponRate;
+    }
+
+    public void setCouponRate(BigDecimal couponRate) {
+        this.couponRate = couponRate;
+    }
+
+    public Integer getRiskLevel() {
+        return riskLevel;
+    }
+
+    public void setRiskLevel(Integer riskLevel) {
+        this.riskLevel = riskLevel;
+    }
 }

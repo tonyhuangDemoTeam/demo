@@ -10,81 +10,81 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "FUND_ISSUE")
 public class FundIssue {
-	@Id
+    @Id
     @Column(name = "FUND_ISSUE_CODE", nullable = false, length = 20)
-	private String fundIssueCode;
-	
-	@Column(name = "FUND_ISSUE_NAME", length = 200)
-	private String fundIssueName;
-	
-	@Column(name = "FUND_COUNTRY", length = 3)
-	private String fundCountry;
-	
-	@Column(name = "ISSUER_CODE", length = 30)
-	private String issueCode;
-	
-	@Column(name = "FUND_PRICE", precision = 10, scale = 2)
-	private BigDecimal fundPrice;
-	
-	@Column(name = "FUND_CURRENCY", length = 3)
-	private String fundCurrency;
-	
-	@Column(name = "RISK_LEVEL")
-	private Integer riskLevel;
+    private String fundIssueCode;
 
-	public String getFundIssueCode() {
-		return fundIssueCode;
-	}
+    @Column(name = "FUND_ISSUE_NAME", length = 200)
+    private String fundIssueName;
 
-	public void setFundIssueCode(String fundIssueCode) {
-		this.fundIssueCode = fundIssueCode;
-	}
+    @Column(name = "FUND_COUNTRY", length = 3)
+    private String fundCountry;
 
-	public String getFundIssueName() {
-		return fundIssueName;
-	}
+    @Column(name = "ISSUER_CODE", length = 30)
+    private String issueCode;
 
-	public void setFundIssueName(String fundIssueName) {
-		this.fundIssueName = fundIssueName;
-	}
+    @Column(name = "FUND_PRICE", precision = 10, scale = 2)
+    private BigDecimal fundPrice;
 
-	public String getFundCountry() {
-		return fundCountry;
-	}
+    @Column(name = "FUND_CURRENCY", length = 3)
+    private String fundCurrency;
 
-	public void setFundCountry(String fundCountry) {
-		this.fundCountry = fundCountry;
-	}
+    @Column(name = "RISK_LEVEL")
+    private Integer riskLevel;
 
-	public String getIssueCode() {
-		return issueCode;
-	}
+    public String getFundIssueCode() {
+        return fundIssueCode;
+    }
 
-	public void setIssueCode(String issueCode) {
-		this.issueCode = issueCode;
-	}
+    public void setFundIssueCode(String fundIssueCode) {
+        this.fundIssueCode = fundIssueCode;
+    }
 
-	public BigDecimal getFundPrice() {
-		return fundPrice;
-	}
+    public String getFundIssueName() {
+        return fundIssueName;
+    }
 
-	public void setFundPrice(BigDecimal fundPrice) {
-		this.fundPrice = fundPrice;
-	}
+    public void setFundIssueName(String fundIssueName) {
+        this.fundIssueName = fundIssueName;
+    }
 
-	public String getFundCurrency() {
-		return fundCurrency;
-	}
+    public String getFundCountry() {
+        return fundCountry;
+    }
 
-	public void setFundCurrency(String fundCurrency) {
-		this.fundCurrency = fundCurrency;
-	}
+    public void setFundCountry(String fundCountry) {
+        this.fundCountry = fundCountry;
+    }
 
-	public Integer getRiskLevel() {
-		return riskLevel;
-	}
+    public String getIssueCode() {
+        return issueCode;
+    }
 
-	public void setRiskLevel(Integer riskLevel) {
-		this.riskLevel = riskLevel;
-	}
+    public void setIssueCode(String issueCode) {
+        this.issueCode = issueCode;
+    }
+
+    public BigDecimal getFundPrice() {
+        return fundPrice;
+    }
+
+    public void setFundPrice(BigDecimal fundPrice) {
+        this.fundPrice = fundPrice;
+    }
+
+    public String getFundCurrency() {
+        return fundCurrency;
+    }
+
+    public void setFundCurrency(String fundCurrency) {
+        this.fundCurrency = fundCurrency;
+    }
+
+    public Integer getRiskLevel() {
+        return riskLevel;
+    }
+
+    public void setRiskLevel(Integer riskLevel) {
+        this.riskLevel = riskLevel;
+    }
 }

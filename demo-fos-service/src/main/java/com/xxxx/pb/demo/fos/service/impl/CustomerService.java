@@ -1,11 +1,15 @@
 package com.xxxx.pb.demo.fos.service.impl;
 
 import java.util.List;
+import java.util.Map;
 
+import com.xxxx.pb.demo.fos.detail.CustomerDetail;
 import com.xxxx.pb.demo.fos.service.view.CustomerView;
 
 public interface CustomerService {
-    public List<CustomerView> getCustomers();
+    public List<CustomerView> getCustomerView();
+
+    public List<CustomerView> getCustomerView(String rm);
     
-    public List<CustomerView> getCustomers(String rm);
+    public Map<Integer, CustomerDetail> getCustomers();
 }

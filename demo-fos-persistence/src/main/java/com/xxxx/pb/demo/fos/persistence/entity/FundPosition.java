@@ -10,92 +10,92 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "FUND_POSITION")
 public class FundPosition {
-	@Id
+    @Id
     @Column(name = "ID", nullable = false)
-	private Integer id;
-	
-	@Column(name = "CUSTOMER_NUMBER", nullable = false)
-	private Integer customerNumber;
-	
-	@Column(name = "ACCOUNT_NUMBER", nullable = false)
-	private Integer accountNumber;
-	
-	@Column(name = "FUND_ISSUE_CODE", nullable = false, length = 20)
-	private String fundIssueCode;
-	
-	@Column(name = "FUND_CURRENCY", length = 3)
-	private String fundCurrency;
-	
-	@Column(name = "AVERAGE_PRICE", precision = 10, scale = 2)
-	private BigDecimal averagePrice;
-	
-	@Column(name = "HOLDING_QUANTITY", precision = 15, scale = 2)
-	private BigDecimal holdingQuantity;
-	
-	@Column(name = "CONSIDERATION_AMOUNT", precision = 15, scale = 2)
-	private BigDecimal considerationAmount;
+    private Integer id;
 
-	public Integer getId() {
-		return id;
-	}
+    @Column(name = "CUSTOMER_NUMBER", nullable = false)
+    private Integer customerNumber;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    @Column(name = "ACCOUNT_NUMBER", nullable = false)
+    private Integer accountNumber;
 
-	public Integer getCustomerNumber() {
-		return customerNumber;
-	}
+    @Column(name = "FUND_ISSUE_CODE", nullable = false, length = 20)
+    private String fundIssueCode;
 
-	public void setCustomerNumber(Integer customerNumber) {
-		this.customerNumber = customerNumber;
-	}
+    @Column(name = "FUND_CURRENCY", length = 3)
+    private String fundCurrency;
 
-	public Integer getAccountNumber() {
-		return accountNumber;
-	}
+    @Column(name = "AVERAGE_PRICE", precision = 10, scale = 2)
+    private BigDecimal averagePrice;
 
-	public void setAccountNumber(Integer accountNumber) {
-		this.accountNumber = accountNumber;
-	}
+    @Column(name = "HOLDING_QUANTITY", precision = 15, scale = 2)
+    private BigDecimal holdingQuantity;
 
-	public String getFundIssueCode() {
-		return fundIssueCode;
-	}
+    @Column(name = "CONSIDERATION_AMOUNT", precision = 15, scale = 2)
+    private BigDecimal considerationAmount;
 
-	public void setFundIssueCode(String fundIssueCode) {
-		this.fundIssueCode = fundIssueCode;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public String getFundCurrency() {
-		return fundCurrency;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setFundCurrency(String fundCurrency) {
-		this.fundCurrency = fundCurrency;
-	}
+    public Integer getCustomerNumber() {
+        return customerNumber;
+    }
 
-	public BigDecimal getAveragePrice() {
-		return averagePrice;
-	}
+    public void setCustomerNumber(Integer customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 
-	public void setAveragePrice(BigDecimal averagePrice) {
-		this.averagePrice = averagePrice;
-	}
+    public Integer getAccountNumber() {
+        return accountNumber;
+    }
 
-	public BigDecimal getHoldingQuantity() {
-		return holdingQuantity;
-	}
+    public void setAccountNumber(Integer accountNumber) {
+        this.accountNumber = accountNumber;
+    }
 
-	public void setHoldingQuantity(BigDecimal holdingQuantity) {
-		this.holdingQuantity = holdingQuantity;
-	}
+    public String getFundIssueCode() {
+        return fundIssueCode;
+    }
 
-	public BigDecimal getConsiderationAmount() {
-		return considerationAmount;
-	}
+    public void setFundIssueCode(String fundIssueCode) {
+        this.fundIssueCode = fundIssueCode;
+    }
 
-	public void setConsiderationAmount(BigDecimal considerationAmount) {
-		this.considerationAmount = considerationAmount;
-	}
+    public String getFundCurrency() {
+        return fundCurrency;
+    }
+
+    public void setFundCurrency(String fundCurrency) {
+        this.fundCurrency = fundCurrency;
+    }
+
+    public BigDecimal getAveragePrice() {
+        return averagePrice;
+    }
+
+    public void setAveragePrice(BigDecimal averagePrice) {
+        this.averagePrice = averagePrice;
+    }
+
+    public BigDecimal getHoldingQuantity() {
+        return holdingQuantity;
+    }
+
+    public void setHoldingQuantity(BigDecimal holdingQuantity) {
+        this.holdingQuantity = holdingQuantity;
+    }
+
+    public BigDecimal getConsiderationAmount() {
+        return considerationAmount;
+    }
+
+    public void setConsiderationAmount(BigDecimal considerationAmount) {
+        this.considerationAmount = considerationAmount;
+    }
 }

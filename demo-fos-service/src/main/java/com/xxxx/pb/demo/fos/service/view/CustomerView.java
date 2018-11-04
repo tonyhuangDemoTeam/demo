@@ -2,15 +2,15 @@ package com.xxxx.pb.demo.fos.service.view;
 
 public class CustomerView {
     private Integer customerNumber;
-    
+
     private String customerName;
-    
+
     private String type;
-    
+
     private Integer age;
-    
+
     private String region;
-    
+
     private String bookingEntity;
 
     public Integer getCustomerNumber() {

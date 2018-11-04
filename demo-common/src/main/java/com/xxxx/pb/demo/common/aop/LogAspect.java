@@ -13,33 +13,34 @@ import com.xxxx.pb.demo.common.util.Constant;
 @Aspect
 @Component
 public class LogAspect {
-	private final static Logger logger = LoggerFactory.getLogger(LogAspect.class);
-	
-	@Pointcut("execution(public * com.xxxx.pb.demo.*.*.*.*.*(..))")
-    public void log(){}
+    private final static Logger logger = LoggerFactory.getLogger(LogAspect.class);
+
+    @Pointcut("execution(public * com.xxxx.pb.demo.*.*.*.*.*(..))")
+    public void log() {
+    }
 
     @Before("log()")
-    public void doBefore(JoinPoint joinPoint){ 
-    	StringBuilder b = new StringBuilder(joinPoint.getTarget().getClass().getName());
-    	b.append(" - ");
-    	b.append("{");
-    	
-    	int i = 0;
-    	for(Object obj : joinPoint.getArgs()) {
-    		if(obj != null) {
-    			b.append(obj.toString());
-    		} else {
-    			b.append(Constant.NULL);
-    		}
-    		
-    		i++;
-    		if(i<joinPoint.getArgs().length) {
-    			b.append(", ");
-    		}
-    	}
-    	
-    	b.append("}");
-    	
+    public void doBefore(JoinPoint joinPoint) {
+        StringBuilder b = new StringBuilder(joinPoint.getTarget().getClass().getName());
+        b.append(" - ");
+        b.append("{");
+
+        int i = 0;
+        for (Object obj : joinPoint.getArgs()) {
+            if (obj != null) {
+                b.append(obj.toString());
+            } else {
+                b.append(Constant.NULL);
+            }
+
+            i++;
+            if (i < joinPoint.getArgs().length) {
+                b.append(", ");
+            }
+        }
+
+        b.append("}");
+
         logger.info(b.toString());
     }
 }

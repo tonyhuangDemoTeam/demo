@@ -1,53 +1,53 @@
 package com.xxxx.pb.demo.fos.detail;
 
 public class RelationshipManagerDetail {
-	private String rmCode;
-	
-	private String rmName;
-	
-	private String phoneName;
-	
-	private String emailAddress;
-	
-	private String homeCountry;
+    private String rmCode;
 
-	public String getRmCode() {
-		return rmCode;
-	}
+    private String rmName;
 
-	public void setRmCode(String rmCode) {
-		this.rmCode = rmCode;
-	}
+    private String phoneNumber;
 
-	public String getRmName() {
-		return rmName;
-	}
+    private String emailAddress;
 
-	public void setRmName(String rmName) {
-		this.rmName = rmName;
-	}
+    private String homeCountry;
 
-	public String getPhoneName() {
-		return phoneName;
-	}
+    public String getRmCode() {
+        return rmCode;
+    }
 
-	public void setPhoneName(String phoneName) {
-		this.phoneName = phoneName;
-	}
+    public void setRmCode(String rmCode) {
+        this.rmCode = rmCode;
+    }
 
-	public String getEmailAddress() {
-		return emailAddress;
-	}
+    public String getRmName() {
+        return rmName;
+    }
 
-	public void setEmailAddress(String emailAddress) {
-		this.emailAddress = emailAddress;
-	}
+    public void setRmName(String rmName) {
+        this.rmName = rmName;
+    }
 
-	public String getHomeCountry() {
-		return homeCountry;
-	}
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 
-	public void setHomeCountry(String homeCountry) {
-		this.homeCountry = homeCountry;
-	}
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public String getHomeCountry() {
+        return homeCountry;
+    }
+
+    public void setHomeCountry(String homeCountry) {
+        this.homeCountry = homeCountry;
+    }
 }

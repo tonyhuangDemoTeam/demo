@@ -11,13 +11,13 @@ public class Action {
     @Id
     @Column(name = "ID", nullable = false)
     private Integer id;
-    
+
     @Column(name = "TYPE", length = 1)
     private String type;
-    
+
     @Column(name = "RM_CODE", length = 6)
     private String rmCode;
-    
+
     @Column(name = "REMARKS", length = 256)
     private String remarks;
 

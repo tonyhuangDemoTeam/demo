@@ -11,11 +11,11 @@ import com.xxxx.pb.demo.fos.detail.ActionDetail;
 import com.xxxx.pb.demo.fos.service.client.ActionPersistenceClient;
 
 @Service
-public class ActionServiceImpl implements ActionService{
+public class ActionServiceImpl implements ActionService {
 
     @Autowired
     private ActionPersistenceClient actionPersistenceClient;
-    
+
     @Override
     public List<ActionDetail> getActionsByRm(String rm) {
         return actionPersistenceClient.getByRm(rm);

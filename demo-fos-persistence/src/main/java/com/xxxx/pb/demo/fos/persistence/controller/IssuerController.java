@@ -13,18 +13,18 @@ import com.xxxx.pb.demo.fos.detail.IssuerDetail;
 import com.xxxx.pb.demo.fos.persistence.repository.IssuerRepository;
 
 @RestController
-@RequestMapping(value="/issuer")
+@RequestMapping(value = "/issuer")
 public class IssuerController {
     @Autowired
     private IssuerRepository issuerRepository;
-    
-    @RequestMapping(value="/get", params = "type=all", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/get", params = "type=all", method = RequestMethod.GET)
     public List<IssuerDetail> getAll() throws SystemException {
-        return CopyHelper.copy(issuerRepository.findAll(), IssuerDetail.class); 
+        return CopyHelper.copy(issuerRepository.findAll(), IssuerDetail.class);
     }
-    
-    @RequestMapping(value="/get", params = "type=issue", method=RequestMethod.GET)
+
+    @RequestMapping(value = "/get", params = "type=issue", method = RequestMethod.GET)
     public IssuerDetail getByCode(String code) throws SystemException {
-        return CopyHelper.copy(issuerRepository.findById(code), IssuerDetail.class); 
+        return CopyHelper.copy(issuerRepository.findById(code), IssuerDetail.class);
     }
 }

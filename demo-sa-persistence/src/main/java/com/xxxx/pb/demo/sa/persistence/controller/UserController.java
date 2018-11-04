@@ -23,43 +23,43 @@ import com.xxxx.pb.demo.sa.persistence.repository.UserRepository;
 import com.xxxx.pb.demo.sa.persistence.repository.UserRoleRepository;
 
 @RestController
-@RequestMapping(value="/user")
+@RequestMapping(value = "/user")
 public class UserController {
 
     @Autowired
     private UserRepository userRepository;
-    
+
     @Autowired
     private UserRoleRepository userRoleRepository;
-    
+
     @Autowired
     private UserEntitlementRepository userEntitlementRepository;
-    
-    @RequestMapping(value="/get", params = "type=user", method=RequestMethod.GET)
-    public UserDetail getUser(String id) throws SystemException{
+
+    @RequestMapping(value = "/get", params = "type=user", method = RequestMethod.GET)
+    public UserDetail getUser(String id) throws SystemException {
         return CopyHelper.copy(userRepository.findById(id), UserDetail.class);
     }
-    
-    @RequestMapping(value="/save", method=RequestMethod.POST)
-    public boolean saveUser(@RequestBody UserDetail d) throws ValidationException{
+
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public boolean saveUser(@RequestBody UserDetail d) throws ValidationException {
         Optional<User> u = userRepository.findById(d.getId());
-        
+
         u.map((value) -> {
             BeanUtils.copyProperties(d, value);
             userRepository.save(value);
-            return value;}
-        ).orElseThrow(() -> new ValidationException(Constant.COED_NOT_EXIST, Constant.ERR_NOT_EXIST));
-        
+            return value;
+        }).orElseThrow(() -> new ValidationException(Constant.COED_NOT_EXIST, Constant.ERR_NOT_EXIST));
+
         return true;
     }
-    
-    @RequestMapping(value="/get", params = "type=role", method=RequestMethod.GET)
-    public List<UserRoleDetail> getRole(String id) throws SystemException{
+
+    @RequestMapping(value = "/get", params = "type=role", method = RequestMethod.GET)
+    public List<UserRoleDetail> getRole(String id) throws SystemException {
         return CopyHelper.copy(userRoleRepository.getByUserId(id), UserRoleDetail.class);
     }
-    
-    @RequestMapping(value="/get", params = "type=entitlement", method=RequestMethod.GET)
-    public List<UserEntitlementDetail> getEntitlement(String id) throws SystemException{
+
+    @RequestMapping(value = "/get", params = "type=entitlement", method = RequestMethod.GET)
+    public List<UserEntitlementDetail> getEntitlement(String id) throws SystemException {
         return CopyHelper.copy(userEntitlementRepository.getByUserId(id), UserEntitlementDetail.class);
     }
 }

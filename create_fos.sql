@@ -188,3 +188,12 @@ create table fund_position (
 	consideration_amount numeric(15,2),
 	constraint pk_fund_position primary key (id)
 );
+
+create table deposit_position (
+    id int not null,
+	customer_number int not null,
+	account_number int not null,
+	currency varchar(3),
+	holding_quantity numeric(15,2),
+	constraint pk_deposit_position primary key (id)
+);

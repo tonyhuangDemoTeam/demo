@@ -1,15 +1,15 @@
 package com.xxxx.pb.demo.fos.detail;
 
 public class CustomerDetail {
-	private Integer customerNumber;
-	
-	private String customerName;
-	
-	private String type;
-	
-	private Integer age;
-	
-	private String homeCountry;
+    private Integer customerNumber;
+
+    private String customerName;
+
+    private String type;
+
+    private Integer age;
+
+    private String homeCountry;
 
     public Integer getCustomerNumber() {
         return customerNumber;

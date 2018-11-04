@@ -8,13 +8,13 @@ public class UserRoleDetail {
     private String userId;
 
     private String roleId;
-    
+
     private Date createTime;
-    
+
     private String createBy;
 
     private Date updateTime;
-    
+
     private String updateBy;
 
     public Integer getId() {

@@ -8,37 +8,37 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "TEAM_RM_MAP")
 public class TeamRmMap {
-	@Id
+    @Id
     @Column(name = "ID", nullable = false)
-	private Integer id;
-	
-	@Column(name = "TEAM_CODE", nullable = false, length = 6)
-	private String teamCode;
-	
-	@Column(name = "RM_CODE", nullable = false, length = 6)
-	private String rmCode;
+    private Integer id;
 
-	public Integer getId() {
-		return id;
-	}
+    @Column(name = "TEAM_CODE", nullable = false, length = 6)
+    private String teamCode;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    @Column(name = "RM_CODE", nullable = false, length = 6)
+    private String rmCode;
 
-	public String getTeamCode() {
-		return teamCode;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public void setTeamCode(String teamCode) {
-		this.teamCode = teamCode;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public String getRmCode() {
-		return rmCode;
-	}
+    public String getTeamCode() {
+        return teamCode;
+    }
 
-	public void setRmCode(String rmCode) {
-		this.rmCode = rmCode;
-	}
+    public void setTeamCode(String teamCode) {
+        this.teamCode = teamCode;
+    }
+
+    public String getRmCode() {
+        return rmCode;
+    }
+
+    public void setRmCode(String rmCode) {
+        this.rmCode = rmCode;
+    }
 }

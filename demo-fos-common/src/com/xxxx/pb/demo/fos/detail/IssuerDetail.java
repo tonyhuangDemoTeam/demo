@@ -1,43 +1,43 @@
 package com.xxxx.pb.demo.fos.detail;
 
 public class IssuerDetail {
-	private String issuerCode;
-	
-	private String issuerName;
-	
-	private String domicileCountry;
-	
-	private String industrySector;
+    private String issuerCode;
 
-	public String getIssuerCode() {
-		return issuerCode;
-	}
+    private String issuerName;
 
-	public void setIssuerCode(String issuerCode) {
-		this.issuerCode = issuerCode;
-	}
+    private String domicileCountry;
 
-	public String getIssuerName() {
-		return issuerName;
-	}
+    private String industrySector;
 
-	public void setIssuerName(String issuerName) {
-		this.issuerName = issuerName;
-	}
+    public String getIssuerCode() {
+        return issuerCode;
+    }
 
-	public String getDomicileCountry() {
-		return domicileCountry;
-	}
+    public void setIssuerCode(String issuerCode) {
+        this.issuerCode = issuerCode;
+    }
 
-	public void setDomicileCountry(String domicileCountry) {
-		this.domicileCountry = domicileCountry;
-	}
+    public String getIssuerName() {
+        return issuerName;
+    }
 
-	public String getIndustrySector() {
-		return industrySector;
-	}
+    public void setIssuerName(String issuerName) {
+        this.issuerName = issuerName;
+    }
 
-	public void setIndustrySector(String industrySector) {
-		this.industrySector = industrySector;
-	}
+    public String getDomicileCountry() {
+        return domicileCountry;
+    }
+
+    public void setDomicileCountry(String domicileCountry) {
+        this.domicileCountry = domicileCountry;
+    }
+
+    public String getIndustrySector() {
+        return industrySector;
+    }
+
+    public void setIndustrySector(String industrySector) {
+        this.industrySector = industrySector;
+    }
 }

@@ -18,46 +18,57 @@ import com.xxxx.pb.demo.fos.service.client.RmTeamPersistenceClient;
 import com.xxxx.pb.demo.fos.service.view.CustomerView;
 
 @Service
-public class CustomerServiceImpl implements CustomerService{
+public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private RmPersistenceClient rmPersistenceClient;
-    
+
     @Autowired
     private RmTeamPersistenceClient rmTeamPersistenceClient;
-    
+
     @Autowired
     private CustomerPersistenceClient customerPersistenceClient;
-    
+
     @Override
-    public List<CustomerView> getCustomers() {
+    public List<CustomerView> getCustomerView() {
         return prepareView(customerPersistenceClient.getAll(), rmPersistenceClient.getAllCustMaps(), rmTeamPersistenceClient.getAllMaps(), rmTeamPersistenceClient.getAll());
     }
 
     @Override
-    public List<CustomerView> getCustomers(String rm) {
+    public List<CustomerView> getCustomerView(String rm) {
         return prepareView(customerPersistenceClient.getByRm(rm), rmPersistenceClient.getAllCustMaps(), rmTeamPersistenceClient.getAllMaps(), rmTeamPersistenceClient.getAll());
     }
     
-    private List<CustomerView> prepareView(List<CustomerDetail> custs, List<RmCustomerMapDetail> rmCustMapList, List<TeamRmMapDetail> teamRmMapList, List<RmTeamDetail> teams){
-        List<CustomerView> result = new ArrayList<>();
+    @Override
+    public Map<Integer, CustomerDetail> getCustomers(){
+        List<CustomerDetail> customers = customerPersistenceClient.getAll();
+        Map<Integer, CustomerDetail> custMap = new HashMap<Integer, CustomerDetail>();
+        for (CustomerDetail cust : customers) {
+            custMap.put(cust.getCustomerNumber(), cust);
+        }
         
-        if(custs!=null && custs.size()>0) {
+        return custMap;
+    }
+
+    private List<CustomerView> prepareView(List<CustomerDetail> custs, List<RmCustomerMapDetail> rmCustMapList, List<TeamRmMapDetail> teamRmMapList, List<RmTeamDetail> teams) {
+        List<CustomerView> result = new ArrayList<>();
+
+        if (custs != null && custs.size() > 0) {
             Map<Integer, String> rmCustMap = new HashMap<Integer, String>();
-            for(RmCustomerMapDetail temp: rmCustMapList) {
+            for (RmCustomerMapDetail temp : rmCustMapList) {
                 rmCustMap.put(temp.getCustomerNumber(), temp.getRmCode());
             }
 
             Map<String, String> teamRmMap = new HashMap<String, String>();
-            for(TeamRmMapDetail temp: teamRmMapList) {
+            for (TeamRmMapDetail temp : teamRmMapList) {
                 teamRmMap.put(temp.getRmCode(), temp.getTeamCode());
             }
-            
+
             Map<String, String> teamMap = new HashMap<String, String>();
-            for(RmTeamDetail temp: teams) {
+            for (RmTeamDetail temp : teams) {
                 teamMap.put(temp.getTeamCode(), temp.getBookingEntity());
             }
-            
-            for(CustomerDetail temp: custs) {
+
+            for (CustomerDetail temp : custs) {
                 CustomerView view = new CustomerView();
                 view.setCustomerNumber(temp.getCustomerNumber());
                 view.setCustomerName(temp.getCustomerName());
@@ -65,12 +76,12 @@ public class CustomerServiceImpl implements CustomerService{
                 view.setAge(temp.getAge());
                 view.setRegion(temp.getHomeCountry());
                 view.setBookingEntity(teamMap.get(teamRmMap.get(rmCustMap.get(temp.getCustomerNumber()))));
-                
+
                 result.add(view);
             }
-            
+
         }
-        
+
         return result;
     }
 }

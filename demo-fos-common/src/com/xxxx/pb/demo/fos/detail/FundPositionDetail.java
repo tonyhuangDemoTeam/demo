@@ -3,83 +3,83 @@ package com.xxxx.pb.demo.fos.detail;
 import java.math.BigDecimal;
 
 public class FundPositionDetail {
-	private Integer id;
-	
-	private Integer customerNumber;
-	
-	private Integer accountNumber;
-	
-	private String fundIssueCode;
-	
-	private String fundCurrency;
-	
-	private BigDecimal averagePrice;
-	
-	private BigDecimal holdingQuantity;
-	
-	private BigDecimal considerationAmount;
+    private Integer id;
 
-	public Integer getId() {
-		return id;
-	}
+    private Integer customerNumber;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    private Integer accountNumber;
 
-	public Integer getCustomerNumber() {
-		return customerNumber;
-	}
+    private String fundIssueCode;
 
-	public void setCustomerNumber(Integer customerNumber) {
-		this.customerNumber = customerNumber;
-	}
+    private String fundCurrency;
 
-	public Integer getAccountNumber() {
-		return accountNumber;
-	}
+    private BigDecimal averagePrice;
 
-	public void setAccountNumber(Integer accountNumber) {
-		this.accountNumber = accountNumber;
-	}
+    private BigDecimal holdingQuantity;
 
-	public String getFundIssueCode() {
-		return fundIssueCode;
-	}
+    private BigDecimal considerationAmount;
 
-	public void setFundIssueCode(String fundIssueCode) {
-		this.fundIssueCode = fundIssueCode;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public String getFundCurrency() {
-		return fundCurrency;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setFundCurrency(String fundCurrency) {
-		this.fundCurrency = fundCurrency;
-	}
+    public Integer getCustomerNumber() {
+        return customerNumber;
+    }
 
-	public BigDecimal getAveragePrice() {
-		return averagePrice;
-	}
+    public void setCustomerNumber(Integer customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 
-	public void setAveragePrice(BigDecimal averagePrice) {
-		this.averagePrice = averagePrice;
-	}
+    public Integer getAccountNumber() {
+        return accountNumber;
+    }
 
-	public BigDecimal getHoldingQuantity() {
-		return holdingQuantity;
-	}
+    public void setAccountNumber(Integer accountNumber) {
+        this.accountNumber = accountNumber;
+    }
 
-	public void setHoldingQuantity(BigDecimal holdingQuantity) {
-		this.holdingQuantity = holdingQuantity;
-	}
+    public String getFundIssueCode() {
+        return fundIssueCode;
+    }
 
-	public BigDecimal getConsiderationAmount() {
-		return considerationAmount;
-	}
+    public void setFundIssueCode(String fundIssueCode) {
+        this.fundIssueCode = fundIssueCode;
+    }
 
-	public void setConsiderationAmount(BigDecimal considerationAmount) {
-		this.considerationAmount = considerationAmount;
-	}
+    public String getFundCurrency() {
+        return fundCurrency;
+    }
+
+    public void setFundCurrency(String fundCurrency) {
+        this.fundCurrency = fundCurrency;
+    }
+
+    public BigDecimal getAveragePrice() {
+        return averagePrice;
+    }
+
+    public void setAveragePrice(BigDecimal averagePrice) {
+        this.averagePrice = averagePrice;
+    }
+
+    public BigDecimal getHoldingQuantity() {
+        return holdingQuantity;
+    }
+
+    public void setHoldingQuantity(BigDecimal holdingQuantity) {
+        this.holdingQuantity = holdingQuantity;
+    }
+
+    public BigDecimal getConsiderationAmount() {
+        return considerationAmount;
+    }
+
+    public void setConsiderationAmount(BigDecimal considerationAmount) {
+        this.considerationAmount = considerationAmount;
+    }
 }
