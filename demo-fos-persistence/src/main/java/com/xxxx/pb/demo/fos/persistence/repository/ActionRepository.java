@@ -8,6 +8,6 @@ import com.xxxx.pb.demo.fos.persistence.entity.Action;
 
 public interface ActionRepository extends JpaRepository<Action, Integer> {
 
-    public List<Action> getByRmCodeAndType(String rm, String type);
+    public List<Action> getByRmCode(String rm);
 
 }

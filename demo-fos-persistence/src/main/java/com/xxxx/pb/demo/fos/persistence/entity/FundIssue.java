@@ -21,7 +21,7 @@ public class FundIssue {
     private String fundCountry;
 
     @Column(name = "ISSUER_CODE", length = 30)
-    private String issueCode;
+    private String issuerCode;
 
     @Column(name = "FUND_PRICE", precision = 10, scale = 2)
     private BigDecimal fundPrice;
@@ -29,8 +29,8 @@ public class FundIssue {
     @Column(name = "FUND_CURRENCY", length = 3)
     private String fundCurrency;
 
-    @Column(name = "RISK_LEVEL")
-    private Integer riskLevel;
+    @Column(name = "CREDIT_RATING")
+    private String creditRating;
 
     public String getFundIssueCode() {
         return fundIssueCode;
@@ -56,12 +56,12 @@ public class FundIssue {
         this.fundCountry = fundCountry;
     }
 
-    public String getIssueCode() {
-        return issueCode;
+    public String getIssuerCode() {
+        return issuerCode;
     }
 
-    public void setIssueCode(String issueCode) {
-        this.issueCode = issueCode;
+    public void setIssuerCode(String issuerCode) {
+        this.issuerCode = issuerCode;
     }
 
     public BigDecimal getFundPrice() {
@@ -80,11 +80,11 @@ public class FundIssue {
         this.fundCurrency = fundCurrency;
     }
 
-    public Integer getRiskLevel() {
-        return riskLevel;
+    public String getCreditRating() {
+        return creditRating;
     }
 
-    public void setRiskLevel(Integer riskLevel) {
-        this.riskLevel = riskLevel;
+    public void setCreditRating(String creditRating) {
+        this.creditRating = creditRating;
     }
 }

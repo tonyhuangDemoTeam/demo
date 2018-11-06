@@ -6,6 +6,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 
 import com.xxxx.pb.demo.zuul.filter.AccessFilter;
+import com.xxxx.pb.demo.zuul.filter.CrossDomainFilter;
 
 @EnableZuulProxy
 @SpringBootApplication
@@ -18,5 +19,10 @@ public class DemoZuulApplication {
     @Bean
     public AccessFilter accessFilter() {
         return new AccessFilter();
+    }
+    
+    @Bean
+    public CrossDomainFilter crossFilter() {
+        return new CrossDomainFilter();
     }
 }

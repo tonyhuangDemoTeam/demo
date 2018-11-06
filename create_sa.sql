@@ -8,4 +8,7 @@ create table user_role(id int not null, user_id varchar(32) not null, role_id va
 
 create table user_entitlement(id int not null, user_id varchar(32) not null, entitlement_id varchar(32) not null, create_time timestamp, create_by varchar(32), constraint pk_user_entitlement primary key (id));
 
-insert into users values('rm1', 'pwd', 0, 'E', 'remark');
+insert into users values('rm1', 'RM ONE', 'mePbuUxT+PUtahp2cg4KSE5AQNBzz1fe', 0, 'E', 'remark');
+insert into users values('pm1', 'PM ONE', 'mePbuUxT+PUtahp2cg4KSE5AQNBzz1fe', 0, 'E', 'remark');
+insert into user_role values(1, 'rm1', 'rm');
+insert into user_role values(2, 'pm1', 'pm');

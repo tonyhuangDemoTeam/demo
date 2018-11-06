@@ -33,7 +33,7 @@ create table bond_issue (
 	bond_maturity_date date,
 	bond_yield numeric(13,9),
 	coupon_rate numeric(9,5),
-	risk_level int,
+	credit_rating varchar(8),
 	constraint pk_bond_issue primary key (bond_issue_code)
 );
 
@@ -142,6 +142,7 @@ create table action (
 	type varchar(1),
 	rm_code varchar(6),
 	remarks varchar(256),
+	create_date date,
 	constraint pk_actions primary key (id)
 );
 
@@ -171,10 +172,10 @@ create table fund_issue (
 	fund_issue_code varchar(20) NOT NULL,
 	fund_issue_name varchar(200),
 	fund_country varchar(3),
-	fund_code varchar(30),
+	issuer_code varchar(30),
 	fund_price numeric(10,2),
 	fund_currency varchar(3),
-	risk_level int,
+	credit_rating varchar(8),
 	constraint pk_fund_issue primary key (fund_issue_code)
 );
 

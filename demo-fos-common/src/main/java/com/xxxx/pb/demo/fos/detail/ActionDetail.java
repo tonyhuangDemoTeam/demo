@@ -1,5 +1,7 @@
 package com.xxxx.pb.demo.fos.detail;
 
+import java.util.Date;
+
 public class ActionDetail {
     private Integer id;
 
@@ -8,6 +10,8 @@ public class ActionDetail {
     private String rmCode;
 
     private String remarks;
+    
+    private Date createDate;
 
     public Integer getId() {
         return id;
@@ -39,5 +43,13 @@ public class ActionDetail {
 
     public void setRemarks(String remarks) {
         this.remarks = remarks;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 }

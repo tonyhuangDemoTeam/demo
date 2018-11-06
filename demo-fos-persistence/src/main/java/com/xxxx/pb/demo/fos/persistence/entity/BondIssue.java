@@ -42,8 +42,8 @@ public class BondIssue {
     @Column(name = "COUPON_RATE", precision = 9, scale = 5)
     private BigDecimal couponRate;
 
-    @Column(name = "RISK_LEVEL")
-    private Integer riskLevel;
+    @Column(name = "CREDIT_RATING")
+    private String creditRating;
 
     public String getBondIssueCode() {
         return bondIssueCode;
@@ -125,11 +125,11 @@ public class BondIssue {
         this.couponRate = couponRate;
     }
 
-    public Integer getRiskLevel() {
-        return riskLevel;
+    public String getCreditRating() {
+        return creditRating;
     }
 
-    public void setRiskLevel(Integer riskLevel) {
-        this.riskLevel = riskLevel;
+    public void setCreditRating(String creditRating) {
+        this.creditRating = creditRating;
     }
 }

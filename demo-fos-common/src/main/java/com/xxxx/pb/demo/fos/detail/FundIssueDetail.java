@@ -9,13 +9,13 @@ public class FundIssueDetail {
 
     private String fundCountry;
 
-    private String issueCode;
+    private String issuerCode;
 
     private BigDecimal fundPrice;
 
     private String fundCurrency;
 
-    private Integer riskLevel;
+    private String creditRating;
 
     public String getFundIssueCode() {
         return fundIssueCode;
@@ -41,12 +41,12 @@ public class FundIssueDetail {
         this.fundCountry = fundCountry;
     }
 
-    public String getIssueCode() {
-        return issueCode;
+    public String getIssuerCode() {
+        return issuerCode;
     }
 
-    public void setIssueCode(String issueCode) {
-        this.issueCode = issueCode;
+    public void setIssuerCode(String issuerCode) {
+        this.issuerCode = issuerCode;
     }
 
     public BigDecimal getFundPrice() {
@@ -65,11 +65,11 @@ public class FundIssueDetail {
         this.fundCurrency = fundCurrency;
     }
 
-    public Integer getRiskLevel() {
-        return riskLevel;
+    public String getCreditRating() {
+        return creditRating;
     }
 
-    public void setRiskLevel(Integer riskLevel) {
-        this.riskLevel = riskLevel;
+    public void setCreditRating(String creditRating) {
+        this.creditRating = creditRating;
     }
 }

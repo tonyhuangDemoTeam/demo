@@ -27,7 +27,7 @@ public class ActionController {
 
     @RequestMapping(value = "/get", method = RequestMethod.GET)
     public List<ActionDetail> getByRm(String rm) throws SystemException {
-        return CopyHelper.copy(actionRepository.getByRmCodeAndType(rm, Constant.STATUS_PENDING), ActionDetail.class);
+        return CopyHelper.copy(actionRepository.getByRmCode(rm), ActionDetail.class);
     }
 
     @RequestMapping(value = "/mark", method = RequestMethod.POST)

@@ -25,7 +25,7 @@ public class BondIssueDetail {
 
     private BigDecimal couponRate;
 
-    private Integer riskLevel;
+    private String creditRating;
 
     public String getBondIssueCode() {
         return bondIssueCode;
@@ -107,11 +107,11 @@ public class BondIssueDetail {
         this.couponRate = couponRate;
     }
 
-    public Integer getRiskLevel() {
-        return riskLevel;
+    public String getCreditRating() {
+        return creditRating;
     }
 
-    public void setRiskLevel(Integer riskLevel) {
-        this.riskLevel = riskLevel;
+    public void setCreditRating(String creditRating) {
+        this.creditRating = creditRating;
     }
 }

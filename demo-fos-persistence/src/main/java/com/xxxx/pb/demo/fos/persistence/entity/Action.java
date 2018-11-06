@@ -1,5 +1,7 @@
 package com.xxxx.pb.demo.fos.persistence.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -21,6 +23,9 @@ public class Action {
     @Column(name = "REMARKS", length = 256)
     private String remarks;
 
+    @Column(name = "CREATE_DATE")
+    private Date createDate;
+    
     public Integer getId() {
         return id;
     }
@@ -51,5 +56,13 @@ public class Action {
 
     public void setRemarks(String remarks) {
         this.remarks = remarks;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 }
