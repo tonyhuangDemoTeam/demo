@@ -1,5 +1,6 @@
 package com.xxxx.pb.demo.fos.service.impl;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
@@ -19,4 +20,6 @@ public interface ShareService {
     public List<SharePositionXView> prepareView(List<SharePositionDetail> shares);
 
     public boolean saveDeal(ShareDealDetail deal) throws ValidationException;
+    
+    public BigDecimal getPosition(SharePositionDetail share);
 }

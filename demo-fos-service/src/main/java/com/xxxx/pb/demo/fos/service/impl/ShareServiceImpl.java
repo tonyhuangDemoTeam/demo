@@ -45,7 +45,7 @@ public class ShareServiceImpl implements ShareService {
         List<SharePositionDetail> sharePositions = sharePersistenceClient.getPositions();
         Map<String, List<SharePositionDetail>> sharePositionMap = new HashMap<String, List<SharePositionDetail>>();
         for (SharePositionDetail sharePosition : sharePositions) {
-            String key = new StringBuilder(sharePosition.getCustomerNumber().toString()).append(Constant.SYMBOL_LINK).append(sharePosition.getCustomerNumber().toString()).toString();
+            String key = new StringBuilder(sharePosition.getCustomerNumber().toString()).append(Constant.SYMBOL_LINK).append(sharePosition.getAccountNumber().toString()).toString();
             List<SharePositionDetail> temp = sharePositionMap.get(key);
             if (temp == null) {
                 temp = new ArrayList<>();
@@ -126,6 +126,14 @@ public class ShareServiceImpl implements ShareService {
         sharePersistenceClient.savePosition(position);
 
         return true;
+    }
+
+    @Override
+    public BigDecimal getPosition(SharePositionDetail share) {
+        Map<String, BigDecimal> rates = fxService.getRates();
+        Map<String, ShareIssueDetail> shareIssues = getAllIssues();
+       
+        return share.getHoldingQuantity().multiply(shareIssues.get(share.getShareIssueCode()).getSharePrice()).multiply(rates.get(share.getShareCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
     }
 
 }

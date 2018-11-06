@@ -1,5 +1,6 @@
 package com.xxxx.pb.demo.fos.service.impl;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
@@ -15,4 +16,6 @@ public interface FundService {
     public List<FundPositionXView> getAccountPositions(Integer cust, Integer acct);
 
     public List<FundPositionXView> prepareView(List<FundPositionDetail> funds);
+    
+    public BigDecimal getPosition(FundPositionDetail fund);
 }

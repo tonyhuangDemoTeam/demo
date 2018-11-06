@@ -44,7 +44,7 @@ public class FundServiceImpl implements FundService {
         List<FundPositionDetail> fundPositions = fundPersistenceClient.getPositions();
         Map<String, List<FundPositionDetail>> fundPositionMap = new HashMap<String, List<FundPositionDetail>>();
         for (FundPositionDetail fundPosition : fundPositions) {
-            String key = new StringBuilder(fundPosition.getCustomerNumber().toString()).append(Constant.SYMBOL_LINK).append(fundPosition.getCustomerNumber().toString()).toString();
+            String key = new StringBuilder(fundPosition.getCustomerNumber().toString()).append(Constant.SYMBOL_LINK).append(fundPosition.getAccountNumber().toString()).toString();
             List<FundPositionDetail> temp = fundPositionMap.get(key);
             if (temp == null) {
                 temp = new ArrayList<>();
@@ -86,6 +86,14 @@ public class FundServiceImpl implements FundService {
         }
 
         return result;
+    }
+
+    @Override
+    public BigDecimal getPosition(FundPositionDetail fund) {
+        Map<String, BigDecimal> rates = fxService.getRates();
+        Map<String, FundIssueDetail> fundIssues = getAllIssues();
+        
+        return fund.getHoldingQuantity().multiply(fundIssues.get(fund.getFundIssueCode()).getFundPrice()).multiply(rates.get(fund.getFundCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
     }
 
 }

@@ -82,4 +82,8 @@ public class FundPositionDetail {
     public void setConsiderationAmount(BigDecimal considerationAmount) {
         this.considerationAmount = considerationAmount;
     }
+    
+    public BigDecimal getPurePosition() {
+        return holdingQuantity.multiply(averagePrice).setScale(2, BigDecimal.ROUND_UP);
+    }
 }

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.xxxx.pb.demo.fos.service.impl.TeamService;
+import com.xxxx.pb.demo.fos.service.view.ArchView;
 import com.xxxx.pb.demo.fos.service.view.TeamXView;
 
 @RestController
@@ -16,8 +17,13 @@ public class TeamServiceController {
     @Autowired
     private TeamService teamService;
 
-    @RequestMapping(value = "/get", method = RequestMethod.GET)
+    @RequestMapping(value = "/get", params = "type=details", method = RequestMethod.GET)
     public List<TeamXView> getAllTeamInfos() {
         return teamService.getAllTeamInfos();
+    }
+    
+    @RequestMapping(value = "/get", params = "type=arch", method = RequestMethod.GET)
+    public List<ArchView> getArch() {
+        return teamService.getArch();
     }
 }

@@ -1,10 +1,13 @@
 package com.xxxx.pb.demo.fos.service.view;
 
 import java.util.List;
+import java.util.Map;
 
 import com.xxxx.pb.demo.fos.detail.AccountDetail;
 
 public class AccountXView extends AccountDetail {
+    private Map<String, Map<String, String>> positions;
+    
     private List<BondPositionXView> bonds;
 
     private List<DepositPositionXView> deposits;
@@ -12,6 +15,14 @@ public class AccountXView extends AccountDetail {
     private List<FundPositionXView> funds;
 
     private List<SharePositionXView> shares;
+    
+    public Map<String, Map<String, String>> getPositions() {
+        return positions;
+    }
+
+    public void setPositions(Map<String, Map<String, String>> positions) {
+        this.positions = positions;
+    }
 
     public List<BondPositionXView> getBonds() {
         return bonds;

@@ -27,7 +27,7 @@ public class DepositServiceImpl implements DepositService {
         List<DepositPositionDetail> depositPositions = depositPersistenceClient.getAllPositions();
         Map<String, List<DepositPositionDetail>> depositPositionMap = new HashMap<String, List<DepositPositionDetail>>();
         for (DepositPositionDetail depositPosition : depositPositions) {
-            String key = new StringBuilder(depositPosition.getCustomerNumber().toString()).append(Constant.SYMBOL_LINK).append(depositPosition.getCustomerNumber().toString()).toString();
+            String key = new StringBuilder(depositPosition.getCustomerNumber().toString()).append(Constant.SYMBOL_LINK).append(depositPosition.getAccountNumber().toString()).toString();
             List<DepositPositionDetail> temp = depositPositionMap.get(key);
             if (temp == null) {
                 temp = new ArrayList<>();
@@ -51,19 +51,25 @@ public class DepositServiceImpl implements DepositService {
         Map<String, BigDecimal> rates = fxService.getRates();
 
         if (deposits != null && deposits.size() > 0) {
-            for (DepositPositionDetail depoist : deposits) {
+            for (DepositPositionDetail deposit : deposits) {
                 DepositPositionXView view = new DepositPositionXView();
                 result.add(view);
 
-                view.setId(depoist.getId());
-                view.setCustomerNumber(depoist.getCustomerNumber());
-                view.setAccountNumber(depoist.getAccountNumber());
-                view.setCurrency(depoist.getCurrency());
-                view.setHoldingQuantity(depoist.getHoldingQuantity());
-                view.setPosition(depoist.getHoldingQuantity().multiply(rates.get(depoist.getCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP).toPlainString());
+                view.setId(deposit.getId());
+                view.setCustomerNumber(deposit.getCustomerNumber());
+                view.setAccountNumber(deposit.getAccountNumber());
+                view.setCurrency(deposit.getCurrency());
+                view.setHoldingQuantity(deposit.getHoldingQuantity());
+                view.setPosition(deposit.getHoldingQuantity().multiply(rates.get(deposit.getCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP).toPlainString());
             }
         }
 
         return result;
+    }
+
+    @Override
+    public BigDecimal getPosition(DepositPositionDetail deposit) {
+        Map<String, BigDecimal> rates = fxService.getRates();
+        return deposit.getHoldingQuantity().multiply(rates.get(deposit.getCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
     }
 }

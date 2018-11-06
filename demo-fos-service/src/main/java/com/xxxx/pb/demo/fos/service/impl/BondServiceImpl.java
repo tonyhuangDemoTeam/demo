@@ -43,7 +43,7 @@ public class BondServiceImpl implements BondService {
         List<BondPositionDetail> bondPositions = bondPersistenceClient.getPositions();
         Map<String, List<BondPositionDetail>> bondPositionMap = new HashMap<String, List<BondPositionDetail>>();
         for (BondPositionDetail bondPosition : bondPositions) {
-            String key = new StringBuilder(bondPosition.getCustomerNumber().toString()).append(Constant.SYMBOL_LINK).append(bondPosition.getCustomerNumber().toString()).toString();
+            String key = new StringBuilder(bondPosition.getCustomerNumber().toString()).append(Constant.SYMBOL_LINK).append(bondPosition.getAccountNumber().toString()).toString();
             List<BondPositionDetail> temp = bondPositionMap.get(key);
             if (temp == null) {
                 temp = new ArrayList<>();
@@ -86,5 +86,13 @@ public class BondServiceImpl implements BondService {
         }
 
         return result;
+    }
+
+    @Override
+    public BigDecimal getPosition(BondPositionDetail bond) {
+        Map<String, BigDecimal> rates = fxService.getRates();
+        Map<String, BondIssueDetail> bondIssues = getAllIssues();
+        
+        return bond.getHoldingQuantity().multiply(bondIssues.get(bond.getBondIssueCode()).getBondPrice()).multiply(rates.get(bond.getBondCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
     }
 }
