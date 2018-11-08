@@ -6,6 +6,7 @@
 
 	<groupId>com.xxxx.pb</groupId>
 	<artifactId>demo-sa-service</artifactId>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
 	<name>demo-sa-service</name>
@@ -65,11 +66,13 @@
 			<artifactId>jasypt-spring31</artifactId>
 			<version>1.9.0</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.xxxx.pb</groupId>
 			<artifactId>demo-sa-common</artifactId>
 			<version>1.0</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.xxxx.pb</groupId>
 			<artifactId>demo-common</artifactId>
@@ -99,5 +102,4 @@
 	</build>
 
 
-	<version>1.0</version>
 </project>

@@ -6,6 +6,7 @@
 
 	<groupId>com.xxxx.pb</groupId>
 	<artifactId>demo-fos-persistence</artifactId>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
 	<name>demo-fos-persistence</name>
@@ -70,11 +71,13 @@
 			<artifactId>logstash-logback-encoder</artifactId>
 			<version>4.9</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.xxxx.pb</groupId>
 			<artifactId>demo-common</artifactId>
 			<version>1.0</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.xxxx.pb</groupId>
 			<artifactId>demo-fos-common</artifactId>
@@ -104,5 +107,4 @@
 	</build>
 
 
-	<version>1.0</version>
 </project>
