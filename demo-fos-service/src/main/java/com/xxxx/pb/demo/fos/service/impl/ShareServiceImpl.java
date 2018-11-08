@@ -39,7 +39,12 @@ public class ShareServiceImpl implements ShareService {
         }
         return issues;
     }
-
+    
+    @Override
+    public List<SharePositionDetail> getPositions(){
+        return sharePersistenceClient.getPositions();
+    }
+    
     @Override
     public Map<String, List<SharePositionDetail>> getAllPositions() {
         List<SharePositionDetail> sharePositions = sharePersistenceClient.getPositions();

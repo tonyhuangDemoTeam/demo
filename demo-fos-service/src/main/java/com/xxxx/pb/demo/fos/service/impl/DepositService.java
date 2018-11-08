@@ -8,6 +8,9 @@ import com.xxxx.pb.demo.fos.detail.DepositPositionDetail;
 import com.xxxx.pb.demo.fos.service.view.DepositPositionXView;
 
 public interface DepositService {
+
+    public List<DepositPositionDetail> getPositions();
+    
     public Map<String, List<DepositPositionDetail>> getAllPositions();
 
     public List<DepositPositionXView> getAccountPositions(Integer cust, Integer acct);

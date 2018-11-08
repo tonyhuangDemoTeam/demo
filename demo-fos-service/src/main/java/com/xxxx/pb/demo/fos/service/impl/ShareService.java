@@ -13,6 +13,8 @@ import com.xxxx.pb.demo.fos.service.view.SharePositionXView;
 public interface ShareService {
     public Map<String, ShareIssueDetail> getAllIssues();
 
+    public List<SharePositionDetail> getPositions();
+
     public Map<String, List<SharePositionDetail>> getAllPositions();
 
     public List<SharePositionXView> getAccountPositions(Integer cust, Integer acct);

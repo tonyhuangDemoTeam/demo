@@ -43,5 +43,4 @@ public class RmServiceImpl implements RmService {
 
         return rmCustMap;
     }
-
 }

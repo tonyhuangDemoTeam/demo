@@ -11,6 +11,8 @@ import com.xxxx.pb.demo.fos.service.view.BondPositionXView;
 public interface BondService {
     public Map<String, BondIssueDetail> getAllIssues();
 
+    public List<BondPositionDetail> getPositions();
+    
     public Map<String, List<BondPositionDetail>> getAllPositions();
 
     public List<BondPositionXView> getAccountPositions(Integer cust, Integer acct);

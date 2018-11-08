@@ -21,7 +21,12 @@ public class DepositServiceImpl implements DepositService {
 
     @Autowired
     private DepositPersistenceClient depositPersistenceClient;
-
+    
+    @Override
+    public List<DepositPositionDetail> getPositions(){
+        return depositPersistenceClient.getAllPositions();
+    }
+    
     @Override
     public Map<String, List<DepositPositionDetail>> getAllPositions() {
         List<DepositPositionDetail> depositPositions = depositPersistenceClient.getAllPositions();

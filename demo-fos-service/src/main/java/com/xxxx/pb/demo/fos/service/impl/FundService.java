@@ -11,6 +11,8 @@ import com.xxxx.pb.demo.fos.service.view.FundPositionXView;
 public interface FundService {
     public Map<String, FundIssueDetail> getAllIssues();
 
+    public List<FundPositionDetail> getPositions();
+    
     public Map<String, List<FundPositionDetail>> getAllPositions();
 
     public List<FundPositionXView> getAccountPositions(Integer cust, Integer acct);

@@ -39,6 +39,11 @@ public class BondServiceImpl implements BondService {
     }
 
     @Override
+    public List<BondPositionDetail> getPositions(){
+        return bondPersistenceClient.getPositions();
+    }
+    
+    @Override
     public Map<String, List<BondPositionDetail>> getAllPositions() {
         List<BondPositionDetail> bondPositions = bondPersistenceClient.getPositions();
         Map<String, List<BondPositionDetail>> bondPositionMap = new HashMap<String, List<BondPositionDetail>>();

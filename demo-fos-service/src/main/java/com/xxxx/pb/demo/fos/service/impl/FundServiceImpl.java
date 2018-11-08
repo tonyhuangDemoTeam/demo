@@ -39,6 +39,10 @@ public class FundServiceImpl implements FundService {
         return issues;
     }
 
+    public List<FundPositionDetail> getPositions(){
+        return fundPersistenceClient.getPositions();
+    }
+    
     @Override
     public Map<String, List<FundPositionDetail>> getAllPositions() {
         List<FundPositionDetail> fundPositions = fundPersistenceClient.getPositions();

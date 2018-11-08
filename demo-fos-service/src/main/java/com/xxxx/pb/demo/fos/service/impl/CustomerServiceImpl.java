@@ -244,4 +244,15 @@ public class CustomerServiceImpl implements CustomerService {
         
         return result;
     }
+
+    @Override
+    public Map<Integer, RmCustomerMapDetail> getRelationshipManagers() {
+        List<RmCustomerMapDetail> rmCustRelationships = rmPersistenceClient.getAllCustMaps();
+        Map<Integer, RmCustomerMapDetail> rmCustMap = new HashMap<Integer, RmCustomerMapDetail>();
+        for (RmCustomerMapDetail rmCustRelationship : rmCustRelationships) {
+            rmCustMap.put(rmCustRelationship.getCustomerNumber(), rmCustRelationship);
+        }
+
+        return rmCustMap;
+    }
 }
