@@ -16,10 +16,16 @@ public interface ShareService {
     public Map<String, List<SharePositionDetail>> getAllPositions();
 
     public List<SharePositionXView> getAccountPositions(Integer cust, Integer acct);
+    
+    public List<SharePositionDetail> getPositions(Integer cust, Integer acct);
 
     public List<SharePositionXView> prepareView(List<SharePositionDetail> shares);
 
     public boolean saveDeal(ShareDealDetail deal) throws ValidationException;
     
     public BigDecimal getPosition(SharePositionDetail share);
+    
+    public BigDecimal getPL(SharePositionDetail share);
+    
+    public BigDecimal getYesterdayPL(SharePositionDetail share);
 }

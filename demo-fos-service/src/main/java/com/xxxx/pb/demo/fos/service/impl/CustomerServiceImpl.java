@@ -2,6 +2,7 @@ package com.xxxx.pb.demo.fos.service.impl;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -175,6 +176,8 @@ public class CustomerServiceImpl implements CustomerService {
                 teamMap.put(temp.getTeamCode(), temp.getBookingEntity());
             }
 
+            Date current = new Date();
+            
             for (CustomerDetail temp : custs) {
                 CustomerView view = new CustomerView();
                 view.setCustomerNumber(temp.getCustomerNumber());
@@ -183,6 +186,8 @@ public class CustomerServiceImpl implements CustomerService {
                 view.setAge(temp.getAge());
                 view.setRegion(temp.getHomeCountry());
                 view.setBookingEntity(teamMap.get(teamRmMap.get(rmCustMap.get(temp.getCustomerNumber()))));
+               
+                view.setPeriod((current.getTime()-temp.getCreateDate().getTime())/Long.valueOf("31536000000"));
 
                 result.add(view);
             }
@@ -207,5 +212,36 @@ public class CustomerServiceImpl implements CustomerService {
         } else {
             prodPositions.put(prod, ((new BigDecimal(temp)).add(position)).toPlainString());
         }
+    }
+
+    @Override
+    public List<CustomerXView> getAccounts(String rm) {
+        List<CustomerXView> result = new ArrayList<>();
+        
+        List<CustomerDetail> custs = customerPersistenceClient.getByRm(rm);
+        Map<Integer, List<AccountDetail>> accountMap = accountService.getAllAccounts();
+        
+        for(CustomerDetail cust: custs) {
+            CustomerXView custView = new CustomerXView();
+            result.add(custView);
+            
+            custView.setCustomerNumber(cust.getCustomerNumber());
+            custView.setCustomerName(cust.getCustomerName());
+            
+            List<AccountXView> acctViews = new ArrayList<>();
+            custView.setAccounts(acctViews);
+            
+            for (AccountDetail acct : accountMap.get(cust.getCustomerNumber())) {
+                AccountXView acctView = new AccountXView();
+                acctViews.add(acctView);
+
+                acctView.setId(acct.getId());
+                acctView.setCustomerNumber(acct.getCustomerNumber());
+                acctView.setAccountNumber(acct.getAccountNumber());
+                acctView.setAccountName(acct.getAccountName());
+            }
+        }
+        
+        return result;
     }
 }

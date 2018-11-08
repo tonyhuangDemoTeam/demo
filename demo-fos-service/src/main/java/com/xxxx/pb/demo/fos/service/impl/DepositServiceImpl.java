@@ -43,6 +43,11 @@ public class DepositServiceImpl implements DepositService {
     public List<DepositPositionXView> getAccountPositions(Integer cust, Integer acct) {
         return prepareView(depositPersistenceClient.getPositions(cust, acct));
     }
+    
+    @Override
+    public List<DepositPositionDetail> getPositions(Integer cust, Integer acct) {
+        return depositPersistenceClient.getPositions(cust, acct);
+    }
 
     @Override
     public List<DepositPositionXView> prepareView(List<DepositPositionDetail> deposits) {
@@ -71,5 +76,19 @@ public class DepositServiceImpl implements DepositService {
     public BigDecimal getPosition(DepositPositionDetail deposit) {
         Map<String, BigDecimal> rates = fxService.getRates();
         return deposit.getHoldingQuantity().multiply(rates.get(deposit.getCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
+    }
+
+    @Override
+    public BigDecimal getPL(DepositPositionDetail deposit) {
+        Map<String, BigDecimal> rates = fxService.getRates();
+        Map<String, BigDecimal> xRates = fxService.getPreviousRates();
+        return deposit.getHoldingQuantity().multiply(rates.get(deposit.getCurrency()).subtract(xRates.get(deposit.getCurrency()))).divide(new BigDecimal(2)).setScale(2, BigDecimal.ROUND_HALF_UP);
+    }
+
+    @Override
+    public BigDecimal getYesterdayPL(DepositPositionDetail deposit) {
+        Map<String, BigDecimal> rates = fxService.getRates();
+        Map<String, BigDecimal> xRates = fxService.getPreviousRates();
+        return deposit.getHoldingQuantity().multiply(rates.get(deposit.getCurrency()).subtract(xRates.get(deposit.getCurrency()))).setScale(2, BigDecimal.ROUND_HALF_UP);
     }
 }

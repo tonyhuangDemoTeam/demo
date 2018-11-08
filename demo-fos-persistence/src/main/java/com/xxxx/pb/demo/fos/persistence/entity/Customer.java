@@ -1,5 +1,7 @@
 package com.xxxx.pb.demo.fos.persistence.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -23,6 +25,9 @@ public class Customer {
 
     @Column(name = "HOME_COUNTRY", length = 3)
     private String homeCountry;
+    
+    @Column(name = "CREATE_DATE")
+    private Date createDate;
 
     public Integer getCustomerNumber() {
         return customerNumber;
@@ -62,5 +67,13 @@ public class Customer {
 
     public void setHomeCountry(String homeCountry) {
         this.homeCountry = homeCountry;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 }

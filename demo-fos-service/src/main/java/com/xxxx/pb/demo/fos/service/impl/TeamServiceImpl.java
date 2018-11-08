@@ -161,8 +161,8 @@ public class TeamServiceImpl implements TeamService {
     }
 
     @Override
-    public List<ArchView> getArch() {
-        List<ArchView> result = new ArrayList<>();
+    public ArchView getArch() {
+        ArchView result = new ArchView();
         
         List<RmTeamDetail> teams = rmTeamPersistenceClient.getAll();
         
@@ -193,6 +193,12 @@ public class TeamServiceImpl implements TeamService {
             
             entities.add(team);
         }
+
+
+        int totalClients = 0;
+        BigDecimal totalPositions = new BigDecimal(0);
+        
+        List<ArchView> archs = new ArrayList<>();
         
         for(String entity: teamMap.keySet()) {
             ArchView entityArch = new ArchView();
@@ -219,6 +225,7 @@ public class TeamServiceImpl implements TeamService {
                     rm.setEntries(custs);
                     
                     for(RmCustomerMapDetail rmCustRelationship: rmCustMap.get(teamRmRelationship.getRmCode())) {
+                        totalClients++;
                         entityClients++;
                         teamClients++;
                         rmClients++;
@@ -232,6 +239,7 @@ public class TeamServiceImpl implements TeamService {
                                 rmPosition = rmPosition.add(position);
                                 teamPosition = teamPosition.add(position);
                                 entityPosition = entityPosition.add(position);
+                                totalPositions = totalPositions.add(position);
                             }
                             
                             List<DepositPositionDetail> deposits = depositPositionMap.get(key);
@@ -240,6 +248,7 @@ public class TeamServiceImpl implements TeamService {
                                 rmPosition = rmPosition.add(position);
                                 teamPosition = teamPosition.add(position);
                                 entityPosition = entityPosition.add(position);
+                                totalPositions = totalPositions.add(position);
                             }
                             
                             List<SharePositionDetail> shares = sharePositionMap.get(key);
@@ -248,6 +257,7 @@ public class TeamServiceImpl implements TeamService {
                                 rmPosition = rmPosition.add(position);
                                 teamPosition = teamPosition.add(position);
                                 entityPosition = entityPosition.add(position);
+                                totalPositions = totalPositions.add(position);
                             }
                             
                             List<FundPositionDetail> funds = fundPositionMap.get(key);
@@ -256,6 +266,7 @@ public class TeamServiceImpl implements TeamService {
                                 rmPosition = rmPosition.add(position);
                                 teamPosition = teamPosition.add(position);
                                 entityPosition = entityPosition.add(position);
+                                totalPositions = totalPositions.add(position);
                             }
                         }
                     }
@@ -275,8 +286,14 @@ public class TeamServiceImpl implements TeamService {
             entityArch.setClients(entityClients);
             entityArch.setPosition(entityPosition);
             
-            result.add(entityArch);
+            archs.add(entityArch);
         }
+        
+        result.setEntries(archs);
+        result.setName("GPB");
+        
+        result.setClients(totalClients);
+        result.setPosition(totalPositions);
         
         return result;
     }

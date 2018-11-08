@@ -1,5 +1,7 @@
 package com.xxxx.pb.demo.fos.detail;
 
+import java.util.Date;
+
 public class CustomerDetail {
     private Integer customerNumber;
 
@@ -10,6 +12,8 @@ public class CustomerDetail {
     private Integer age;
 
     private String homeCountry;
+    
+    private Date createDate;
 
     public Integer getCustomerNumber() {
         return customerNumber;
@@ -49,5 +53,13 @@ public class CustomerDetail {
 
     public void setHomeCountry(String homeCountry) {
         this.homeCountry = homeCountry;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 }

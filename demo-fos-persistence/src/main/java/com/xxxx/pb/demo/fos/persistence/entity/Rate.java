@@ -16,6 +16,9 @@ public class Rate {
 
     @Column(name = "RATE", precision = 10, scale = 4)
     private BigDecimal rate;
+    
+    @Column(name = "PREVIOUS_RATE", precision = 10, scale = 4)
+    private BigDecimal previousRate;
 
     public String getCcy() {
         return ccy;
@@ -31,5 +34,13 @@ public class Rate {
 
     public void setRate(BigDecimal rate) {
         this.rate = rate;
+    }
+
+    public BigDecimal getPreviousRate() {
+        return previousRate;
+    }
+
+    public void setPreviousRate(BigDecimal previousRate) {
+        this.previousRate = previousRate;
     }
 }

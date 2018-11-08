@@ -25,6 +25,9 @@ public class FundIssue {
 
     @Column(name = "FUND_PRICE", precision = 10, scale = 2)
     private BigDecimal fundPrice;
+    
+    @Column(name = "PREVIOUS_FUND_PRICE", precision = 10, scale = 2)
+    private BigDecimal previousFundPrice;
 
     @Column(name = "FUND_CURRENCY", length = 3)
     private String fundCurrency;
@@ -70,6 +73,14 @@ public class FundIssue {
 
     public void setFundPrice(BigDecimal fundPrice) {
         this.fundPrice = fundPrice;
+    }
+
+    public BigDecimal getPreviousFundPrice() {
+        return previousFundPrice;
+    }
+
+    public void setPreviousFundPrice(BigDecimal previousFundPrice) {
+        this.previousFundPrice = previousFundPrice;
     }
 
     public String getFundCurrency() {

@@ -25,6 +25,9 @@ public class ShareIssue {
 
     @Column(name = "SHARE_PRICE", precision = 10, scale = 2)
     private BigDecimal sharePrice;
+    
+    @Column(name = "PREVIOUS_SHARE_PRICE", precision = 10, scale = 2)
+    private BigDecimal previousSharePrice;
 
     @Column(name = "SHARE_CURRENCY", length = 3)
     private String shareCurrency;
@@ -76,6 +79,14 @@ public class ShareIssue {
 
     public void setSharePrice(BigDecimal sharePrice) {
         this.sharePrice = sharePrice;
+    }
+
+    public BigDecimal getPreviousSharePrice() {
+        return previousSharePrice;
+    }
+
+    public void setPreviousSharePrice(BigDecimal previousSharePrice) {
+        this.previousSharePrice = previousSharePrice;
     }
 
     public String getShareCurrency() {

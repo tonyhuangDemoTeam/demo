@@ -29,6 +29,7 @@ create table bond_issue (
 	issuer_code varchar(30),
 	issue_date date,
 	bond_price numeric(10,2),
+	previous_bond_price numeric(10,2),
 	bond_currency varchar(3),
 	bond_maturity_date date,
 	bond_yield numeric(13,9),
@@ -56,6 +57,7 @@ create table customer (
 	type char(1),
 	age int,
 	home_country varchar(3),
+	create_date date,
 	constraint pk_customer primary key (customer_number)
 );
 
@@ -111,6 +113,7 @@ create table share_issue (
 	share_country varchar(3),
 	issuer_code varchar(30),
 	share_price numeric(10,2),
+	previous_share_price numeric(10,2),
 	share_currency varchar(3),
 	house_view varchar(8),
 	credit_rating varchar(8),
@@ -149,6 +152,7 @@ create table action (
 create table rate (
 	ccy char(3) not null,
 	rate numeric(10,4),
+	previous_rate numeric(10,4),
 	constraint pk_rate primary key (ccy)
 );
 
@@ -174,6 +178,7 @@ create table fund_issue (
 	fund_country varchar(3),
 	issuer_code varchar(30),
 	fund_price numeric(10,2),
+	previous_fund_price numeric(10,2),
 	fund_currency varchar(3),
 	credit_rating varchar(8),
 	constraint pk_fund_issue primary key (fund_issue_code)

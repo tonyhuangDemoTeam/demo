@@ -21,7 +21,7 @@ public class BondIssue {
     @Column(name = "BOND_COUNTRY", length = 3)
     private String bondCountry;
 
-    @Column(name = "BOND_CODE", length = 30)
+    @Column(name = "ISSUER_CODE", length = 30)
     private String issuerCode;
 
     @Column(name = "ISSUE_DATE")
@@ -29,11 +29,14 @@ public class BondIssue {
 
     @Column(name = "BOND_PRICE", precision = 10, scale = 2)
     private BigDecimal bondPrice;
+    
+    @Column(name = "PREVIOUS_BOND_PRICE", precision = 10, scale = 2)
+    private BigDecimal previousBondPrice;
 
     @Column(name = "BOND_CURRENCY", length = 3)
     private String bondCurrency;
 
-    @Column(name = "BOUND_MATURITY_DATE")
+    @Column(name = "BOND_MATURITY_DATE")
     private Date bondMaturityDate;
 
     @Column(name = "BOND_YIELD", precision = 13, scale = 9)
@@ -91,6 +94,14 @@ public class BondIssue {
 
     public void setBondPrice(BigDecimal bondPrice) {
         this.bondPrice = bondPrice;
+    }
+
+    public BigDecimal getPreviousBondPrice() {
+        return previousBondPrice;
+    }
+
+    public void setPreviousBondPrice(BigDecimal previousBondPrice) {
+        this.previousBondPrice = previousBondPrice;
     }
 
     public String getBondCurrency() {

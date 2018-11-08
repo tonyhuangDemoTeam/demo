@@ -14,8 +14,14 @@ public interface BondService {
     public Map<String, List<BondPositionDetail>> getAllPositions();
 
     public List<BondPositionXView> getAccountPositions(Integer cust, Integer acct);
+    
+    public List<BondPositionDetail> getPositions(Integer cust, Integer acct);
 
     public List<BondPositionXView> prepareView(List<BondPositionDetail> bonds);
-    
+
     public BigDecimal getPosition(BondPositionDetail bond);
+    
+    public BigDecimal getPL(BondPositionDetail bond);
+    
+    public BigDecimal getYesterdayPL(BondPositionDetail bond);
 }

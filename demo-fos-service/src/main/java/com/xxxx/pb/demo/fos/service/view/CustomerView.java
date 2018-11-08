@@ -12,6 +12,8 @@ public class CustomerView {
     private String region;
 
     private String bookingEntity;
+    
+    private float period;
 
     public Integer getCustomerNumber() {
         return customerNumber;
@@ -59,5 +61,13 @@ public class CustomerView {
 
     public void setBookingEntity(String bookingEntity) {
         this.bookingEntity = bookingEntity;
+    }
+
+    public float getPeriod() {
+        return period;
+    }
+
+    public void setPeriod(float period) {
+        this.period = period;
     }
 }

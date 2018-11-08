@@ -34,6 +34,20 @@ public class FXServiceImpl implements FXService {
     }
 
     @Override
+    public Map<String, BigDecimal> getPreviousRates() {
+        if (rates == null) {
+            rates = new HashMap<String, BigDecimal>();
+
+            List<RateDetail> temp = ratePersistenceClient.getAll();
+            for (RateDetail rate : temp) {
+                rates.put(rate.getCcy(), rate.getPreviousRate());
+            }
+        }
+
+        return rates;
+    }
+    
+    @Override
     public BigDecimal getRate(String ccy) {
         return getRates().get(ccy);
     }

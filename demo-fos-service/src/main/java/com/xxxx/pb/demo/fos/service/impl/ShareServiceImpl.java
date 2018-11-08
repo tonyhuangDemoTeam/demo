@@ -61,6 +61,11 @@ public class ShareServiceImpl implements ShareService {
     public List<SharePositionXView> getAccountPositions(Integer cust, Integer acct) {
         return prepareView(sharePersistenceClient.getPositions(cust, acct));
     }
+    
+    @Override
+    public List<SharePositionDetail> getPositions(Integer cust, Integer acct) {
+        return sharePersistenceClient.getPositions(cust, acct);
+    }
 
     @Override
     public List<SharePositionXView> prepareView(List<SharePositionDetail> shares) {
@@ -134,6 +139,22 @@ public class ShareServiceImpl implements ShareService {
         Map<String, ShareIssueDetail> shareIssues = getAllIssues();
        
         return share.getHoldingQuantity().multiply(shareIssues.get(share.getShareIssueCode()).getSharePrice()).multiply(rates.get(share.getShareCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
+    }
+
+    @Override
+    public BigDecimal getPL(SharePositionDetail share) {
+        Map<String, BigDecimal> rates = fxService.getRates();
+        Map<String, ShareIssueDetail> shareIssues = getAllIssues();
+        
+        return share.getHoldingQuantity().multiply(shareIssues.get(share.getShareIssueCode()).getSharePrice().subtract(share.getAveragePrice())).multiply(rates.get(share.getShareCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
+    }
+
+    @Override
+    public BigDecimal getYesterdayPL(SharePositionDetail share) {
+        Map<String, BigDecimal> rates = fxService.getRates();
+        Map<String, ShareIssueDetail> shareIssues = getAllIssues();
+        
+        return share.getHoldingQuantity().multiply(shareIssues.get(share.getShareIssueCode()).getPreviousSharePrice().subtract(share.getAveragePrice())).multiply(rates.get(share.getShareCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
     }
 
 }

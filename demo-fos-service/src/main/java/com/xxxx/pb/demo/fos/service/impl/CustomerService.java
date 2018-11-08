@@ -11,6 +11,8 @@ public interface CustomerService {
     public List<CustomerView> getCustomerView();
 
     public List<CustomerXView> getCustomerView(String rm);
+    
+    public List<CustomerXView> getAccounts(String rm);
 
     public Map<Integer, CustomerDetail> getCustomers();
 }

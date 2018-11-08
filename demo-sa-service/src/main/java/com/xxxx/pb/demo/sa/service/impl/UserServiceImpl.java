@@ -84,4 +84,9 @@ public class UserServiceImpl implements UserService {
         return result;
     }
 
+    @Override
+    public UserDetail getUser(String id) {
+        return userPersistenceClient.getUser(id);
+    }
+
 }

@@ -5,6 +5,8 @@ import java.util.Map;
 
 public interface FXService {
     public Map<String, BigDecimal> getRates();
+    
+    public Map<String, BigDecimal> getPreviousRates();
 
     public BigDecimal getRate(String ccy);
 }

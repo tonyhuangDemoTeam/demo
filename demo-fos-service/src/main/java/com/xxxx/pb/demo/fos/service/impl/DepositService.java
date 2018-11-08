@@ -11,8 +11,14 @@ public interface DepositService {
     public Map<String, List<DepositPositionDetail>> getAllPositions();
 
     public List<DepositPositionXView> getAccountPositions(Integer cust, Integer acct);
+    
+    public List<DepositPositionDetail> getPositions(Integer cust, Integer acct);
 
     public List<DepositPositionXView> prepareView(List<DepositPositionDetail> deposits);
-    
+
     public BigDecimal getPosition(DepositPositionDetail deposit);
+    
+    public BigDecimal getPL(DepositPositionDetail deposit);
+    
+    public BigDecimal getYesterdayPL(DepositPositionDetail deposit);
 }

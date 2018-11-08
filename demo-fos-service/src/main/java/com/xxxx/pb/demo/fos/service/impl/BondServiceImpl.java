@@ -61,6 +61,11 @@ public class BondServiceImpl implements BondService {
     }
 
     @Override
+    public List<BondPositionDetail> getPositions(Integer cust, Integer acct) {
+        return bondPersistenceClient.getPositions(cust, acct);
+    }
+
+    @Override
     public List<BondPositionXView> prepareView(List<BondPositionDetail> bonds) {
         List<BondPositionXView> result = new ArrayList<>();
 
@@ -94,5 +99,21 @@ public class BondServiceImpl implements BondService {
         Map<String, BondIssueDetail> bondIssues = getAllIssues();
         
         return bond.getHoldingQuantity().multiply(bondIssues.get(bond.getBondIssueCode()).getBondPrice()).multiply(rates.get(bond.getBondCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
+    }
+
+    @Override
+    public BigDecimal getPL(BondPositionDetail bond) {
+        Map<String, BigDecimal> rates = fxService.getRates();
+        Map<String, BondIssueDetail> bondIssues = getAllIssues();
+        
+        return bond.getHoldingQuantity().multiply(bondIssues.get(bond.getBondIssueCode()).getBondPrice().subtract(bond.getAveragePrice())).multiply(rates.get(bond.getBondCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
+    }
+
+    @Override
+    public BigDecimal getYesterdayPL(BondPositionDetail bond) {
+        Map<String, BigDecimal> rates = fxService.getRates();
+        Map<String, BondIssueDetail> bondIssues = getAllIssues();
+        
+        return bond.getHoldingQuantity().multiply(bondIssues.get(bond.getBondIssueCode()).getPreviousBondPrice().subtract(bond.getAveragePrice())).multiply(rates.get(bond.getBondCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
     }
 }

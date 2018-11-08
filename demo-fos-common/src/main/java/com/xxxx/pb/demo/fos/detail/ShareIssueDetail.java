@@ -12,6 +12,8 @@ public class ShareIssueDetail {
     private String issueCode;
 
     private BigDecimal sharePrice;
+    
+    private BigDecimal previousSharePrice;
 
     private String shareCurrency;
 
@@ -59,6 +61,14 @@ public class ShareIssueDetail {
 
     public void setSharePrice(BigDecimal sharePrice) {
         this.sharePrice = sharePrice;
+    }
+    
+    public BigDecimal getPreviousSharePrice() {
+        return previousSharePrice;
+    }
+
+    public void setPreviousSharePrice(BigDecimal previousSharePrice) {
+        this.previousSharePrice = previousSharePrice;
     }
 
     public String getShareCurrency() {

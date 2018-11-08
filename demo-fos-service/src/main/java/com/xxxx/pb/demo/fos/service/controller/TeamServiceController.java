@@ -23,7 +23,7 @@ public class TeamServiceController {
     }
     
     @RequestMapping(value = "/get", params = "type=arch", method = RequestMethod.GET)
-    public List<ArchView> getArch() {
+    public ArchView getArch() {
         return teamService.getArch();
     }
 }

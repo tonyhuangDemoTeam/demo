@@ -6,6 +6,8 @@ public class RateDetail {
     private String ccy;
 
     private BigDecimal rate;
+    
+    private BigDecimal previousRate;
 
     public String getCcy() {
         return ccy;
@@ -21,5 +23,13 @@ public class RateDetail {
 
     public void setRate(BigDecimal rate) {
         this.rate = rate;
+    }
+
+    public BigDecimal getPreviousRate() {
+        return previousRate;
+    }
+
+    public void setPreviousRate(BigDecimal previousRate) {
+        this.previousRate = previousRate;
     }
 }

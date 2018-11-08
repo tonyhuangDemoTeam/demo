@@ -12,6 +12,8 @@ public class FundIssueDetail {
     private String issuerCode;
 
     private BigDecimal fundPrice;
+    
+    private BigDecimal previousFundPrice;
 
     private String fundCurrency;
 
@@ -59,6 +61,14 @@ public class FundIssueDetail {
 
     public String getFundCurrency() {
         return fundCurrency;
+    }
+
+    public BigDecimal getPreviousFundPrice() {
+        return previousFundPrice;
+    }
+
+    public void setPreviousFundPrice(BigDecimal previousFundPrice) {
+        this.previousFundPrice = previousFundPrice;
     }
 
     public void setFundCurrency(String fundCurrency) {

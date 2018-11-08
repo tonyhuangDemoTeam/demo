@@ -14,8 +14,14 @@ public interface FundService {
     public Map<String, List<FundPositionDetail>> getAllPositions();
 
     public List<FundPositionXView> getAccountPositions(Integer cust, Integer acct);
+    
+    public List<FundPositionDetail> getPositions(Integer cust, Integer acct);
 
     public List<FundPositionXView> prepareView(List<FundPositionDetail> funds);
-    
+
     public BigDecimal getPosition(FundPositionDetail fund);
+    
+    public BigDecimal getPL(FundPositionDetail fund);
+    
+    public BigDecimal getYesterdayPL(FundPositionDetail fund);
 }

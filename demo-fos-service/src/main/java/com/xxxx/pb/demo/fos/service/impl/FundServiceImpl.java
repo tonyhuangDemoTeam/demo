@@ -62,6 +62,11 @@ public class FundServiceImpl implements FundService {
     }
 
     @Override
+    public List<FundPositionDetail> getPositions(Integer cust, Integer acct) {
+        return fundPersistenceClient.getPositions(cust, acct);
+    }
+
+    @Override
     public List<FundPositionXView> prepareView(List<FundPositionDetail> funds) {
         List<FundPositionXView> result = new ArrayList<>();
 
@@ -94,6 +99,22 @@ public class FundServiceImpl implements FundService {
         Map<String, FundIssueDetail> fundIssues = getAllIssues();
         
         return fund.getHoldingQuantity().multiply(fundIssues.get(fund.getFundIssueCode()).getFundPrice()).multiply(rates.get(fund.getFundCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
+    }
+
+    @Override
+    public BigDecimal getPL(FundPositionDetail fund) {
+        Map<String, BigDecimal> rates = fxService.getRates();
+        Map<String, FundIssueDetail> fundIssues = getAllIssues();
+        
+        return fund.getHoldingQuantity().multiply(fundIssues.get(fund.getFundIssueCode()).getFundPrice().subtract(fund.getAveragePrice())).multiply(rates.get(fund.getFundCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
+    }
+
+    @Override
+    public BigDecimal getYesterdayPL(FundPositionDetail fund) {
+        Map<String, BigDecimal> rates = fxService.getRates();
+        Map<String, FundIssueDetail> fundIssues = getAllIssues();
+        
+        return fund.getHoldingQuantity().multiply(fundIssues.get(fund.getFundIssueCode()).getPreviousFundPrice().subtract(fund.getAveragePrice())).multiply(rates.get(fund.getFundCurrency())).setScale(2, BigDecimal.ROUND_HALF_UP);
     }
 
 }

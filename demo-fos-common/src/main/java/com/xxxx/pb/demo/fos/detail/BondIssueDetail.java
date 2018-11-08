@@ -16,6 +16,8 @@ public class BondIssueDetail {
     private Date issueDate;
 
     private BigDecimal bondPrice;
+    
+    private BigDecimal previousBondPrice;
 
     private String bondCurrency;
 
@@ -73,6 +75,14 @@ public class BondIssueDetail {
 
     public void setBondPrice(BigDecimal bondPrice) {
         this.bondPrice = bondPrice;
+    }
+    
+    public BigDecimal getPreviousBondPrice() {
+        return previousBondPrice;
+    }
+
+    public void setPreviousBondPrice(BigDecimal previousBondPrice) {
+        this.previousBondPrice = previousBondPrice;
     }
 
     public String getBondCurrency() {

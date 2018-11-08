@@ -26,4 +26,9 @@ public class CustomerServiceController {
     public List<CustomerXView> getCustomers(String rm) {
         return customerService.getCustomerView(rm);
     }
+    
+    @RequestMapping(value = "/get", params = "type=acct", method = RequestMethod.GET)
+    public List<CustomerXView> getAccounts(String rm) {
+        return customerService.getAccounts(rm);
+    }
 }
