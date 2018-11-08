@@ -5,7 +5,6 @@
 
 	<groupId>com.xxxx.pb</groupId>
 	<artifactId>demo-sa-persistence</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>demo-sa-persistence</name>
@@ -65,6 +64,16 @@
 			<artifactId>logstash-logback-encoder</artifactId>
 			<version>4.9</version>
 		</dependency>
+		<dependency>
+			<groupId>com.xxxx.pb</groupId>
+			<artifactId>demo-common</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.xxxx.pb</groupId>
+			<artifactId>demo-sa-common</artifactId>
+			<version>1.0</version>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
@@ -89,4 +98,5 @@
 	</build>
 
 
+	<version>1.0</version>
 </project>
