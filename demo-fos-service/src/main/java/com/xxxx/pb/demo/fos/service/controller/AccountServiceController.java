@@ -1,7 +1,6 @@
 package com.xxxx.pb.demo.fos.service.controller;
 
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.xxxx.pb.demo.fos.detail.AccountDetail;
 import com.xxxx.pb.demo.fos.service.impl.AccountService;
-import com.xxxx.pb.demo.fos.service.view.PositionView;
+import com.xxxx.pb.demo.fos.service.view.ProfileView;
 
 @RestController
 @RequestMapping(value = "/acct")
@@ -24,7 +23,7 @@ public class AccountServiceController {
     }
     
     @RequestMapping(value = "/get", params="type=position", method = RequestMethod.GET)
-    public Map<String, List<PositionView>> getAccountPositions(Integer cust, Integer acct) {
+    public ProfileView getAccountPositions(Integer cust, Integer acct) {
         return accountService.getAccountPositions(cust, acct);
     }
 }

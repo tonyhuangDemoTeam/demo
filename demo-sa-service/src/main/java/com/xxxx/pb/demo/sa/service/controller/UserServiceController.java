@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,13 +18,11 @@ public class UserServiceController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
-    public Map<String, String> authenticate(@RequestBody AuthRequest request) throws Exception {
-        String id = request.getId();
-        
+    @RequestMapping(value = "/authenticate", method = RequestMethod.GET)
+    public Map<String, String> authenticate(String id, String password) throws Exception {
         Map<String, String> result = new HashMap<String, String>();
-        if (userService.authenticate(id, request.getPassword())) {
-            UserDetail user = userService.getUser(request.getId());
+        if (userService.authenticate(id, password)) {
+            UserDetail user = userService.getUser(id);
 
             result.put("id", id);
             result.put("name", user.getName());
