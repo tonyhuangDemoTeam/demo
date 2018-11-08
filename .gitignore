@@ -3,7 +3,7 @@
 
 /RemoteSystemsTempFiles/
 /demo-common/target/
-/demo-sa-common/bin/
+/demo-sa-common/target/
 /demo-sa-persistence/logs/
 /demo-sa-persistence/target/
 /demo-sa-service/logs/

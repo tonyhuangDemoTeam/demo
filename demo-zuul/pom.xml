@@ -6,7 +6,6 @@
 
 	<groupId>com.xxxx.pb</groupId>
 	<artifactId>demo-zuul</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>demo-zuul</name>
@@ -67,4 +66,5 @@
 	</build>
 
 
+	<version>1.0</version>
 </project>
