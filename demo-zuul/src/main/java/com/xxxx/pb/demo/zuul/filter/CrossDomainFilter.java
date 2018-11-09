@@ -8,6 +8,8 @@ import com.netflix.zuul.exception.ZuulException;
 
 public class CrossDomainFilter  extends ZuulFilter {
     private static String TYPE_PRE = "pre";
+    
+    private static String METHOD_GET = "GET";
 
     private static String HEADER_METHODS = "Access-Control-Allow-Methods";
     private static String HEADER_AGE = "Access-Control-Max-Age";
@@ -33,7 +35,10 @@ public class CrossDomainFilter  extends ZuulFilter {
         resp.setHeader(HEADER_ALLOW, HEADER_ALLOW_VALUE);   
         resp.setHeader(HEADER_CACHE, HEADER_CACHE_VALUE); 
         resp.setHeader(HEADER_PRAGMA, HEADER_PRAGMA_VALUE); 
-        resp.setHeader(HEADER_ORIGIN, HEADER_ORIGIN_VALUE); 
+        
+        if(ctx.getRequest().getMethod().equals(METHOD_GET)) {
+            resp.setHeader(HEADER_ORIGIN, HEADER_ORIGIN_VALUE); 
+        }
     
         return null;
     }
