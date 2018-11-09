@@ -1466,11 +1466,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "tab-click": _vm.handleClick
     },
     model: {
-      value: (_vm.activeName2),
+      value: (_vm.activeTab),
       callback: function($$v) {
-        _vm.activeName2 = $$v
+        _vm.activeTab = $$v
       },
-      expression: "activeName2"
+      expression: "activeTab"
     }
   }, [_c('el-tab-pane', {
     attrs: {
@@ -1508,11 +1508,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "show",
       rawName: "v-show",
-      value: (_vm.activeName2 == 'product' ? false : true),
-      expression: "activeName2 == 'product' ? false : true"
+      value: (_vm.activeTab == 'product' ? false : true),
+      expression: "activeTab == 'product' ? false : true"
     }],
     attrs: {
-      "label": "Asset Cals:"
+      "label": "Asset Class:"
     }
   }, [_c('el-checkbox-group', {
     model: {
@@ -1546,8 +1546,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "show",
       rawName: "v-show",
-      value: (_vm.activeName2 == 'region' ? false : true),
-      expression: "activeName2 == 'region' ? false : true"
+      value: (_vm.activeTab == 'region' ? false : true),
+      expression: "activeTab == 'region' ? false : true"
     }],
     attrs: {
       "label": "Region:"
@@ -1587,8 +1587,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "show",
       rawName: "v-show",
-      value: (_vm.activeName2 == 'currency' ? false : true),
-      expression: "activeName2 == 'currency' ? false : true"
+      value: (_vm.activeTab == 'currency' ? false : true),
+      expression: "activeTab == 'currency' ? false : true"
     }],
     attrs: {
       "label": "currency:"
@@ -1628,8 +1628,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "show",
       rawName: "v-show",
-      value: (_vm.activeName2 == 'industry' ? false : true),
-      expression: "activeName2 == 'industry' ? false : true"
+      value: (_vm.activeTab == 'industry' ? false : true),
+      expression: "activeTab == 'industry' ? false : true"
     }],
     attrs: {
       "label": "Industry:"
@@ -4009,12 +4009,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
     currentTxt = tabTxt[0];
 
+let tabList = {
+    product: ['share', 'bond', 'fund', 'depoist'],
+    productTxt: ['Asset Class', 'Region', 'Currency', 'Industry'],
+    region: ['CN', 'HK', 'SG', 'UK'],
+    currency: ['HKD', 'SGD', 'USD', 'GBP'],
+    industry: ['Finance', 'IT', 'Chemistry', 'Patrol']
+};
+
 /* harmony default export */ __webpack_exports__["default"] = ({
     data() {
         return {
             allloading: true,
             show2: true,
-            activeName2: 'product',
+            activeTab: 'product',
             chartPie: null,
             sizeForm: {
                 name: '',
@@ -4092,15 +4100,19 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
                 return f_product && f_region && f_currency && f_industry;
             });
 
-            Vm.changePieDataJSON();
+            Vm.changePieDataJSON(Vm.activeTab);
         },
-        changePieDataJSON() {
+
+        changePieDataJSON(tab) {
             let Vm = this;
 
-            let share = Vm.filterType.filter(item => item.product == 'share');
-            let bond = Vm.filterType.filter(item => item.product == 'bond');
-            let fund = Vm.filterType.filter(item => item.product == 'fund');
-            let deposits = Vm.filterType.filter(item => item.product == 'depoist');
+            let share = Vm.filterType.filter(item => item[tab] == tabList[tab][0]);
+            let bond = Vm.filterType.filter(item => item[tab] == tabList[tab][1]);
+            let fund = Vm.filterType.filter(item => item[tab] == tabList[tab][2]);
+            let deposits = Vm.filterType.filter(item => item[tab] == tabList[tab][3]);
+
+            // console.log(share,bond)
+
 
             let shareTotal = 0,
                 bondTotal = 0,
@@ -4126,31 +4138,39 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
             depositsTotal = depositsTotal.toFixed(2);
 
             // charts data json
-            let temp = [{ "value": 0, "name": "Equity", "tag": "share" }, { "value": 0, "name": "Fixed Income", "tag": "bond" }, { "value": 0, "name": "Structure Product", "tag": "fund" }, { "value": 0, "name": "FX", "tag": "deposits" }];
+            let temp = [{ "value": 0, "name": tabList[tab][0] }, { "value": 0, "name": tabList[tab][1] }, { "value": 0, "name": tabList[tab][2] }, { "value": 0, "name": tabList[tab][3] }];
 
             let total = 0;
 
-            Vm.pieData = temp.filter(item => {
+            let _pieData = temp.filter(item => {
 
-                if (item.tag == 'share' && share) {
+                if (item.name == tabList[tab][0] && share) {
                     item.value = shareTotal;
                     total += Number(shareTotal);
                 }
-                if (item.tag == 'bond' && bond) {
+                if (item.name == tabList[tab][1] && bond) {
                     item.value = bondTotal;
                     total += Number(bondTotal);
                 }
-                if (item.tag == 'fund' && fund) {
+                if (item.name == tabList[tab][2] && fund) {
                     item.value = fundTotal;
                     total += Number(fundTotal);
                 }
-                if (item.tag == 'deposits' && deposits) {
+                if (item.name == tabList[tab][3] && deposits) {
                     item.value = depositsTotal;
                     total += Number(depositsTotal);
                 }
 
                 return true;
             });
+
+            if (tab == 'product') {
+                _pieData.forEach((item, index) => {
+                    item.name = tabList.productTxt[index];
+                });
+            }
+
+            Vm.pieData = _pieData;
 
             Vm.valTotal = total.toFixed(2);;
 
@@ -4163,6 +4183,8 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
         },
         drawPieChart() {
             let Vm = this;
+            let showTxt = Vm.activeTab == 'product' ? tabList.productTxt : tabList[Vm.activeTab];
+
             let option = {
                 title: {
                     text: 'Asset Distribution By ' + currentTxt,
@@ -4177,7 +4199,7 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
                 legend: {
                     orient: 'vertical', //horizontal
                     left: 'right',
-                    data: ['Equity', 'Fixed Income', 'Structure Product', 'FX'],
+                    data: showTxt,
                     formatter: function (name) {
                         let num = '';
                         Vm.pieData.forEach((item, value) => {
@@ -5677,4 +5699,4 @@ new __WEBPACK_IMPORTED_MODULE_1_vue__["default"]({
 /***/ })
 
 },[458]);
-//# sourceMappingURL=app.f1c3353731b831cabff6.js.map
+//# sourceMappingURL=app.49c8cf0c96821f753e89.js.map
