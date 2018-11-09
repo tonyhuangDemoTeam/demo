@@ -19,13 +19,13 @@ module.exports = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAQABAAD/2wBDAAUDBAQ
 
 
 /* styles */
-__webpack_require__(980)
+__webpack_require__(981)
 
 var Component = __webpack_require__(27)(
   /* script */
   null,
   /* template */
-  __webpack_require__(1049),
+  __webpack_require__(1050),
   /* scopeId */
   "data-v-7554d824",
   /* cssModules */
@@ -42,13 +42,13 @@ module.exports = Component.exports
 
 
 /* styles */
-__webpack_require__(979)
+__webpack_require__(980)
 
 var Component = __webpack_require__(27)(
   /* script */
   __webpack_require__(444),
   /* template */
-  __webpack_require__(1048),
+  __webpack_require__(1049),
   /* scopeId */
   "data-v-6bc793b9",
   /* cssModules */
@@ -65,13 +65,13 @@ module.exports = Component.exports
 
 
 /* styles */
-__webpack_require__(970)
+__webpack_require__(972)
 
 var Component = __webpack_require__(27)(
   /* script */
   __webpack_require__(445),
   /* template */
-  __webpack_require__(1039),
+  __webpack_require__(1041),
   /* scopeId */
   "data-v-2b0fc9ff",
   /* cssModules */
@@ -111,13 +111,13 @@ module.exports = Component.exports
 
 
 /* styles */
-__webpack_require__(973)
+__webpack_require__(975)
 
 var Component = __webpack_require__(27)(
   /* script */
   __webpack_require__(447),
   /* template */
-  __webpack_require__(1042),
+  __webpack_require__(1044),
   /* scopeId */
   "data-v-539a8658",
   /* cssModules */
@@ -134,15 +134,15 @@ module.exports = Component.exports
 
 
 /* styles */
-__webpack_require__(977)
+__webpack_require__(982)
 
 var Component = __webpack_require__(27)(
   /* script */
   __webpack_require__(448),
   /* template */
-  __webpack_require__(1046),
+  __webpack_require__(1051),
   /* scopeId */
-  "data-v-64ae67de",
+  "data-v-bdee7d36",
   /* cssModules */
   null
 )
@@ -165,7 +165,7 @@ var Component = __webpack_require__(27)(
   /* template */
   __webpack_require__(1045),
   /* scopeId */
-  "data-v-575f82c3",
+  "data-v-59e70717",
   /* cssModules */
   null
 )
@@ -180,13 +180,13 @@ module.exports = Component.exports
 
 
 /* styles */
-__webpack_require__(969)
+__webpack_require__(970)
 
 var Component = __webpack_require__(27)(
   /* script */
   __webpack_require__(450),
   /* template */
-  __webpack_require__(1038),
+  __webpack_require__(1039),
   /* scopeId */
   null,
   /* cssModules */
@@ -211,7 +211,7 @@ var Component = __webpack_require__(27)(
   /* template */
   __webpack_require__(1043),
   /* scopeId */
-  "data-v-540c726c",
+  "data-v-4efd69c4",
   /* cssModules */
   null
 )
@@ -226,15 +226,15 @@ module.exports = Component.exports
 
 
 /* styles */
-__webpack_require__(982)
+__webpack_require__(978)
 
 var Component = __webpack_require__(27)(
   /* script */
   __webpack_require__(452),
   /* template */
-  __webpack_require__(1051),
+  __webpack_require__(1047),
   /* scopeId */
-  "data-v-d34eaf30",
+  "data-v-640a9950",
   /* cssModules */
   null
 )
@@ -249,13 +249,13 @@ module.exports = Component.exports
 
 
 /* styles */
-__webpack_require__(981)
+__webpack_require__(971)
 
 var Component = __webpack_require__(27)(
   /* script */
   __webpack_require__(453),
   /* template */
-  __webpack_require__(1050),
+  __webpack_require__(1040),
   /* scopeId */
   null,
   /* cssModules */
@@ -272,15 +272,15 @@ module.exports = Component.exports
 
 
 /* styles */
-__webpack_require__(972)
+__webpack_require__(968)
 
 var Component = __webpack_require__(27)(
   /* script */
   __webpack_require__(454),
   /* template */
-  __webpack_require__(1041),
+  __webpack_require__(1037),
   /* scopeId */
-  "data-v-438c99b4",
+  "data-v-0059ce16",
   /* cssModules */
   null
 )
@@ -295,15 +295,15 @@ module.exports = Component.exports
 
 
 /* styles */
-__webpack_require__(968)
+__webpack_require__(973)
 
 var Component = __webpack_require__(27)(
   /* script */
   __webpack_require__(455),
   /* template */
-  __webpack_require__(1037),
+  __webpack_require__(1042),
   /* scopeId */
-  "data-v-1ae5b59d",
+  "data-v-3d05d08d",
   /* cssModules */
   null
 )
@@ -318,15 +318,15 @@ module.exports = Component.exports
 
 
 /* styles */
-__webpack_require__(971)
+__webpack_require__(977)
 
 var Component = __webpack_require__(27)(
   /* script */
   __webpack_require__(456),
   /* template */
-  __webpack_require__(1040),
+  __webpack_require__(1046),
   /* scopeId */
-  "data-v-33e6b01c",
+  "data-v-5f94aee2",
   /* cssModules */
   null
 )
@@ -341,15 +341,15 @@ module.exports = Component.exports
 
 
 /* styles */
-__webpack_require__(975)
+__webpack_require__(969)
 
 var Component = __webpack_require__(27)(
   /* script */
   __webpack_require__(457),
   /* template */
-  __webpack_require__(1044),
+  __webpack_require__(1038),
   /* scopeId */
-  "data-v-566bcfbd",
+  "data-v-0de4a6cd",
   /* cssModules */
   null
 )
@@ -363,17 +363,751 @@ module.exports = Component.exports
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('transition', {
+  return _c('section', {
     attrs: {
-      "name": "fade",
-      "mode": "out-in"
+      "id": "element-to-print"
     }
-  }, [_c('router-view')], 1)
+  }, [_c('el-row', {
+    directives: [{
+      name: "loading",
+      rawName: "v-loading",
+      value: (_vm.loading),
+      expression: "loading"
+    }]
+  }, [_c('el-col', {
+    attrs: {
+      "span": 24
+    }
+  }, [_c('div', {
+    staticClass: "cp-head-info"
+  }, [_c('ul', {
+    staticStyle: {
+      "width": "60%",
+      "float": "left"
+    }
+  }, [_c('li', [_c('span', {
+    staticClass: "span1"
+  }, [_vm._v("Customer Number:")]), _vm._v(" "), _c('span', {
+    staticClass: "span2"
+  }, [_vm._v(_vm._s(_vm.cusAccinfo.customerNumber))])]), _vm._v(" "), _c('li', [_c('span', {
+    staticClass: "span1"
+  }, [_vm._v("Account Number:")]), _vm._v(" "), _c('span', {
+    staticClass: "span2"
+  }, [_vm._v(_vm._s(_vm.cusAccinfo.accountNumber))])]), _vm._v(" "), _c('li', [_c('span', {
+    staticClass: "span1"
+  }, [_vm._v("Account Name:")]), _vm._v(" "), _c('span', {
+    staticClass: "span2"
+  }, [_vm._v(_vm._s(_vm.cusAccinfo.accountName))])])]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "width": "30%",
+      "float": "right"
+    }
+  }, [_c('el-button', {
+    staticStyle: {
+      "float": "right",
+      "margin": "25px"
+    },
+    attrs: {
+      "size": "small",
+      "type": "primary"
+    },
+    on: {
+      "click": _vm.aveAsPDF
+    }
+  }, [_vm._v("Save As PDF")])], 1)])]), _vm._v(" "), _c('el-col', {
+    attrs: {
+      "span": 24
+    }
+  }, [_c('div', {
+    staticClass: "cp-table-txt"
+  }, [_vm._v("\n                Equity:\n            ")]), _vm._v(" "), _c('el-table', {
+    staticClass: "cp-table",
+    staticStyle: {
+      "width": "100%"
+    },
+    attrs: {
+      "data": _vm.equityTable,
+      "show-summary": "",
+      "sum-text": "Total",
+      "size": "small",
+      "header-cell-style": _vm.tableHeaderColor
+    }
+  }, [_c('el-table-column', {
+    attrs: {
+      "prop": "name",
+      "label": "Product Name"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "quantity",
+      "label": "Quantity"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "amount",
+      "label": "Total Amount(USD)"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "marketPrice",
+      "label": "Market Price"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "cost",
+      "label": "Average Cost"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "averagePL",
+      "label": "P&L(USD)"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "yesterdayPL",
+      "width": "180",
+      "label": "Last Biz Date P&L(USD)"
+    }
+  })], 1)], 1), _vm._v(" "), _c('el-col', {
+    attrs: {
+      "span": 24
+    }
+  }, [_c('div', {
+    staticClass: "cp-table-txt"
+  }, [_vm._v("\n                Fixed Income:\n            ")]), _vm._v(" "), _c('el-table', {
+    staticClass: "cp-table",
+    staticStyle: {
+      "width": "100%"
+    },
+    attrs: {
+      "data": _vm.fixedTable,
+      "show-summary": "",
+      "sum-text": "Total",
+      "size": "small",
+      "header-cell-style": _vm.tableHeaderColor
+    }
+  }, [_c('el-table-column', {
+    attrs: {
+      "prop": "name",
+      "label": "Product Name"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "quantity",
+      "label": "Quantity"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "amount",
+      "label": "Total Amount(USD)"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "marketPrice",
+      "label": "Market Price"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "cost",
+      "label": "Average Cost"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "averagePL",
+      "label": "P&L(USD)"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "yesterdayPL",
+      "width": "180",
+      "label": "Last Biz Date P&L(USD)"
+    }
+  })], 1)], 1), _vm._v(" "), _c('el-col', {
+    attrs: {
+      "span": 24
+    }
+  }, [_c('div', {
+    staticClass: "cp-table-txt"
+  }, [_vm._v("\n                FX:\n            ")]), _vm._v(" "), _c('el-table', {
+    staticClass: "cp-table",
+    staticStyle: {
+      "width": "100%"
+    },
+    attrs: {
+      "data": _vm.fxTable,
+      "show-summary": "",
+      "sum-text": "Total",
+      "size": "small",
+      "header-cell-style": _vm.tableHeaderColor
+    }
+  }, [_c('el-table-column', {
+    attrs: {
+      "prop": "name",
+      "fixed": "right",
+      "label": "Product Name"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "quantity",
+      "fixed": "right",
+      "label": "Quantity"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "amount",
+      "fixed": "right",
+      "label": "Total Amount(USD)"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "marketPrice",
+      "fixed": "right",
+      "label": "Market Price"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "cost",
+      "fixed": "right",
+      "label": "Average Cost"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "averagePL",
+      "fixed": "right",
+      "label": "P&L(USD)"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "yesterdayPL",
+      "width": "180",
+      "fixed": "right",
+      "label": "Last Biz Date P&L(USD)"
+    }
+  })], 1)], 1), _vm._v(" "), _c('el-col', {
+    attrs: {
+      "span": 24
+    }
+  }, [_c('div', {
+    staticClass: "cp-table-txt"
+  }, [_vm._v("\n                Structure Product:\n            ")]), _vm._v(" "), _c('el-table', {
+    staticClass: "cp-table",
+    staticStyle: {
+      "width": "100%"
+    },
+    attrs: {
+      "data": _vm.structureTable,
+      "show-summary": "",
+      "sum-text": "Total",
+      "size": "small",
+      "header-cell-style": _vm.tableHeaderColor
+    }
+  }, [_c('el-table-column', {
+    attrs: {
+      "prop": "name",
+      "label": "Product Name"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "quantity",
+      "label": "Quantity"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "amount",
+      "label": "Total Amount(USD)"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "marketPrice",
+      "label": "Market Price"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "cost",
+      "label": "Average Cost"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "averagePL",
+      "label": "P&L(USD)"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "yesterdayPL",
+      "width": "180",
+      "label": "Last Biz Date P&L(USD)"
+    }
+  })], 1)], 1), _vm._v(" "), _c('el-col', {
+    attrs: {
+      "span": 24
+    }
+  }, [_c('div', {
+    staticClass: "cp-table-txt"
+  }, [_vm._v("\n                Portfolio Summary:\n            ")]), _vm._v(" "), _c('el-table', {
+    staticClass: "cp-table",
+    staticStyle: {
+      "width": "100%"
+    },
+    attrs: {
+      "data": _vm.SummaryTable,
+      "fixed": "",
+      "size": "small",
+      "header-cell-style": _vm.tableHeaderColor
+    }
+  }, [_c('el-table-column', {
+    attrs: {
+      "prop": "share",
+      "label": "Equity"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "bond",
+      "label": "Fixed Income"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "deposits",
+      "label": "FX"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "fund",
+      "label": "Structure Product"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "cost",
+      "label": "Total Value"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "averagePL",
+      "label": "Total P&L"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "fixed": "right",
+      "prop": "yesterdayPL",
+      "width": "180",
+      "label": "Total P&L Last Biz Date"
+    }
+  })], 1)], 1)], 1), _vm._v(" "), _c('el-row', [_c('el-col', {
+    attrs: {
+      "span": 12
+    }
+  }, [_c('div', {
+    staticStyle: {
+      "width": "100%",
+      "height": "400px"
+    },
+    attrs: {
+      "id": "chartPie1"
+    }
+  })]), _vm._v(" "), _c('el-col', {
+    attrs: {
+      "span": 12
+    }
+  }, [_c('div', {
+    staticStyle: {
+      "width": "100%",
+      "height": "400px"
+    },
+    attrs: {
+      "id": "chartPie2"
+    }
+  })])], 1)], 1)
 },staticRenderFns: []}
 
 /***/ }),
 
 /***/ 1038:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('el-row', [_c('el-col', {
+    staticStyle: {
+      "margin": "35px 0 25px"
+    },
+    attrs: {
+      "span": 14
+    }
+  }, [_c('el-form', {
+    directives: [{
+      name: "loading",
+      rawName: "v-loading",
+      value: (_vm.submiting),
+      expression: "submiting"
+    }],
+    ref: "form",
+    attrs: {
+      "model": _vm.form,
+      "label-width": "100px",
+      "size": "mini"
+    }
+  }, [_c('el-row', [_c('el-col', {
+    attrs: {
+      "span": 11
+    }
+  }, [_c('el-form-item', {
+    attrs: {
+      "label": "Buy/Sell:",
+      "inline": ""
+    }
+  }, [_c('el-radio-group', {
+    model: {
+      value: (_vm.form.transactionType),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "transactionType", $$v)
+      },
+      expression: "form.transactionType"
+    }
+  }, [_c('el-radio-button', {
+    attrs: {
+      "label": "B",
+      "value": "B"
+    }
+  }, [_vm._v("Buy")]), _vm._v(" "), _c('el-radio-button', {
+    attrs: {
+      "label": "S",
+      "value": "S"
+    }
+  }, [_vm._v("Sell")])], 1)], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Customer:"
+    }
+  }, [_c('el-select', {
+    attrs: {
+      "placeholder": "Pls select Customer Number!"
+    },
+    on: {
+      "change": _vm.getcustomerNumber
+    },
+    model: {
+      value: (_vm.form.customerNumber),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "customerNumber", $$v)
+      },
+      expression: "form.customerNumber"
+    }
+  }, _vm._l((_vm.form.customerNumberoptions), function(item, index) {
+    return _c('el-option', {
+      key: index,
+      attrs: {
+        "label": item.label,
+        "value": item.value
+      }
+    })
+  }))], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Share Issue:"
+    }
+  }, [_c('el-select', {
+    attrs: {
+      "placeholder": "Pls select issue Code!"
+    },
+    on: {
+      "change": _vm.getIssueItem
+    },
+    model: {
+      value: (_vm.form.shareIssueCode),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "shareIssueCode", $$v)
+      },
+      expression: "form.shareIssueCode"
+    }
+  }, _vm._l((_vm.form.shareIssueCodeoptions), function(item) {
+    return _c('el-option', {
+      key: item.value,
+      attrs: {
+        "label": item.label,
+        "value": item.value
+      }
+    })
+  }))], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Norminal:"
+    }
+  }, [_c('el-input', {
+    model: {
+      value: (_vm.form.shareQuantity),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "shareQuantity", $$v)
+      },
+      expression: "form.shareQuantity"
+    }
+  })], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Share Price:"
+    }
+  }, [_c('el-input', {
+    model: {
+      value: (_vm.form.sharePrice),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "sharePrice", $$v)
+      },
+      expression: "form.sharePrice"
+    }
+  })], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "TradeDate:"
+    }
+  }, [_c('el-date-picker', {
+    attrs: {
+      "type": "date",
+      "value-format": "yyyy-MM-dd",
+      "placeholder": "Please pick a date!"
+    },
+    model: {
+      value: (_vm.form.tradeDate),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "tradeDate", $$v)
+      },
+      expression: "form.tradeDate"
+    }
+  })], 1)], 1), _vm._v(" "), _c('el-col', {
+    staticStyle: {
+      "height": "20px"
+    },
+    attrs: {
+      "span": 0
+    }
+  }), _vm._v(" "), _c('el-col', {
+    attrs: {
+      "span": 11
+    }
+  }, [_c('el-form-item', {
+    attrs: {
+      "label": "Trans Type:",
+      "inline": ""
+    }
+  }, [_c('el-radio-group', {
+    model: {
+      value: (_vm.form.type2),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "type2", $$v)
+      },
+      expression: "form.type2"
+    }
+  }, [_c('el-radio-button', {
+    attrs: {
+      "label": "eShare"
+    }
+  }), _vm._v(" "), _c('el-radio-button', {
+    attrs: {
+      "label": "Phone"
+    }
+  })], 1)], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Account:"
+    }
+  }, [_c('el-select', {
+    attrs: {
+      "placeholder": "Pls select Account Number!"
+    },
+    model: {
+      value: (_vm.form.accountNumber),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "accountNumber", $$v)
+      },
+      expression: "form.accountNumber"
+    }
+  }, _vm._l((_vm.form.accountNumberoptions), function(item) {
+    return _c('el-option', {
+      key: item.value,
+      attrs: {
+        "label": item.label,
+        "value": item.value
+      }
+    })
+  }))], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Currency:"
+    }
+  }, [_c('el-input', {
+    model: {
+      value: (_vm.form.shareCurrency),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "shareCurrency", $$v)
+      },
+      expression: "form.shareCurrency"
+    }
+  })], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Trade Type:"
+    }
+  }, [_c('el-select', {
+    attrs: {
+      "placeholder": "Pls select Trade Type"
+    },
+    model: {
+      value: (_vm.form.tradeType),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "tradeType", $$v)
+      },
+      expression: "form.tradeType"
+    }
+  }, [_c('el-option', {
+    attrs: {
+      "label": " ",
+      "value": " "
+    }
+  }), _vm._v(" "), _c('el-option', {
+    attrs: {
+      "label": "Limit",
+      "value": "Limit"
+    }
+  })], 1)], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Remark:"
+    }
+  }, [_c('el-input', {
+    model: {
+      value: (_vm.form.remark),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "remark", $$v)
+      },
+      expression: "form.remark"
+    }
+  })], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "ValueDate:"
+    }
+  }, [_c('el-date-picker', {
+    attrs: {
+      "type": "date",
+      "value-format": "yyyy-MM-dd",
+      "placeholder": "Please pick a date!"
+    },
+    model: {
+      value: (_vm.form.valueDate),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "valueDate", $$v)
+      },
+      expression: "form.valueDate"
+    }
+  })], 1)], 1)], 1), _vm._v(" "), _c('el-row', [_c('el-col', {
+    staticClass: "el-form-item_submit",
+    attrs: {
+      "span": 24
+    }
+  }, [_c('el-button', {
+    attrs: {
+      "type": "primary",
+      "size": "small"
+    },
+    on: {
+      "click": _vm.onSubmit
+    }
+  }, [_vm._v("Submit")]), _vm._v(" "), _c('el-button', {
+    attrs: {
+      "size": "small"
+    },
+    on: {
+      "click": _vm.onReset
+    }
+  }, [_vm._v("Reset")])], 1)], 1)], 1), _vm._v(" "), _c('div', {
+    staticClass: "cp-table-txt"
+  }, [_c('p', [_vm._v("Holding Details:")])]), _vm._v(" "), _c('el-table', {
+    staticStyle: {
+      "width": "100%"
+    },
+    attrs: {
+      "data": _vm.tableData,
+      "size": "small",
+      "header-cell-style": _vm.tableHeaderColor
+    }
+  }, [_c('el-table-column', {
+    attrs: {
+      "prop": "shareIssueCode",
+      "label": "Issue Name"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "averagePrice",
+      "label": "Avg Price"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "considerationAmount",
+      "label": "Norminal"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "holdingQuantity",
+      "label": "Total Value"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "shareCurrency",
+      "label": "CCY"
+    }
+  })], 1)], 1), _vm._v(" "), _c('el-col', {
+    staticStyle: {
+      "padding": "40px 10px 0 40px"
+    },
+    attrs: {
+      "span": 10
+    }
+  }, [_c('el-form', {
+    ref: "form",
+    attrs: {
+      "model": _vm.issueInfo,
+      "label-width": "150px",
+      "size": "mina"
+    }
+  }, [_c('el-form-item', {
+    attrs: {
+      "label": "House View:"
+    }
+  }, [_c('div', [_vm._v(_vm._s(_vm.issueInfo.houseView))])]), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Credit Rating:"
+    }
+  }, [_c('div', [_vm._v(_vm._s(_vm.issueInfo.creditRating))])]), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Solicite:"
+    }
+  }, [_c('div', [_vm._v(_vm._s(_vm.issueInfo.solicite))])]), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Issue Code:"
+    }
+  }, [_c('div', [_vm._v(_vm._s(_vm.issueInfo.issueCode))])]), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Share Issue Name:"
+    }
+  }, [_c('div', [_vm._v(_vm._s(_vm.issueInfo.shareIssueName))])]), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Share Price:"
+    }
+  }, [_c('div', [_vm._v(_vm._s(_vm.issueInfo.sharePrice))])])], 1)], 1)], 1)
+},staticRenderFns: []}
+
+/***/ }),
+
+/***/ 1039:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -404,7 +1138,173 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 /***/ }),
 
-/***/ 1039:
+/***/ 1040:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('section', [_c('el-col', {
+    staticClass: "toolbar",
+    staticStyle: {
+      "padding-bottom": "0px"
+    },
+    attrs: {
+      "span": 24
+    }
+  }, [_c('el-form', {
+    attrs: {
+      "inline": true,
+      "model": _vm.filters,
+      "size": "small"
+    }
+  }, [_c('el-form-item', [_c('el-input', {
+    staticStyle: {
+      "width": "300px"
+    },
+    attrs: {
+      "placeholder": "Please input Customer Number!"
+    },
+    model: {
+      value: (_vm.filters.name),
+      callback: function($$v) {
+        _vm.$set(_vm.filters, "name", $$v)
+      },
+      expression: "filters.name"
+    }
+  })], 1), _vm._v(" "), _c('el-form-item', [_c('el-button', {
+    attrs: {
+      "type": "primary"
+    },
+    on: {
+      "click": _vm.getCustomerNumber
+    }
+  }, [_vm._v("Search")])], 1)], 1)], 1), _vm._v(" "), [_c('el-col', {
+    attrs: {
+      "span": 24
+    }
+  }, [_c('el-table', {
+    directives: [{
+      name: "loading",
+      rawName: "v-loading",
+      value: (_vm.loading),
+      expression: "loading"
+    }],
+    attrs: {
+      "data": _vm.customerPositions,
+      "size": "small",
+      "header-cell-style": _vm.tableHeaderColor
+    }
+  }, [_c('el-table-column', {
+    attrs: {
+      "type": "expand"
+    },
+    scopedSlots: _vm._u([{
+      key: "default",
+      fn: function(props) {
+        return [_c('el-table', {
+          staticStyle: {
+            "width": "100%"
+          },
+          attrs: {
+            "size": "small",
+            "data": props.row.accounts,
+            "show-header": false
+          },
+          on: {
+            "row-click": _vm.rowSelect
+          }
+        }, [_c('el-table-column', {
+          attrs: {
+            "prop": "customerAccount",
+            "type": "number",
+            "label": "Customer Number"
+          }
+        }), _vm._v(" "), _c('el-table-column', {
+          attrs: {
+            "prop": "",
+            "label": "Customer Name"
+          }
+        }), _vm._v(" "), _c('el-table-column', {
+          attrs: {
+            "prop": "positions.prod.bond",
+            "label": "Equity",
+            "sortable": ""
+          }
+        }), _vm._v(" "), _c('el-table-column', {
+          attrs: {
+            "prop": "positions.prod.share",
+            "label": "Fixed Income",
+            "sortable": ""
+          }
+        }), _vm._v(" "), _c('el-table-column', {
+          attrs: {
+            "prop": "positions.prod.deposit",
+            "label": "FX",
+            "sortable": ""
+          }
+        }), _vm._v(" "), _c('el-table-column', {
+          attrs: {
+            "prop": "positions.prod.fund",
+            "label": "Structure Product",
+            "sortable": ""
+          }
+        }), _vm._v(" "), _c('el-table-column', {
+          attrs: {
+            "prop": "positions.prod.total",
+            "label": "Total Asset Value (USD)",
+            "align": "right",
+            "sortable": ""
+          }
+        })], 1)]
+      }
+    }])
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "customerNumber",
+      "type": "number",
+      "label": "Customer Number"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "customerName",
+      "label": "Customer Name"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "positions.prod.bond",
+      "label": "Equity",
+      "sortable": ""
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "positions.prod.share",
+      "label": "Fixed Income",
+      "sortable": ""
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "positions.prod.deposit",
+      "label": "FX",
+      "sortable": ""
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "positions.prod.fund",
+      "label": "Structure Product",
+      "sortable": ""
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "positions.prod.total",
+      "label": "Total Asset Value (USD)",
+      "align": "right",
+      "sortable": ""
+    }
+  })], 1)], 1)]], 2)
+},staticRenderFns: []}
+
+/***/ }),
+
+/***/ 1041:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -514,550 +1414,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 /***/ }),
 
-/***/ 1040:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('el-row', [_c('el-col', {
-    attrs: {
-      "span": 20
-    }
-  }, [_c('p', {
-    staticClass: "data-txt"
-  }), _vm._v(" "), _c('el-table', {
-    staticStyle: {
-      "width": "100%"
-    },
-    attrs: {
-      "data": _vm.tableData,
-      "show-header": false,
-      "size": "small"
-    }
-  }, [_c('el-table-column', {
-    attrs: {
-      "prop": "createDate",
-      "formatter": _vm.formatter,
-      "label": "",
-      "width": "180"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "remarks",
-      "label": ""
-    }
-  })], 1)], 1)], 1)
-},staticRenderFns: []}
-
-/***/ }),
-
-/***/ 1041:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('section', {
-    attrs: {
-      "id": "element-to-print"
-    }
-  }, [_c('el-row', {
-    directives: [{
-      name: "loading",
-      rawName: "v-loading",
-      value: (_vm.loading),
-      expression: "loading"
-    }]
-  }, [_c('el-col', {
-    attrs: {
-      "span": 24
-    }
-  }, [_c('div', {
-    staticClass: "cp-head-info"
-  }, [_c('ul', {
-    staticStyle: {
-      "width": "60%",
-      "float": "left"
-    }
-  }, [_c('li', [_c('span', {
-    staticClass: "span1"
-  }, [_vm._v("Customer Number:")]), _vm._v(" "), _c('span', {
-    staticClass: "span2"
-  }, [_vm._v(_vm._s(_vm.cusAccinfo.customerNumber))])]), _vm._v(" "), _c('li', [_c('span', {
-    staticClass: "span1"
-  }, [_vm._v("Account Number:")]), _vm._v(" "), _c('span', {
-    staticClass: "span2"
-  }, [_vm._v(_vm._s(_vm.cusAccinfo.accountNumber))])]), _vm._v(" "), _c('li', [_c('span', {
-    staticClass: "span1"
-  }, [_vm._v("Account Name:")]), _vm._v(" "), _c('span', {
-    staticClass: "span2"
-  }, [_vm._v(_vm._s(_vm.cusAccinfo.accountName))])])]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "width": "30%",
-      "float": "right"
-    }
-  }, [_c('el-button', {
-    staticStyle: {
-      "float": "right",
-      "margin": "25px"
-    },
-    attrs: {
-      "size": "small",
-      "type": "primary"
-    },
-    on: {
-      "click": _vm.aveAsPDF
-    }
-  }, [_vm._v("Save As PDF")])], 1)])]), _vm._v(" "), _c('el-col', {
-    attrs: {
-      "span": 24
-    }
-  }, [_c('div', {
-    staticClass: "cp-table-txt"
-  }, [_vm._v("\n              \tEquity:\n              ")]), _vm._v(" "), _c('el-table', {
-    staticClass: "cp-table",
-    staticStyle: {
-      "width": "100%"
-    },
-    attrs: {
-      "data": _vm.equityTable,
-      "show-summary": "",
-      "sum-text": "Total",
-      "size": "small",
-      "header-cell-style": _vm.tableHeaderColor
-    }
-  }, [_c('el-table-column', {
-    attrs: {
-      "prop": "name",
-      "label": "Product Name"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "quantity",
-      "label": "Quantity"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "amount",
-      "label": "Total Amount(USD)"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "marketPrice",
-      "label": "Market Price"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "cost",
-      "label": "Average Cost"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "averagePL",
-      "label": "P&L(USD)"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "yesterdayPL",
-      "width": "180",
-      "label": "Last Biz Date P&L(USD)"
-    }
-  })], 1)], 1), _vm._v(" "), _c('el-col', {
-    attrs: {
-      "span": 24
-    }
-  }, [_c('div', {
-    staticClass: "cp-table-txt"
-  }, [_vm._v("\n              \tFixed Income:\n              ")]), _vm._v(" "), _c('el-table', {
-    staticClass: "cp-table",
-    staticStyle: {
-      "width": "100%"
-    },
-    attrs: {
-      "data": _vm.fixedTable,
-      "show-summary": "",
-      "sum-text": "Total",
-      "size": "small",
-      "header-cell-style": _vm.tableHeaderColor
-    }
-  }, [_c('el-table-column', {
-    attrs: {
-      "prop": "name",
-      "label": "Product Name"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "quantity",
-      "label": "Quantity"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "amount",
-      "label": "Total Amount(USD)"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "marketPrice",
-      "label": "Market Price"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "cost",
-      "label": "Average Cost"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "averagePL",
-      "label": "P&L(USD)"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "yesterdayPL",
-      "width": "180",
-      "label": "Last Biz Date P&L(USD)"
-    }
-  })], 1)], 1), _vm._v(" "), _c('el-col', {
-    attrs: {
-      "span": 24
-    }
-  }, [_c('div', {
-    staticClass: "cp-table-txt"
-  }, [_vm._v("\n              \tFX:\n              ")]), _vm._v(" "), _c('el-table', {
-    staticClass: "cp-table",
-    staticStyle: {
-      "width": "100%"
-    },
-    attrs: {
-      "data": _vm.fxTable,
-      "show-summary": "",
-      "sum-text": "Total",
-      "size": "small",
-      "header-cell-style": _vm.tableHeaderColor
-    }
-  }, [_c('el-table-column', {
-    attrs: {
-      "prop": "name",
-      "fixed": "right",
-      "label": "Product Name"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "quantity",
-      "fixed": "right",
-      "label": "Quantity"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "amount",
-      "fixed": "right",
-      "label": "Total Amount(USD)"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "marketPrice",
-      "fixed": "right",
-      "label": "Market Price"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "cost",
-      "fixed": "right",
-      "label": "Average Cost"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "averagePL",
-      "fixed": "right",
-      "label": "P&L(USD)"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "yesterdayPL",
-      "width": "180",
-      "fixed": "right",
-      "label": "Last Biz Date P&L(USD)"
-    }
-  })], 1)], 1), _vm._v(" "), _c('el-col', {
-    attrs: {
-      "span": 24
-    }
-  }, [_c('div', {
-    staticClass: "cp-table-txt"
-  }, [_vm._v("\n              \tStructure Product:\n              ")]), _vm._v(" "), _c('el-table', {
-    staticClass: "cp-table",
-    staticStyle: {
-      "width": "100%"
-    },
-    attrs: {
-      "data": _vm.structureTable,
-      "show-summary": "",
-      "sum-text": "Total",
-      "size": "small",
-      "header-cell-style": _vm.tableHeaderColor
-    }
-  }, [_c('el-table-column', {
-    attrs: {
-      "prop": "name",
-      "label": "Product Name"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "quantity",
-      "label": "Quantity"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "amount",
-      "label": "Total Amount(USD)"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "marketPrice",
-      "label": "Market Price"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "cost",
-      "label": "Average Cost"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "averagePL",
-      "label": "P&L(USD)"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "yesterdayPL",
-      "width": "180",
-      "label": "Last Biz Date P&L(USD)"
-    }
-  })], 1)], 1), _vm._v(" "), _c('el-col', {
-    attrs: {
-      "span": 24
-    }
-  }, [_c('div', {
-    staticClass: "cp-table-txt"
-  }, [_vm._v("\n              \tPortfolio Summary:\n              ")]), _vm._v(" "), _c('el-table', {
-    staticClass: "cp-table",
-    staticStyle: {
-      "width": "100%"
-    },
-    attrs: {
-      "data": _vm.SummaryTable,
-      "fixed": "",
-      "size": "small",
-      "header-cell-style": _vm.tableHeaderColor
-    }
-  }, [_c('el-table-column', {
-    attrs: {
-      "prop": "share",
-      "label": "Equity"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "bond",
-      "label": "Fixed Income"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "deposits",
-      "label": "FX"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "fund",
-      "label": "Structure Product"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "cost",
-      "label": "Total Value"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "averagePL",
-      "label": "Total P&L"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "fixed": "right",
-      "prop": "yesterdayPL",
-      "width": "180",
-      "label": "Total P&L Last Biz Date"
-    }
-  })], 1)], 1)], 1), _vm._v(" "), _c('el-row', [_c('el-col', {
-    attrs: {
-      "span": 12
-    }
-  }, [_c('div', {
-    staticStyle: {
-      "width": "100%",
-      "height": "400px"
-    },
-    attrs: {
-      "id": "chartPie1"
-    }
-  })]), _vm._v(" "), _c('el-col', {
-    attrs: {
-      "span": 12
-    }
-  }, [_c('div', {
-    staticStyle: {
-      "width": "100%",
-      "height": "400px"
-    },
-    attrs: {
-      "id": "chartPie2"
-    }
-  })])], 1)], 1)
-},staticRenderFns: []}
-
-/***/ }),
-
 /***/ 1042:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('section', [_c('el-col', {
+  return _c('transition', {
     attrs: {
-      "span": 12
+      "name": "fade",
+      "mode": "out-in"
     }
-  }, [_c('el-form', {
-    ref: "form",
-    attrs: {
-      "model": _vm.form,
-      "label-width": "150px",
-      "size": "small"
-    }
-  }, [_c('el-form-item', {
-    attrs: {
-      "label": "User ID :"
-    }
-  }, [_c('el-input', {
-    model: {
-      value: (_vm.form.userId),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "userId", $$v)
-      },
-      expression: "form.userId"
-    }
-  })], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "User Name :"
-    }
-  }, [_c('el-input', {
-    model: {
-      value: (_vm.form.userName),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "userName", $$v)
-      },
-      expression: "form.userName"
-    }
-  })], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "User Role :"
-    }
-  }, [_c('el-input', {
-    model: {
-      value: (_vm.form.userRole),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "userRole", $$v)
-      },
-      expression: "form.userRole"
-    }
-  })], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "RM Code :"
-    }
-  }, [_c('el-input', {
-    model: {
-      value: (_vm.form.rmCode),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "rmCode", $$v)
-      },
-      expression: "form.rmCode"
-    }
-  })], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Team Code :"
-    }
-  }, [_c('el-input', {
-    model: {
-      value: (_vm.form.teamCode),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "teamCode", $$v)
-      },
-      expression: "form.teamCode"
-    }
-  })], 1), _vm._v(" "), _c('el-form-item', [_c('el-button', {
-    attrs: {
-      "type": "primary"
-    },
-    on: {
-      "click": _vm.onSubmit
-    }
-  }, [_vm._v("Create Now")]), _vm._v(" "), _c('el-button', [_vm._v("Reset")])], 1)], 1)], 1), _vm._v(" "), _c('el-col', {
-    attrs: {
-      "span": 18
-    }
-  }, [_c('p', {
-    staticClass: "info-txt"
-  }, [_vm._v("User List")]), _vm._v(" "), _c('el-table', {
-    staticStyle: {
-      "width": "100%"
-    },
-    attrs: {
-      "data": _vm.tableData,
-      "size": "small"
-    }
-  }, [_c('el-table-column', {
-    attrs: {
-      "prop": "userId",
-      "label": "User ID",
-      "width": "180"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "userName",
-      "label": "User Name",
-      "width": "180"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "userRole",
-      "label": "User Role"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "rmCode",
-      "label": "RM Code"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "teamCode",
-      "label": "Team Code"
-    }
-  })], 1)], 1)], 1)
+  }, [_c('router-view')], 1)
 },staticRenderFns: []}
 
 /***/ }),
@@ -1327,362 +1693,126 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('el-row', [_c('el-col', {
-    staticStyle: {
-      "margin": "35px 0 25px"
-    },
+  return _c('section', [_c('el-col', {
     attrs: {
-      "span": 14
+      "span": 12
     }
   }, [_c('el-form', {
-    directives: [{
-      name: "loading",
-      rawName: "v-loading",
-      value: (_vm.submiting),
-      expression: "submiting"
-    }],
     ref: "form",
     attrs: {
       "model": _vm.form,
-      "label-width": "100px",
-      "size": "mini"
-    }
-  }, [_c('el-row', [_c('el-col', {
-    attrs: {
-      "span": 11
-    }
-  }, [_c('el-form-item', {
-    attrs: {
-      "label": "Buy/Sell:",
-      "inline": ""
-    }
-  }, [_c('el-radio-group', {
-    model: {
-      value: (_vm.form.transactionType),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "transactionType", $$v)
-      },
-      expression: "form.transactionType"
-    }
-  }, [_c('el-radio-button', {
-    attrs: {
-      "label": "B",
-      "value": "B"
-    }
-  }, [_vm._v("Buy")]), _vm._v(" "), _c('el-radio-button', {
-    attrs: {
-      "label": "S",
-      "value": "S"
-    }
-  }, [_vm._v("Sell")])], 1)], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Customer:"
-    }
-  }, [_c('el-select', {
-    attrs: {
-      "placeholder": "Pls select Customer Number!"
-    },
-    on: {
-      "change": _vm.getcustomerNumber
-    },
-    model: {
-      value: (_vm.form.customerNumber),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "customerNumber", $$v)
-      },
-      expression: "form.customerNumber"
-    }
-  }, _vm._l((_vm.form.customerNumberoptions), function(item, index) {
-    return _c('el-option', {
-      key: index,
-      attrs: {
-        "label": item.label,
-        "value": item.value
-      }
-    })
-  }))], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Share Issue:"
-    }
-  }, [_c('el-select', {
-    attrs: {
-      "placeholder": "Pls select issue Code!"
-    },
-    on: {
-      "change": _vm.getIssueItem
-    },
-    model: {
-      value: (_vm.form.shareIssueCode),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "shareIssueCode", $$v)
-      },
-      expression: "form.shareIssueCode"
-    }
-  }, _vm._l((_vm.form.shareIssueCodeoptions), function(item) {
-    return _c('el-option', {
-      key: item.value,
-      attrs: {
-        "label": item.label,
-        "value": item.value
-      }
-    })
-  }))], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Norminal:"
-    }
-  }, [_c('el-input', {
-    model: {
-      value: (_vm.form.shareQuantity),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "shareQuantity", $$v)
-      },
-      expression: "form.shareQuantity"
-    }
-  })], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Share Price:"
-    }
-  }, [_c('el-input', {
-    model: {
-      value: (_vm.form.sharePrice),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "sharePrice", $$v)
-      },
-      expression: "form.sharePrice"
-    }
-  })], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "TradeDate:"
-    }
-  }, [_c('el-date-picker', {
-    attrs: {
-      "type": "date",
-      "value-format": "yyyy-MM-dd",
-      "placeholder": "Please pick a date!"
-    },
-    model: {
-      value: (_vm.form.tradeDate),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "tradeDate", $$v)
-      },
-      expression: "form.tradeDate"
-    }
-  })], 1)], 1), _vm._v(" "), _c('el-col', {
-    staticStyle: {
-      "height": "20px"
-    },
-    attrs: {
-      "span": 0
-    }
-  }), _vm._v(" "), _c('el-col', {
-    attrs: {
-      "span": 11
-    }
-  }, [_c('el-form-item', {
-    attrs: {
-      "label": "Trans Type:",
-      "inline": ""
-    }
-  }, [_c('el-radio-group', {
-    model: {
-      value: (_vm.form.type2),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "type2", $$v)
-      },
-      expression: "form.type2"
-    }
-  }, [_c('el-radio-button', {
-    attrs: {
-      "label": "eShare"
-    }
-  }), _vm._v(" "), _c('el-radio-button', {
-    attrs: {
-      "label": "Phone"
-    }
-  })], 1)], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Account:"
-    }
-  }, [_c('el-select', {
-    attrs: {
-      "placeholder": "Pls select Account Number!"
-    },
-    model: {
-      value: (_vm.form.accountNumber),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "accountNumber", $$v)
-      },
-      expression: "form.accountNumber"
-    }
-  }, _vm._l((_vm.form.accountNumberoptions), function(item) {
-    return _c('el-option', {
-      key: item.value,
-      attrs: {
-        "label": item.label,
-        "value": item.value
-      }
-    })
-  }))], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Currency:"
-    }
-  }, [_c('el-input', {
-    model: {
-      value: (_vm.form.shareCurrency),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "shareCurrency", $$v)
-      },
-      expression: "form.shareCurrency"
-    }
-  })], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Trade Type:"
-    }
-  }, [_c('el-select', {
-    attrs: {
-      "placeholder": "Pls select Trade Type"
-    },
-    model: {
-      value: (_vm.form.tradeType),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "tradeType", $$v)
-      },
-      expression: "form.tradeType"
-    }
-  }, [_c('el-option', {
-    attrs: {
-      "label": "Limit",
-      "value": "shanghai"
-    }
-  }), _vm._v(" "), _c('el-option', {
-    attrs: {
-      "label": "Limit",
-      "value": "beijing"
-    }
-  })], 1)], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Remark:"
-    }
-  }, [_c('el-input', {
-    model: {
-      value: (_vm.form.remark),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "remark", $$v)
-      },
-      expression: "form.remark"
-    }
-  })], 1), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "ValueDate:"
-    }
-  }, [_c('el-date-picker', {
-    attrs: {
-      "type": "date",
-      "value-format": "yyyy-MM-dd",
-      "placeholder": "Please pick a date!"
-    },
-    model: {
-      value: (_vm.form.valueDate),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "valueDate", $$v)
-      },
-      expression: "form.valueDate"
-    }
-  })], 1)], 1)], 1), _vm._v(" "), _c('el-row', [_c('el-col', {
-    staticClass: "el-form-item_submit",
-    attrs: {
-      "span": 24
-    }
-  }, [_c('el-button', {
-    attrs: {
-      "type": "primary",
+      "label-width": "150px",
       "size": "small"
+    }
+  }, [_c('el-form-item', {
+    attrs: {
+      "label": "User ID :"
+    }
+  }, [_c('el-input', {
+    model: {
+      value: (_vm.form.userId),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "userId", $$v)
+      },
+      expression: "form.userId"
+    }
+  })], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "User Name :"
+    }
+  }, [_c('el-input', {
+    model: {
+      value: (_vm.form.userName),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "userName", $$v)
+      },
+      expression: "form.userName"
+    }
+  })], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "User Role :"
+    }
+  }, [_c('el-input', {
+    model: {
+      value: (_vm.form.userRole),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "userRole", $$v)
+      },
+      expression: "form.userRole"
+    }
+  })], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "RM Code :"
+    }
+  }, [_c('el-input', {
+    model: {
+      value: (_vm.form.rmCode),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "rmCode", $$v)
+      },
+      expression: "form.rmCode"
+    }
+  })], 1), _vm._v(" "), _c('el-form-item', {
+    attrs: {
+      "label": "Team Code :"
+    }
+  }, [_c('el-input', {
+    model: {
+      value: (_vm.form.teamCode),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "teamCode", $$v)
+      },
+      expression: "form.teamCode"
+    }
+  })], 1), _vm._v(" "), _c('el-form-item', [_c('el-button', {
+    attrs: {
+      "type": "primary"
     },
     on: {
       "click": _vm.onSubmit
     }
-  }, [_vm._v("Submit")]), _vm._v(" "), _c('el-button', {
+  }, [_vm._v("Create Now")]), _vm._v(" "), _c('el-button', [_vm._v("Reset")])], 1)], 1)], 1), _vm._v(" "), _c('el-col', {
     attrs: {
-      "size": "small"
-    },
-    on: {
-      "click": _vm.onReset
+      "span": 18
     }
-  }, [_vm._v("Reset")])], 1)], 1)], 1), _vm._v(" "), _c('div', {
-    staticClass: "cp-table-txt"
-  }, [_c('p', [_vm._v("Holding Details:")])]), _vm._v(" "), _c('el-table', {
+  }, [_c('p', {
+    staticClass: "info-txt"
+  }, [_vm._v("User List")]), _vm._v(" "), _c('el-table', {
     staticStyle: {
       "width": "100%"
     },
     attrs: {
       "data": _vm.tableData,
-      "size": "small",
-      "header-cell-style": _vm.tableHeaderColor
+      "size": "small"
     }
   }, [_c('el-table-column', {
     attrs: {
-      "prop": "shareIssueCode",
-      "label": "Issue Name"
+      "prop": "userId",
+      "label": "User ID",
+      "width": "180"
     }
   }), _vm._v(" "), _c('el-table-column', {
     attrs: {
-      "prop": "averagePrice",
-      "label": "Avg Price"
+      "prop": "userName",
+      "label": "User Name",
+      "width": "180"
     }
   }), _vm._v(" "), _c('el-table-column', {
     attrs: {
-      "prop": "considerationAmount",
-      "label": "Norminal"
+      "prop": "userRole",
+      "label": "User Role"
     }
   }), _vm._v(" "), _c('el-table-column', {
     attrs: {
-      "prop": "holdingQuantity",
-      "label": "Total Value"
+      "prop": "rmCode",
+      "label": "RM Code"
     }
   }), _vm._v(" "), _c('el-table-column', {
     attrs: {
-      "prop": "shareCurrency",
-      "label": "CCY"
+      "prop": "teamCode",
+      "label": "Team Code"
     }
-  })], 1)], 1), _vm._v(" "), _c('el-col', {
-    staticStyle: {
-      "padding": "40px 10px 0 40px"
-    },
-    attrs: {
-      "span": 10
-    }
-  }, [_c('el-form', {
-    ref: "form",
-    attrs: {
-      "model": _vm.issueInfo,
-      "label-width": "150px",
-      "size": "mina"
-    }
-  }, [_c('el-form-item', {
-    attrs: {
-      "label": "House View:"
-    }
-  }, [_c('div', [_vm._v(_vm._s(_vm.issueInfo.houseView))])]), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Credit Rating:"
-    }
-  }, [_c('div', [_vm._v(_vm._s(_vm.issueInfo.creditRating))])]), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Solicite:"
-    }
-  }, [_c('div', [_vm._v(_vm._s(_vm.issueInfo.solicite))])]), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Issue Code:"
-    }
-  }, [_c('div', [_vm._v(_vm._s(_vm.issueInfo.issueCode))])]), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Share Issue Name:"
-    }
-  }, [_c('div', [_vm._v(_vm._s(_vm.issueInfo.shareIssueName))])]), _vm._v(" "), _c('el-form-item', {
-    attrs: {
-      "label": "Share Price:"
-    }
-  }, [_c('div', [_vm._v(_vm._s(_vm.issueInfo.sharePrice))])])], 1)], 1)], 1)
+  })], 1)], 1)], 1)
 },staticRenderFns: []}
 
 /***/ }),
@@ -1743,6 +1873,504 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 /***/ }),
 
 /***/ 1046:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('el-row', [_c('el-col', {
+    attrs: {
+      "span": 20
+    }
+  }, [_c('p', {
+    staticClass: "data-txt"
+  }), _vm._v(" "), _c('el-table', {
+    staticStyle: {
+      "width": "100%"
+    },
+    attrs: {
+      "data": _vm.tableData,
+      "show-header": false,
+      "size": "small"
+    }
+  }, [_c('el-table-column', {
+    attrs: {
+      "prop": "createDate",
+      "formatter": _vm.formatter,
+      "label": "",
+      "width": "180"
+    }
+  }), _vm._v(" "), _c('el-table-column', {
+    attrs: {
+      "prop": "remarks",
+      "label": ""
+    }
+  })], 1)], 1)], 1)
+},staticRenderFns: []}
+
+/***/ }),
+
+/***/ 1047:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('section', [_c('el-row', {
+    staticStyle: {
+      "padding-top": "35px"
+    }
+  }, [_c('el-col', {
+    attrs: {
+      "span": 24
+    }
+  }, [_c('el-select', {
+    staticStyle: {
+      "width": "250px"
+    },
+    attrs: {
+      "placeholder": "Please select value!",
+      "size": "small"
+    },
+    model: {
+      value: (_vm.selectValue),
+      callback: function($$v) {
+        _vm.selectValue = $$v
+      },
+      expression: "selectValue"
+    }
+  }, _vm._l((_vm.options), function(item) {
+    return _c('el-option', {
+      key: item.value,
+      attrs: {
+        "label": item.label,
+        "value": item.value
+      }
+    })
+  })), _vm._v(" "), _c('el-button', {
+    attrs: {
+      "type": "primary",
+      "size": "small"
+    },
+    on: {
+      "click": _vm.addItem
+    }
+  }, [_vm._v("Add")])], 1)], 1), _vm._v(" "), _c('el-row', {
+    staticStyle: {
+      "padding-top": "30px"
+    },
+    attrs: {
+      "gutter": 6
+    }
+  }, _vm._l((_vm.cards), function(card, index) {
+    return _c('el-col', {
+      directives: [{
+        name: "loading",
+        rawName: "v-loading",
+        value: (card.loading),
+        expression: "card.loading"
+      }],
+      attrs: {
+        "span": 8
+      }
+    }, [_c('el-card', {
+      staticClass: "box-card"
+    }, [_c('div', {
+      staticClass: "clearfix",
+      attrs: {
+        "slot": "header"
+      },
+      slot: "header"
+    }, [_c('b', [_vm._v(_vm._s(card.name))]), _vm._v(" "), _c('el-button', {
+      staticStyle: {
+        "float": "right",
+        "padding": "3px 0"
+      },
+      attrs: {
+        "index": index,
+        "type": "text"
+      },
+      on: {
+        "click": function($event) {
+          _vm.delCard(index)
+        }
+      }
+    }, [_vm._v("del")])], 1), _vm._v(" "), _c('el-form', {
+      ref: "form",
+      refInFor: true,
+      attrs: {
+        "model": card.form,
+        "rules": _vm.cardRules,
+        "size": "small",
+        "label-width": "110px"
+      }
+    }, [_c('el-form-item', {
+      attrs: {
+        "prop": "issueCode",
+        "label": "Underlying:"
+      }
+    }, [_c('el-select', {
+      attrs: {
+        "placeholder": "Please select value!"
+      },
+      model: {
+        value: (card.form.issueCode),
+        callback: function($$v) {
+          _vm.$set(card.form, "issueCode", $$v)
+        },
+        expression: "card.form.issueCode"
+      }
+    }, _vm._l((card.form.issueCodeoptions), function(item) {
+      return _c('el-option', {
+        key: item.value,
+        attrs: {
+          "label": item.label,
+          "value": item.value
+        }
+      })
+    }))], 1), _vm._v(" "), _c('el-form-item', {
+      attrs: {
+        "prop": "iusseDate",
+        "label": "Iusse Date:"
+      }
+    }, [_c('el-date-picker', {
+      attrs: {
+        "type": "date",
+        "value-format": "yyyy-MM-dd",
+        "placeholder": "Please pick a date!"
+      },
+      model: {
+        value: (card.form.iusseDate),
+        callback: function($$v) {
+          _vm.$set(card.form, "iusseDate", $$v)
+        },
+        expression: "card.form.iusseDate"
+      }
+    })], 1), _vm._v(" "), _c('el-form-item', {
+      attrs: {
+        "prop": "maturityDate",
+        "label": "Maturity Date:"
+      }
+    }, [_c('el-date-picker', {
+      attrs: {
+        "type": "date",
+        "value-format": "yyyy-MM-dd",
+        "placeholder": "Please pick a date!"
+      },
+      model: {
+        value: (card.form.maturityDate),
+        callback: function($$v) {
+          _vm.$set(card.form, "maturityDate", $$v)
+        },
+        expression: "card.form.maturityDate"
+      }
+    })], 1), _vm._v(" "), _c('el-form-item', [_c('el-button', {
+      attrs: {
+        "type": "primary",
+        "index": index
+      },
+      on: {
+        "click": function($event) {
+          _vm.onSubmit(index)
+        }
+      }
+    }, [_vm._v("Submit")]), _vm._v(" "), _c('el-button', {
+      on: {
+        "click": function($event) {
+          _vm.onReset(index)
+        }
+      }
+    }, [_vm._v("Reset")])], 1)], 1)], 1)], 1)
+  })), _vm._v(" "), _c('el-row', {
+    staticStyle: {
+      "padding-top": "20px"
+    },
+    attrs: {
+      "gutter": 10
+    }
+  }, _vm._l((_vm.tables), function(table) {
+    return _c('el-col', {
+      attrs: {
+        "span": 8
+      }
+    }, [_c('el-card', [_c('ul', {
+      staticClass: "con-bank-ul"
+    }, _vm._l((table.list), function(item, index) {
+      return _c('li', [_c('span', [_vm._v(_vm._s(item.name))]), _vm._v(" "), _c('span', {
+        directives: [{
+          name: "loading",
+          rawName: "v-loading",
+          value: (item.loading),
+          expression: "item.loading"
+        }],
+        class: item.class
+      }, [_vm._v(_vm._s(item.value))])])
+    }))])], 1)
+  }))], 1)
+},staticRenderFns: []}
+
+/***/ }),
+
+/***/ 1048:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "app"
+    }
+  }, [_c('transition', {
+    attrs: {
+      "name": "fade",
+      "mode": "out-in"
+    }
+  }, [_c('router-view')], 1)], 1)
+},staticRenderFns: []}
+
+/***/ }),
+
+/***/ 1049:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('el-row', {
+    staticClass: "container"
+  }, [_c('el-col', {
+    staticClass: "header",
+    attrs: {
+      "span": 24
+    }
+  }, [_c('el-col', {
+    staticClass: "logo",
+    class: _vm.collapsed ? 'logo-collapse-width' : 'logo-width',
+    attrs: {
+      "span": 10
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": this.sysLogo,
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('span', [_vm._v(_vm._s(_vm.collapsed ? _vm.sysLogoTxt : _vm.sysName))])]), _vm._v(" "), _c('el-col', {
+    attrs: {
+      "span": 6
+    }
+  }, [_c('div', {
+    staticClass: "tools",
+    on: {
+      "click": function($event) {
+        $event.preventDefault();
+        return _vm.collapse($event)
+      }
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-align-justify"
+  })])]), _vm._v(" "), _c('el-col', {
+    staticClass: "userinfo",
+    attrs: {
+      "span": 8
+    }
+  }, [_c('el-dropdown', {
+    attrs: {
+      "trigger": "hover"
+    }
+  }, [_c('div', {
+    staticClass: "el-dropdown-link userinfo-inner"
+  }, [_c('el-badge', {
+    staticClass: "item",
+    attrs: {
+      "is-dot": ""
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": this.sysUserAvatar
+    }
+  })]), _vm._v(" "), _c('div', [_c('span', {
+    staticClass: "_name"
+  }, [_vm._v(_vm._s(_vm.sysUserName))]), _vm._v(" "), _c('span', {
+    staticClass: "_bsn"
+  }, [_vm._v(_vm._s(_vm.businessDate))])])], 1), _vm._v(" "), _c('el-dropdown-menu', {
+    attrs: {
+      "slot": "dropdown"
+    },
+    slot: "dropdown"
+  }, [_c('el-dropdown-item', {
+    nativeOn: {
+      "click": function($event) {
+        _vm.$router.push('/daily-event')
+      }
+    }
+  }, [_vm._v("\n\t\t\t\t\t\tNotifications\n\t\t\t\t\t\t")]), _vm._v(" "), _c('el-dropdown-item', [_vm._v("Settings")]), _vm._v(" "), _c('el-dropdown-item', {
+    attrs: {
+      "divided": ""
+    },
+    nativeOn: {
+      "click": function($event) {
+        return _vm.logout($event)
+      }
+    }
+  }, [_vm._v("Sign Out")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('el-col', {
+    staticClass: "main",
+    attrs: {
+      "span": 24
+    }
+  }, [_c('aside', {
+    class: _vm.collapsed ? 'menu-collapsed' : 'menu-expanded'
+  }, [_c('el-menu', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.collapsed),
+      expression: "!collapsed"
+    }],
+    staticClass: "el-menu-vertical-demo",
+    attrs: {
+      "default-active": _vm.$route.path,
+      "unique-opened": "",
+      "router": ""
+    },
+    on: {
+      "open": _vm.handleopen,
+      "close": _vm.handleclose,
+      "select": _vm.handleselect
+    }
+  }, [_vm._l((_vm.$router.options.routes), function(item, index) {
+    return (!item.hidden && item.meta == _vm.sysMeta) ? [(!item.leaf) ? _c('el-submenu', {
+      attrs: {
+        "index": index + ''
+      }
+    }, [_c('template', {
+      slot: "title"
+    }, [_c('i', {
+      class: item.iconCls
+    }), _vm._v(_vm._s(item.name))]), _vm._v(" "), _vm._l((item.children), function(child) {
+      return (!child.hidden) ? _c('el-menu-item', {
+        key: child.path,
+        attrs: {
+          "index": child.path
+        }
+      }, [_vm._v(_vm._s(child.name))]) : _vm._e()
+    })], 2) : _vm._e(), _vm._v(" "), (item.leaf && item.children.length > 0) ? _c('el-menu-item', {
+      attrs: {
+        "index": item.children[0].path
+      }
+    }, [_c('i', {
+      class: item.iconCls
+    }), _vm._v(_vm._s(item.children[0].name))]) : _vm._e()] : _vm._e()
+  })], 2), _vm._v(" "), _c('ul', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.collapsed),
+      expression: "collapsed"
+    }],
+    ref: "menuCollapsed",
+    staticClass: "el-menu el-menu-vertical-demo collapsed"
+  }, _vm._l((_vm.$router.options.routes), function(item, index) {
+    return (!item.hidden && item.meta == _vm.sysMeta) ? _c('li', {
+      staticClass: "el-submenu item"
+    }, [(!item.leaf) ? [_c('div', {
+      staticClass: "el-submenu__title",
+      staticStyle: {
+        "padding-left": "20px"
+      },
+      on: {
+        "mouseover": function($event) {
+          _vm.showMenu(index, true)
+        },
+        "mouseout": function($event) {
+          _vm.showMenu(index, false)
+        }
+      }
+    }, [_c('i', {
+      class: item.iconCls
+    })]), _vm._v(" "), _c('ul', {
+      staticClass: "el-menu submenu",
+      class: 'submenu-hook-' + index,
+      on: {
+        "mouseover": function($event) {
+          _vm.showMenu(index, true)
+        },
+        "mouseout": function($event) {
+          _vm.showMenu(index, false)
+        }
+      }
+    }, _vm._l((item.children), function(child) {
+      return (!child.hidden) ? _c('li', {
+        key: child.path,
+        staticClass: "el-menu-item",
+        class: _vm.$route.path == child.path ? 'is-active' : '',
+        staticStyle: {
+          "padding-left": "40px"
+        },
+        on: {
+          "click": function($event) {
+            _vm.$router.push(child.path)
+          }
+        }
+      }, [_vm._v(_vm._s(child.name))]) : _vm._e()
+    }))] : [_c('li', {
+      staticClass: "el-submenu"
+    }, [_c('div', {
+      staticClass: "el-submenu__title",
+      class: _vm.$route.path == item.children[0].path ? 'is-active' : '',
+      staticStyle: {
+        "padding-left": "20px",
+        "height": "56px",
+        "line-height": "56px",
+        "padding": "0 20px"
+      },
+      on: {
+        "click": function($event) {
+          _vm.$router.push(item.children[0].path)
+        }
+      }
+    }, [_c('i', {
+      class: item.iconCls
+    })])])]], 2) : _vm._e()
+  }))], 1), _vm._v(" "), _c('section', {
+    staticClass: "content-container"
+  }, [_c('div', {
+    staticClass: "grid-content bg-purple-light"
+  }, [_c('el-col', {
+    staticClass: "breadcrumb-container",
+    attrs: {
+      "span": 24
+    }
+  }, [_c('strong', {
+    staticClass: "title"
+  }, [_vm._v(_vm._s(_vm.$route.name))]), _vm._v(" "), _c('el-breadcrumb', {
+    staticClass: "breadcrumb-inner",
+    attrs: {
+      "separator": "/"
+    }
+  }, _vm._l((_vm.$route.matched), function(item) {
+    return _c('el-breadcrumb-item', {
+      key: item.path
+    }, [_vm._v("\n\t\t\t\t\t\t\t" + _vm._s(item.name) + "\n\t\t\t\t\t\t")])
+  }))], 1), _vm._v(" "), _c('el-col', {
+    staticClass: "content-wrapper",
+    attrs: {
+      "span": 24
+    }
+  }, [_c('transition', {
+    attrs: {
+      "name": "fade",
+      "mode": "out-in"
+    }
+  }, [_c('router-view')], 1)], 1)], 1)])])], 1)
+},staticRenderFns: []}
+
+/***/ }),
+
+/***/ 1050:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('p', {
+    staticClass: "page-container"
+  }, [_vm._v("404 page not found")])
+},staticRenderFns: []}
+
+/***/ }),
+
+/***/ 1051:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -2005,634 +2633,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 /***/ }),
 
-/***/ 1047:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    attrs: {
-      "id": "app"
-    }
-  }, [_c('transition', {
-    attrs: {
-      "name": "fade",
-      "mode": "out-in"
-    }
-  }, [_c('router-view')], 1)], 1)
-},staticRenderFns: []}
-
-/***/ }),
-
-/***/ 1048:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('el-row', {
-    staticClass: "container"
-  }, [_c('el-col', {
-    staticClass: "header",
-    attrs: {
-      "span": 24
-    }
-  }, [_c('el-col', {
-    staticClass: "logo",
-    class: _vm.collapsed ? 'logo-collapse-width' : 'logo-width',
-    attrs: {
-      "span": 10
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": this.sysLogo,
-      "alt": ""
-    }
-  }), _vm._v(" "), _c('span', [_vm._v(_vm._s(_vm.collapsed ? _vm.sysLogoTxt : _vm.sysName))])]), _vm._v(" "), _c('el-col', {
-    attrs: {
-      "span": 6
-    }
-  }, [_c('div', {
-    staticClass: "tools",
-    on: {
-      "click": function($event) {
-        $event.preventDefault();
-        return _vm.collapse($event)
-      }
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-align-justify"
-  })])]), _vm._v(" "), _c('el-col', {
-    staticClass: "userinfo",
-    attrs: {
-      "span": 8
-    }
-  }, [_c('el-dropdown', {
-    attrs: {
-      "trigger": "hover"
-    }
-  }, [_c('div', {
-    staticClass: "el-dropdown-link userinfo-inner"
-  }, [_c('el-badge', {
-    staticClass: "item",
-    attrs: {
-      "is-dot": ""
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": this.sysUserAvatar
-    }
-  })]), _vm._v(" "), _c('div', [_c('span', {
-    staticClass: "_name"
-  }, [_vm._v(_vm._s(_vm.sysUserName))]), _vm._v(" "), _c('span', {
-    staticClass: "_bsn"
-  }, [_vm._v(_vm._s(_vm.businessDate))])])], 1), _vm._v(" "), _c('el-dropdown-menu', {
-    attrs: {
-      "slot": "dropdown"
-    },
-    slot: "dropdown"
-  }, [_c('el-dropdown-item', {
-    nativeOn: {
-      "click": function($event) {
-        _vm.$router.push('/daily-event')
-      }
-    }
-  }, [_vm._v("\n\t\t\t\t\t\tNotifications\n\t\t\t\t\t\t")]), _vm._v(" "), _c('el-dropdown-item', [_vm._v("Settings")]), _vm._v(" "), _c('el-dropdown-item', {
-    attrs: {
-      "divided": ""
-    },
-    nativeOn: {
-      "click": function($event) {
-        return _vm.logout($event)
-      }
-    }
-  }, [_vm._v("Sign Out")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('el-col', {
-    staticClass: "main",
-    attrs: {
-      "span": 24
-    }
-  }, [_c('aside', {
-    class: _vm.collapsed ? 'menu-collapsed' : 'menu-expanded'
-  }, [_c('el-menu', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (!_vm.collapsed),
-      expression: "!collapsed"
-    }],
-    staticClass: "el-menu-vertical-demo",
-    attrs: {
-      "default-active": _vm.$route.path,
-      "unique-opened": "",
-      "router": ""
-    },
-    on: {
-      "open": _vm.handleopen,
-      "close": _vm.handleclose,
-      "select": _vm.handleselect
-    }
-  }, [_vm._l((_vm.$router.options.routes), function(item, index) {
-    return (!item.hidden && item.meta == _vm.sysMeta) ? [(!item.leaf) ? _c('el-submenu', {
-      attrs: {
-        "index": index + ''
-      }
-    }, [_c('template', {
-      slot: "title"
-    }, [_c('i', {
-      class: item.iconCls
-    }), _vm._v(_vm._s(item.name))]), _vm._v(" "), _vm._l((item.children), function(child) {
-      return (!child.hidden) ? _c('el-menu-item', {
-        key: child.path,
-        attrs: {
-          "index": child.path
-        }
-      }, [_vm._v(_vm._s(child.name))]) : _vm._e()
-    })], 2) : _vm._e(), _vm._v(" "), (item.leaf && item.children.length > 0) ? _c('el-menu-item', {
-      attrs: {
-        "index": item.children[0].path
-      }
-    }, [_c('i', {
-      class: item.iconCls
-    }), _vm._v(_vm._s(item.children[0].name))]) : _vm._e()] : _vm._e()
-  })], 2), _vm._v(" "), _c('ul', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.collapsed),
-      expression: "collapsed"
-    }],
-    ref: "menuCollapsed",
-    staticClass: "el-menu el-menu-vertical-demo collapsed"
-  }, _vm._l((_vm.$router.options.routes), function(item, index) {
-    return (!item.hidden && item.meta == _vm.sysMeta) ? _c('li', {
-      staticClass: "el-submenu item"
-    }, [(!item.leaf) ? [_c('div', {
-      staticClass: "el-submenu__title",
-      staticStyle: {
-        "padding-left": "20px"
-      },
-      on: {
-        "mouseover": function($event) {
-          _vm.showMenu(index, true)
-        },
-        "mouseout": function($event) {
-          _vm.showMenu(index, false)
-        }
-      }
-    }, [_c('i', {
-      class: item.iconCls
-    })]), _vm._v(" "), _c('ul', {
-      staticClass: "el-menu submenu",
-      class: 'submenu-hook-' + index,
-      on: {
-        "mouseover": function($event) {
-          _vm.showMenu(index, true)
-        },
-        "mouseout": function($event) {
-          _vm.showMenu(index, false)
-        }
-      }
-    }, _vm._l((item.children), function(child) {
-      return (!child.hidden) ? _c('li', {
-        key: child.path,
-        staticClass: "el-menu-item",
-        class: _vm.$route.path == child.path ? 'is-active' : '',
-        staticStyle: {
-          "padding-left": "40px"
-        },
-        on: {
-          "click": function($event) {
-            _vm.$router.push(child.path)
-          }
-        }
-      }, [_vm._v(_vm._s(child.name))]) : _vm._e()
-    }))] : [_c('li', {
-      staticClass: "el-submenu"
-    }, [_c('div', {
-      staticClass: "el-submenu__title",
-      class: _vm.$route.path == item.children[0].path ? 'is-active' : '',
-      staticStyle: {
-        "padding-left": "20px",
-        "height": "56px",
-        "line-height": "56px",
-        "padding": "0 20px"
-      },
-      on: {
-        "click": function($event) {
-          _vm.$router.push(item.children[0].path)
-        }
-      }
-    }, [_c('i', {
-      class: item.iconCls
-    })])])]], 2) : _vm._e()
-  }))], 1), _vm._v(" "), _c('section', {
-    staticClass: "content-container"
-  }, [_c('div', {
-    staticClass: "grid-content bg-purple-light"
-  }, [_c('el-col', {
-    staticClass: "breadcrumb-container",
-    attrs: {
-      "span": 24
-    }
-  }, [_c('strong', {
-    staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.$route.name))]), _vm._v(" "), _c('el-breadcrumb', {
-    staticClass: "breadcrumb-inner",
-    attrs: {
-      "separator": "/"
-    }
-  }, _vm._l((_vm.$route.matched), function(item) {
-    return _c('el-breadcrumb-item', {
-      key: item.path
-    }, [_vm._v("\n\t\t\t\t\t\t\t" + _vm._s(item.name) + "\n\t\t\t\t\t\t")])
-  }))], 1), _vm._v(" "), _c('el-col', {
-    staticClass: "content-wrapper",
-    attrs: {
-      "span": 24
-    }
-  }, [_c('transition', {
-    attrs: {
-      "name": "fade",
-      "mode": "out-in"
-    }
-  }, [_c('router-view')], 1)], 1)], 1)])])], 1)
-},staticRenderFns: []}
-
-/***/ }),
-
-/***/ 1049:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('p', {
-    staticClass: "page-container"
-  }, [_vm._v("404 page not found")])
-},staticRenderFns: []}
-
-/***/ }),
-
-/***/ 1050:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('section', [_c('el-col', {
-    staticClass: "toolbar",
-    staticStyle: {
-      "padding-bottom": "0px"
-    },
-    attrs: {
-      "span": 24
-    }
-  }, [_c('el-form', {
-    attrs: {
-      "inline": true,
-      "model": _vm.filters,
-      "size": "small"
-    }
-  }, [_c('el-form-item', [_c('el-input', {
-    staticStyle: {
-      "width": "300px"
-    },
-    attrs: {
-      "placeholder": "Please input Customer Number!"
-    },
-    model: {
-      value: (_vm.filters.name),
-      callback: function($$v) {
-        _vm.$set(_vm.filters, "name", $$v)
-      },
-      expression: "filters.name"
-    }
-  })], 1), _vm._v(" "), _c('el-form-item', [_c('el-button', {
-    attrs: {
-      "type": "primary"
-    },
-    on: {
-      "click": _vm.getCustomerNumber
-    }
-  }, [_vm._v("Search")])], 1)], 1)], 1), _vm._v(" "), [_c('el-col', {
-    attrs: {
-      "span": 24
-    }
-  }, [_c('el-table', {
-    directives: [{
-      name: "loading",
-      rawName: "v-loading",
-      value: (_vm.loading),
-      expression: "loading"
-    }],
-    attrs: {
-      "data": _vm.customerPositions,
-      "size": "small",
-      "header-cell-style": _vm.tableHeaderColor
-    }
-  }, [_c('el-table-column', {
-    attrs: {
-      "type": "expand"
-    },
-    scopedSlots: _vm._u([{
-      key: "default",
-      fn: function(props) {
-        return [_c('el-table', {
-          staticStyle: {
-            "width": "100%"
-          },
-          attrs: {
-            "size": "small",
-            "data": props.row.accounts,
-            "show-header": false
-          },
-          on: {
-            "row-click": _vm.rowSelect
-          }
-        }, [_c('el-table-column', {
-          attrs: {
-            "prop": "customerAccount",
-            "type": "number",
-            "label": "Customer Number"
-          }
-        }), _vm._v(" "), _c('el-table-column', {
-          attrs: {
-            "prop": "",
-            "label": "Customer Name"
-          }
-        }), _vm._v(" "), _c('el-table-column', {
-          attrs: {
-            "prop": "positions.prod.bond",
-            "label": "Equity",
-            "sortable": ""
-          }
-        }), _vm._v(" "), _c('el-table-column', {
-          attrs: {
-            "prop": "positions.prod.share",
-            "label": "Fixed Income",
-            "sortable": ""
-          }
-        }), _vm._v(" "), _c('el-table-column', {
-          attrs: {
-            "prop": "positions.prod.deposit",
-            "label": "FX",
-            "sortable": ""
-          }
-        }), _vm._v(" "), _c('el-table-column', {
-          attrs: {
-            "prop": "positions.prod.fund",
-            "label": "Structure Product",
-            "sortable": ""
-          }
-        }), _vm._v(" "), _c('el-table-column', {
-          attrs: {
-            "prop": "positions.prod.total",
-            "label": "Total Asset Value (USD)",
-            "align": "right",
-            "sortable": ""
-          }
-        })], 1)]
-      }
-    }])
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "customerNumber",
-      "type": "number",
-      "label": "Customer Number"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "customerName",
-      "label": "Customer Name"
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "positions.prod.bond",
-      "label": "Equity",
-      "sortable": ""
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "positions.prod.share",
-      "label": "Fixed Income",
-      "sortable": ""
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "positions.prod.deposit",
-      "label": "FX",
-      "sortable": ""
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "positions.prod.fund",
-      "label": "Structure Product",
-      "sortable": ""
-    }
-  }), _vm._v(" "), _c('el-table-column', {
-    attrs: {
-      "prop": "positions.prod.total",
-      "label": "Total Asset Value (USD)",
-      "align": "right",
-      "sortable": ""
-    }
-  })], 1)], 1)]], 2)
-},staticRenderFns: []}
-
-/***/ }),
-
-/***/ 1051:
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('section', [_c('el-row', {
-    staticStyle: {
-      "padding-top": "35px"
-    }
-  }, [_c('el-col', {
-    attrs: {
-      "span": 24
-    }
-  }, [_c('el-select', {
-    staticStyle: {
-      "width": "250px"
-    },
-    attrs: {
-      "placeholder": "Please select value!",
-      "size": "small"
-    },
-    model: {
-      value: (_vm.selectValue),
-      callback: function($$v) {
-        _vm.selectValue = $$v
-      },
-      expression: "selectValue"
-    }
-  }, _vm._l((_vm.options), function(item) {
-    return _c('el-option', {
-      key: item.value,
-      attrs: {
-        "label": item.label,
-        "value": item.value
-      }
-    })
-  })), _vm._v(" "), _c('el-button', {
-    attrs: {
-      "type": "primary",
-      "size": "small"
-    },
-    on: {
-      "click": _vm.addItem
-    }
-  }, [_vm._v("Add")])], 1)], 1), _vm._v(" "), _c('el-row', {
-    staticStyle: {
-      "padding-top": "30px"
-    },
-    attrs: {
-      "gutter": 6
-    }
-  }, _vm._l((_vm.cards), function(card, index) {
-    return _c('el-col', {
-      directives: [{
-        name: "loading",
-        rawName: "v-loading",
-        value: (card.loading),
-        expression: "card.loading"
-      }],
-      attrs: {
-        "span": 8
-      }
-    }, [_c('el-card', {
-      staticClass: "box-card"
-    }, [_c('div', {
-      staticClass: "clearfix",
-      attrs: {
-        "slot": "header"
-      },
-      slot: "header"
-    }, [_c('b', [_vm._v(_vm._s(card.name))]), _vm._v(" "), _c('el-button', {
-      staticStyle: {
-        "float": "right",
-        "padding": "3px 0"
-      },
-      attrs: {
-        "index": index,
-        "type": "text"
-      },
-      on: {
-        "click": function($event) {
-          _vm.delCard(index)
-        }
-      }
-    }, [_vm._v("del")])], 1), _vm._v(" "), _c('el-form', {
-      ref: "form",
-      refInFor: true,
-      attrs: {
-        "model": card.form,
-        "rules": _vm.cardRules,
-        "size": "small",
-        "label-width": "110px"
-      }
-    }, [_c('el-form-item', {
-      attrs: {
-        "prop": "issueCode",
-        "label": "Underlying:"
-      }
-    }, [_c('el-select', {
-      attrs: {
-        "placeholder": "Please select value!"
-      },
-      model: {
-        value: (card.form.issueCode),
-        callback: function($$v) {
-          _vm.$set(card.form, "issueCode", $$v)
-        },
-        expression: "card.form.issueCode"
-      }
-    }, _vm._l((card.form.issueCodeoptions), function(item) {
-      return _c('el-option', {
-        key: item.value,
-        attrs: {
-          "label": item.label,
-          "value": item.value
-        }
-      })
-    }))], 1), _vm._v(" "), _c('el-form-item', {
-      attrs: {
-        "prop": "iusseDate",
-        "label": "Iusse Date:"
-      }
-    }, [_c('el-date-picker', {
-      attrs: {
-        "type": "date",
-        "value-format": "yyyy-MM-dd",
-        "placeholder": "Please pick a date!"
-      },
-      model: {
-        value: (card.form.iusseDate),
-        callback: function($$v) {
-          _vm.$set(card.form, "iusseDate", $$v)
-        },
-        expression: "card.form.iusseDate"
-      }
-    })], 1), _vm._v(" "), _c('el-form-item', {
-      attrs: {
-        "prop": "maturityDate",
-        "label": "Maturity Date:"
-      }
-    }, [_c('el-date-picker', {
-      attrs: {
-        "type": "date",
-        "value-format": "yyyy-MM-dd",
-        "placeholder": "Please pick a date!"
-      },
-      model: {
-        value: (card.form.maturityDate),
-        callback: function($$v) {
-          _vm.$set(card.form, "maturityDate", $$v)
-        },
-        expression: "card.form.maturityDate"
-      }
-    })], 1), _vm._v(" "), _c('el-form-item', [_c('el-button', {
-      attrs: {
-        "type": "primary",
-        "index": index
-      },
-      on: {
-        "click": function($event) {
-          _vm.onSubmit(index)
-        }
-      }
-    }, [_vm._v("Submit")]), _vm._v(" "), _c('el-button', {
-      on: {
-        "click": function($event) {
-          _vm.onReset(index)
-        }
-      }
-    }, [_vm._v("Reset")])], 1)], 1)], 1)], 1)
-  })), _vm._v(" "), _c('el-row', {
-    staticStyle: {
-      "padding-top": "20px"
-    },
-    attrs: {
-      "gutter": 10
-    }
-  }, _vm._l((_vm.tables), function(table) {
-    return _c('el-col', {
-      attrs: {
-        "span": 8
-      }
-    }, [_c('el-card', [_c('ul', {
-      staticClass: "con-bank-ul"
-    }, _vm._l((table.list), function(item, index) {
-      return _c('li', [_c('span', [_vm._v(_vm._s(item.name))]), _vm._v(" "), _c('span', {
-        directives: [{
-          name: "loading",
-          rawName: "v-loading",
-          value: (item.loading),
-          expression: "item.loading"
-        }],
-        class: item.class
-      }, [_vm._v(_vm._s(item.value))])])
-    }))])], 1)
-  }))], 1)
-},staticRenderFns: []}
-
-/***/ }),
-
 /***/ 1052:
 /***/ (function(module, exports) {
 
@@ -2661,26 +2661,26 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGlu
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_Home_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__views_Home_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Main_vue__ = __webpack_require__(1025);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Main_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__views_Main_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_managerNav_Management_vue__ = __webpack_require__(1029);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_managerNav_Management_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__views_managerNav_Management_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_managerNav_CustomerTrends_vue__ = __webpack_require__(1028);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_managerNav_CustomerTrends_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__views_managerNav_CustomerTrends_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__views_managerNav_CustomerDistribution_vue__ = __webpack_require__(1027);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__views_managerNav_CustomerDistribution_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__views_managerNav_CustomerDistribution_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__views_managerNav_customersAsset_vue__ = __webpack_require__(1030);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__views_managerNav_customersAsset_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__views_managerNav_customersAsset_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__views_userNav_DailyEvent_vue__ = __webpack_require__(1035);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__views_userNav_DailyEvent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__views_userNav_DailyEvent_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__views_userNav_CustomerPositionView_vue__ = __webpack_require__(1034);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__views_userNav_CustomerPositionView_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__views_userNav_CustomerPositionView_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__views_userNav_CustomerPosition_vue__ = __webpack_require__(1032);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__views_userNav_CustomerPosition_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__views_userNav_CustomerPosition_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__views_userNav_CustomerPositionInfo_vue__ = __webpack_require__(1033);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__views_userNav_CustomerPositionInfo_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__views_userNav_CustomerPositionInfo_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__views_userNav_Transaction_vue__ = __webpack_require__(1036);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__views_userNav_Transaction_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__views_userNav_Transaction_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__views_userNav_Connectivity_vue__ = __webpack_require__(1031);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__views_userNav_Connectivity_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__views_userNav_Connectivity_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_pmNav_Management_vue__ = __webpack_require__(1029);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_pmNav_Management_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__views_pmNav_Management_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_pmNav_CustomerTrends_vue__ = __webpack_require__(1028);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_pmNav_CustomerTrends_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__views_pmNav_CustomerTrends_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__views_pmNav_CustomerDistribution_vue__ = __webpack_require__(1027);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__views_pmNav_CustomerDistribution_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__views_pmNav_CustomerDistribution_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__views_pmNav_customersAsset_vue__ = __webpack_require__(1030);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__views_pmNav_customersAsset_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__views_pmNav_customersAsset_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__views_rmNav_DailyEvent_vue__ = __webpack_require__(1035);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__views_rmNav_DailyEvent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__views_rmNav_DailyEvent_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__views_rmNav_CustomerPositionView_vue__ = __webpack_require__(1034);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__views_rmNav_CustomerPositionView_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__views_rmNav_CustomerPositionView_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__views_rmNav_CustomerPosition_vue__ = __webpack_require__(1032);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__views_rmNav_CustomerPosition_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__views_rmNav_CustomerPosition_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__views_rmNav_CustomerPositionInfo_vue__ = __webpack_require__(1033);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__views_rmNav_CustomerPositionInfo_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__views_rmNav_CustomerPositionInfo_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__views_rmNav_Transaction_vue__ = __webpack_require__(1036);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__views_rmNav_Transaction_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__views_rmNav_Transaction_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__views_rmNav_Connectivity_vue__ = __webpack_require__(1031);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__views_rmNav_Connectivity_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__views_rmNav_Connectivity_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__views_adminNav_CreateUser_vue__ = __webpack_require__(1026);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__views_adminNav_CreateUser_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__views_adminNav_CreateUser_vue__);
 
@@ -2726,7 +2726,7 @@ var routes = [{
     iconCls: 'fa fa-sitemap',
     leaf: true, //只有一个节点，
     meta: "pm",
-    children: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_4__views_managerNav_Management_vue___default.a, name: 'Organization Structure' }]
+    children: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_4__views_pmNav_Management_vue___default.a, name: 'Organization Structure' }]
 }, {
     path: '/',
     component: __WEBPACK_IMPORTED_MODULE_2__views_Home_vue___default.a,
@@ -2734,7 +2734,7 @@ var routes = [{
     iconCls: 'el-icon-date',
     // leaf: true,//只有一个节点
     meta: "pm",
-    children: [{ path: '/customer-distribution', component: __WEBPACK_IMPORTED_MODULE_6__views_managerNav_CustomerDistribution_vue___default.a, name: 'Customer Distribution' }, { path: '/customer-trends-report', component: __WEBPACK_IMPORTED_MODULE_5__views_managerNav_CustomerTrends_vue___default.a, name: 'Customer Trends Report' }]
+    children: [{ path: '/customer-distribution', component: __WEBPACK_IMPORTED_MODULE_6__views_pmNav_CustomerDistribution_vue___default.a, name: 'Customer Distribution' }, { path: '/customer-trends-report', component: __WEBPACK_IMPORTED_MODULE_5__views_pmNav_CustomerTrends_vue___default.a, name: 'Customer Trends Report' }]
 }, {
     path: '/',
     component: __WEBPACK_IMPORTED_MODULE_2__views_Home_vue___default.a,
@@ -2742,7 +2742,7 @@ var routes = [{
     iconCls: 'el-icon-news',
     leaf: true, //只有一个节点
     meta: "pm",
-    children: [{ path: '/asset-overview', component: __WEBPACK_IMPORTED_MODULE_7__views_managerNav_customersAsset_vue___default.a, name: 'Asset Overview' }]
+    children: [{ path: '/asset-overview', component: __WEBPACK_IMPORTED_MODULE_7__views_pmNav_customersAsset_vue___default.a, name: 'Asset Overview' }]
 },
 // =======================
 // rm nav
@@ -2756,18 +2756,18 @@ var routes = [{
     meta: "rm",
     children: [{
         path: '/customer-position/',
-        component: __WEBPACK_IMPORTED_MODULE_9__views_userNav_CustomerPositionView_vue___default.a,
+        component: __WEBPACK_IMPORTED_MODULE_9__views_rmNav_CustomerPositionView_vue___default.a,
         name: 'Customer Position',
         children: [{
             path: '/',
-            component: __WEBPACK_IMPORTED_MODULE_10__views_userNav_CustomerPosition_vue___default.a,
+            component: __WEBPACK_IMPORTED_MODULE_10__views_rmNav_CustomerPosition_vue___default.a,
             name: 'Customer Position'
         }, {
             path: '/customer-position/:customerId/:accountId',
-            component: __WEBPACK_IMPORTED_MODULE_11__views_userNav_CustomerPositionInfo_vue___default.a,
+            component: __WEBPACK_IMPORTED_MODULE_11__views_rmNav_CustomerPositionInfo_vue___default.a,
             name: 'Customer Position Info'
         }]
-    }, { path: '/customer-position-info', component: __WEBPACK_IMPORTED_MODULE_11__views_userNav_CustomerPositionInfo_vue___default.a, name: 'Customer Position Info', hidden: true }]
+    }, { path: '/customer-position-info', component: __WEBPACK_IMPORTED_MODULE_11__views_rmNav_CustomerPositionInfo_vue___default.a, name: 'Customer Position Info', hidden: true }]
 }, {
     path: '/',
     component: __WEBPACK_IMPORTED_MODULE_2__views_Home_vue___default.a,
@@ -2775,7 +2775,7 @@ var routes = [{
     iconCls: 'fa fa-flag-checkered', //图标样式class
     // leaf: true,//只有一个节点
     meta: "rm",
-    children: [{ path: '/share-transaction-input', component: __WEBPACK_IMPORTED_MODULE_12__views_userNav_Transaction_vue___default.a, name: 'Share Transaction Input' }, { path: '/connectivity', component: __WEBPACK_IMPORTED_MODULE_13__views_userNav_Connectivity_vue___default.a, name: 'Connectivity' }]
+    children: [{ path: '/share-transaction-input', component: __WEBPACK_IMPORTED_MODULE_12__views_rmNav_Transaction_vue___default.a, name: 'Share Transaction Input' }, { path: '/connectivity', component: __WEBPACK_IMPORTED_MODULE_13__views_rmNav_Connectivity_vue___default.a, name: 'Connectivity' }]
 }, {
     path: '/',
     component: __WEBPACK_IMPORTED_MODULE_2__views_Home_vue___default.a,
@@ -2783,7 +2783,7 @@ var routes = [{
     iconCls: 'fa fa-cubes', //图标样式class
     leaf: true, //只有一个节点
     meta: "rm",
-    children: [{ path: '/daily-event', component: __WEBPACK_IMPORTED_MODULE_8__views_userNav_DailyEvent_vue___default.a, name: 'Daily Event' }]
+    children: [{ path: '/daily-event', component: __WEBPACK_IMPORTED_MODULE_8__views_rmNav_DailyEvent_vue___default.a, name: 'Daily Event' }]
 },
 // =======================
 // admin nav
@@ -2832,13 +2832,13 @@ var routes = [{
 
 
 /* styles */
-__webpack_require__(978)
+__webpack_require__(979)
 
 var Component = __webpack_require__(27)(
   /* script */
   __webpack_require__(443),
   /* template */
-  __webpack_require__(1047),
+  __webpack_require__(1048),
   /* scopeId */
   null,
   /* cssModules */
@@ -2859,11 +2859,10 @@ module.exports = Component.exports
 
 
 // let base = 'http://134.175.84.92:18000';
-// let base = 'http://219.136.164.45:8000';
+// let base = 'http://219.136.164.215:8000';
 let base = 'http://tonyhuang-dojo.xyz:18000';
 // let base = '';
 
-// export const requestLogin = params => { return axios.post(`${base}/sa/user/authenticate`, params).then(res => res.data); };
 const requestLogin = params => {
   return __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(`${base}/sa/user/authenticate`, { params: params });
 };
@@ -2919,7 +2918,7 @@ const testUrl = (url, params) => {
 
 
 const requestTransaction = (url, params) => {
-  return __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(base + url, { params: params }).then(res => res.data);
+  return __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(base + url, params).then(res => res.data);
 };
 /* harmony export (immutable) */ __webpack_exports__["b"] = requestTransaction;
 
@@ -3480,7 +3479,6 @@ let tabTxt = ['Region', 'Type', 'Booking Entity', 'Age'],
             pieData: []
         };
     },
-
     watch: {},
     computed: {},
     filters: {},
@@ -3489,10 +3487,8 @@ let tabTxt = ['Region', 'Type', 'Booking Entity', 'Age'],
             let Vm = this;
         },
         handleClick(tab, event) {
-            // console.log(tab, event);
             let Vm = this,
                 tabName = tab.name;
-
             switch (tabName) {
                 case 'region':
                     Vm.sizeForm.region = ['CN', 'HK', 'SG', 'UK'];
@@ -3910,7 +3906,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }
             }
 
-            // 'AUM: $55bn<br\>Client#: 100,000',
             function curry(obj) {
                 obj['content'] = 'AUM: ' + obj['position'] + '<br\>Client#:' + obj['clients'];
             }
@@ -4036,7 +4031,6 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
             pieData: []
         };
     },
-
     watch: {},
     computed: {},
     filters: {},
@@ -4045,7 +4039,6 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
             let Vm = this;
         },
         handleClick(tab, event) {
-            // console.log(tab, event);
             let Vm = this,
                 tabName = tab.name;
 
@@ -4068,7 +4061,6 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
                     break;
                 default:
                     break;
-
             };
         },
         initPage() {
@@ -4077,10 +4069,7 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
 
             Vm.allloading = true; // loading start
 
-            // return false;
-
             __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__api_api__["a" /* getDataUrl */])('/fos/asset/get', {}).then(data => {
-
                 Vm.allType = Vm.filterType = data.data;
                 Vm.filter();
             }).catch(data => {
@@ -4105,9 +4094,6 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
         },
         changePieDataJSON() {
             let Vm = this;
-
-            // Vm.sizeForm.product = ['share','bond','fund','deposits'];
-
 
             let share = Vm.filterType.filter(item => item.product == 'share');
             let bond = Vm.filterType.filter(item => item.product == 'bond');
@@ -4200,10 +4186,8 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
                             }
                         }
                     }
-
                 }]
             };
-
             this.chartPie = __WEBPACK_IMPORTED_MODULE_0_echarts___default.a.init(document.getElementById('assetchartPie'));
             this.chartPie.setOption(option);
         },
@@ -4775,47 +4759,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -4872,8 +4815,6 @@ let acctlist;
                 Vm.fxTable = acctlist.positions.deposits;
                 Vm.structureTable = acctlist.positions.fund;
 
-                // console.log(acctlist);
-
                 Object.assign(Vm.SummaryTable[0], acctlist.prodCataInfo);
 
                 Vm.loading = false;
@@ -4883,8 +4824,6 @@ let acctlist;
         },
 
         aveAsPDF() {
-
-            // this.aveAsPDFBtn = false;
 
             let element = document.getElementById('element-to-print');
 
@@ -4898,9 +4837,6 @@ let acctlist;
 
             // New Promise-based usage:
             __WEBPACK_IMPORTED_MODULE_1_html2pdf_js___default()().set(opt).from(element).save();
-
-            //this.aveAsPDFBtn = true;
-
         },
 
         getSummaries(param) {
@@ -4990,12 +4926,10 @@ let acctlist;
 
             for (let key in ccyCataInfo) {
                 data2.push({
-                    name: key, value: ccyCataInfo[key]
+                    name: key,
+                    value: ccyCataInfo[key]
                 });
             }
-
-            // console.log(data2)
-
 
             let opt2 = {
                 title: {
@@ -5051,17 +4985,12 @@ let acctlist;
         drawCharts() {
             let Vm = this;
 
-            setTimeout(() => {
-                Vm.drawPieChart();
-            }, 200);
+            Vm.drawPieChart();
         }
 
     },
     mounted() {
-
         this.drawCharts();
-
-        // this.initPage();
     },
     created() {
         this.initPage();
@@ -5125,23 +5054,33 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 	methods: {
 		formatter(row, column) {
-			// console.log(row.createDate)
-			// let time="2018-05-19T08:04:52.000+0000";
 			let d = new Date(row.createDate);
 			let times = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate() + ' ' + d.getHours() + ':' + d.getMinutes();
 			return times;
 		},
 		filterHandler(value, row, column) {}
 	},
-	mounted() {
+	mounted() {},
+	created() {
+		let Vm = this,
+		    user;
+
+		user = sessionStorage.getItem('user');
+
+		if (!user) {
+			Vm.$router.push('/');
+			return false;
+		};
+
+		user = JSON.parse(user);
+
 		// fos/action/get?rm=rm1
-		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__api_api__["a" /* getDataUrl */])('/fos/action/get', { rm: 'rm1' }).then(data => {
-			this.tableData = data.data;
+		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__api_api__["a" /* getDataUrl */])('/fos/action/get', { rm: user.id }).then(data => {
+			Vm.tableData = data.data;
 		}).catch(data => {
 			console.log(data);
 		});
 	},
-	created() {},
 	updated() {}
 });
 
@@ -5318,6 +5257,7 @@ let customerPositions;
 		return {
 			submiting: false,
 			form: {
+				dealNumber: 0,
 				transactionType: '',
 				type2: '',
 				customerNumber: '',
@@ -5400,21 +5340,53 @@ let customerPositions;
 			let Vm = this;
 			Vm.submiting = true;
 
-			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__api_api__["b" /* requestTransaction */])('fos/share/deal/save', Vm.form).then(data => {
-				// Vm.submiting = false;
+			let formObj = {
+				"customerNumber": Vm.form.customerNumber,
+				"accountNumber": Vm.form.accountNumber,
+				"shareIssueCode": Vm.form.shareIssueCode,
+				"transactionType": Vm.form.transactionType,
+				"shareCurrency": Vm.form.shareCurrency,
+				"sharePrice": Vm.form.sharePrice,
+				"shareQuantity": Vm.form.shareQuantity,
+				"considerationAmount": Vm.form.considerationAmount,
+				"tradeDate": Vm.form.tradeDate,
+				"valueDate": Vm.form.valueDate,
+				"dealNumber": 0,
+				"considerationAmount": 0
+			};
 
-				console.log(data);
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__api_api__["b" /* requestTransaction */])('/fos/share/deal/save', formObj).then(data => {
 
-				if (data.code !== 200) {} else {
-					Vm.$message({
-						showClose: true,
-						message: 'Submitted successfully.',
-						type: 'success'
-					});
-				}
-			}).catch(data => {
-				console.log(data);
+				callfun();
+
+				//    Vm.submiting = false;
+
+				//    if (data.code !== 200) {
+
+				// }else{
+				// 	Vm.$message({
+				//          showClose: true,
+				//          message: 'Submitted successfully.',
+				//          type: 'success'
+				//        });						
+				// }
+
+				// Vm.getSharePosition();
+			}).catch(e => {
+				console.log(e);
+				callfun();
 			});
+
+			function callfun() {
+				Vm.$message({
+					showClose: true,
+					message: 'Submitted successfully.',
+					type: 'success'
+				});
+
+				Vm.submiting = false;
+				Vm.getSharePosition();
+			}
 		},
 		onReset() {},
 		tableHeaderColor({ row, column, rowIndex, columnIndex }) {
@@ -5430,6 +5402,7 @@ let customerPositions;
 			let val = Vm.issueCode[Vm.form.shareIssueCode];
 			Vm.issueInfo = val ? val : {};
 			Vm.form.shareCurrency = val ? val.shareCurrency : '';
+			Vm.form.sharePrice = val ? val.sharePrice : '';
 		}
 
 	},
@@ -5439,13 +5412,12 @@ let customerPositions;
 		    user;
 
 		user = sessionStorage.getItem('user');
-
 		if (!user) {
 			Vm.$router.push('/');
 			return false;
 		};
-
 		user = JSON.parse(user);
+
 		__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__api_api__["a" /* getDataUrl */])('/fos/share/issue/get', {}).then(data => {
 			Vm.issueCode = data.data;
 			var newkey = Object.keys(Vm.issueCode).sort();
@@ -5680,4 +5652,4 @@ new __WEBPACK_IMPORTED_MODULE_1_vue__["default"]({
 /***/ })
 
 },[458]);
-//# sourceMappingURL=app.1a9b630322a5e4e9910c.js.map
+//# sourceMappingURL=app.4c3314d80570927b3cb6.js.map
