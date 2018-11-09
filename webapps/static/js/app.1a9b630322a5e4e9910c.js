@@ -386,6 +386,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.chartLoading),
       expression: "chartLoading"
     }],
+    staticStyle: {
+      "height": "800px"
+    },
     attrs: {
       "span": 24
     }
@@ -3179,7 +3182,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         checkPass: ''
       },
       rules2: {
-        account: [{ required: true, message: 'Please input account number.', trigger: 'blur' }],
+        account: [{ required: true, message: 'Please input username.', trigger: 'blur' }],
         checkPass: [{ required: true, message: 'Please input a password.', trigger: 'blur' }]
       },
       checked: true
@@ -3190,41 +3193,50 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       this.$refs.ruleForm2.resetFields();
     },
     handleSubmit2(ev) {
-      var _this = this;
-      this.$refs.ruleForm2.validate(valid => {
-        if (valid) {
-          //_this.$router.replace('/table');
-          this.logining = true;
-          //NProgress.start();
-          var loginParams = { id: this.ruleForm2.account, password: this.ruleForm2.checkPass };
-          __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__api_api__["d" /* requestLogin */])(loginParams).then(data => {
-            this.logining = false;
+      var Vm = this;
+      Vm.$refs.ruleForm2.validate(valid => {
 
-            if (data.status !== 200) {
-              this.$message({
-                message: data.statusText,
-                type: 'error'
-              });
-            } else {
-              sessionStorage.setItem('user', JSON.stringify(data.data));
-              let _path = { path: '/' };
-              if (data.data.role == 'admin') {
-                _path = { path: '/create-user' };
-              }
-              if (data.data.role == 'pm') {
-                _path = { path: '/' };
-              }
-              if (data.data.role == 'rm') {
-                _path = { path: '/customer-position' };
-              }
-
-              this.$router.push(_path);
-            }
-          });
-        } else {
+        if (!valid) {
           console.log('error submit!!');
           return false;
         }
+        //_Vm.$router.replace('/table');
+        Vm.logining = true;
+        //NProgress.start();
+        var loginParams = { id: Vm.ruleForm2.account, password: Vm.ruleForm2.checkPass };
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__api_api__["d" /* requestLogin */])(loginParams).then(data => {
+          Vm.logining = false;
+
+          if (data.status !== 200) {
+            Vm.$message({
+              message: data.statusText,
+              type: 'error'
+            });
+          } else {
+            sessionStorage.setItem('user', JSON.stringify(data.data));
+            let _path = { path: '/' };
+            if (data.data.role == 'admin') {
+              _path = { path: '/create-user' };
+            }
+            if (data.data.role == 'pm') {
+              _path = { path: '/' };
+            }
+            if (data.data.role == 'rm') {
+              _path = { path: '/customer-position' };
+            }
+
+            Vm.$router.push(_path);
+          }
+        }).then(data => {
+          Vm.logining = false;
+        }).catch(e => {
+          Vm.logining = false;
+          let rdata = e.response.data;
+          Vm.$message({
+            message: 'invalid Username and Password !',
+            type: 'error'
+          });
+        });
       });
     }
   }
@@ -3875,7 +3887,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     computed: {},
     methods: {
         getChartData() {
-            this.chartLoading = true;
+            // this.chartLoading = true;
             __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__api_api__["c" /* getManagerOSList */])({ type: 'arch' }).then(res => {
                 this.tempData = res.data;
                 this.mapJson(this.tempData);
@@ -3900,7 +3912,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             // 'AUM: $55bn<br\>Client#: 100,000',
             function curry(obj) {
-                obj['content'] = 'AUM: ' + obj['clients'] + '<br\>Client#:' + obj['position'];
+                obj['content'] = 'AUM: ' + obj['position'] + '<br\>Client#:' + obj['clients'];
             }
 
             this.chartLoading = false;
@@ -4536,6 +4548,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				name: ''
 			},
 			loading: true,
+			allcusData: [],
 			customerPositions: []
 		};
 	},
@@ -4549,7 +4562,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		rowSelect(row, event, column) {
 			this.$router.push(`/customer-position/${row.customerNumber}/${row.accountNumber}`);
 		},
-		getCustomerNumber() {},
+		getCustomerNumber() {
+
+			let Vm = this;
+
+			if (!Vm.filters.name) {
+				Vm.customerPositions = Vm.allcusData;
+				return false;
+			}
+
+			this.loading = true;
+
+			let cusPosfilters = Vm.allcusData.filter(item => item.customerNumber == Vm.filters.name);
+
+			Vm.customerPositions = cusPosfilters;
+
+			this.loading = false;
+		},
 		initPage: function () {
 
 			let Vm = this,
@@ -4578,7 +4607,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 					});
 				});
 
-				Vm.customerPositions = cusPos;
+				Vm.customerPositions = Vm.allcusData = cusPos;
 
 				this.loading = false;
 			}).catch(data => {
@@ -5372,7 +5401,9 @@ let customerPositions;
 			Vm.submiting = true;
 
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__api_api__["b" /* requestTransaction */])('fos/share/deal/save', Vm.form).then(data => {
-				Vm.submiting = false;
+				// Vm.submiting = false;
+
+				console.log(data);
 
 				if (data.code !== 200) {} else {
 					Vm.$message({
@@ -5649,4 +5680,4 @@ new __WEBPACK_IMPORTED_MODULE_1_vue__["default"]({
 /***/ })
 
 },[458]);
-//# sourceMappingURL=app.4e0f3739fedfdfecd3de.js.map
+//# sourceMappingURL=app.1a9b630322a5e4e9910c.js.map
