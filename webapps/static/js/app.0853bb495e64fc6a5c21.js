@@ -2092,14 +2092,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('el-card', [_c('ul', {
       staticClass: "con-bank-ul"
     }, _vm._l((table.list), function(item, index) {
-      return _c('li', [_c('span', [_vm._v(_vm._s(item.name))]), _vm._v(" "), _c('span', {
+      return _c('li', {
+        class: item.class
+      }, [_c('span', [_vm._v(_vm._s(item.name))]), _vm._v(" "), _c('span', {
         directives: [{
           name: "loading",
           rawName: "v-loading",
           value: (item.loading),
           expression: "item.loading"
         }],
-        class: item.class
+        staticClass: "v"
       }, [_vm._v(_vm._s(item.value))])])
     }))])], 1)
   }))], 1)
@@ -4100,6 +4102,29 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
             let fund = Vm.filterType.filter(item => item.product == 'fund');
             let deposits = Vm.filterType.filter(item => item.product == 'deposits');
 
+            let shareTotal = 0,
+                bondTotal = 0,
+                fundTotal = 0,
+                depositsTotal = 0;
+
+            share.forEach(item => {
+                shareTotal += Number(item.position);
+            });
+            bond.forEach(item => {
+                bondTotal += Number(item.position);
+            });
+            fund.forEach(item => {
+                fundTotal += Number(item.position);
+            });
+            deposits.forEach(item => {
+                depositsTotal += Number(item.position);
+            });
+
+            shareTotal = shareTotal.toFixed(2);
+            bondTotal = bondTotal.toFixed(2);
+            fundTotal = fundTotal.toFixed(2);
+            depositsTotal = depositsTotal.toFixed(2);
+
             // charts data json
             let temp = [{ "value": 0, "name": "Equity", "tag": "share" }, { "value": 0, "name": "Fixed Income", "tag": "bond" }, { "value": 0, "name": "Structure Product", "tag": "fund" }, { "value": 0, "name": "FX", "tag": "deposits" }];
 
@@ -4108,26 +4133,26 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
             Vm.pieData = temp.filter(item => {
 
                 if (item.tag == 'share' && share) {
-                    item.value = share.length;
-                    total += share.length;
+                    item.value = shareTotal;
+                    total += Number(shareTotal);
                 }
                 if (item.tag == 'bond' && bond) {
-                    item.value = bond.length;
-                    total += bond.length;
+                    item.value = bondTotal;
+                    total += Number(bondTotal);
                 }
                 if (item.tag == 'fund' && fund) {
-                    item.value = fund.length;
-                    total += fund.length;
+                    item.value = fundTotal;
+                    total += Number(fundTotal);
                 }
                 if (item.tag == 'deposits' && deposits) {
-                    item.value = deposits.length;
-                    total += deposits.length;
+                    item.value = depositsTotal;
+                    total += Number(depositsTotal);
                 }
 
                 return true;
             });
 
-            Vm.valTotal = total;
+            Vm.valTotal = total.toFixed(2);;
 
             function filterRegion(val) {
                 return Vm.filterType.filter(item => item.product == val);
@@ -4140,7 +4165,7 @@ let tabTxt = ['Asset Class', 'Region', 'Currency', 'Industry'],
             let Vm = this;
             let option = {
                 title: {
-                    text: 'Customer Distribution By ' + currentTxt,
+                    text: 'Asset Distribution By ' + currentTxt,
                     subtext: 'Total GPB Customer : ' + Vm.valTotal,
                     x: 'center'
                 },
@@ -5652,4 +5677,4 @@ new __WEBPACK_IMPORTED_MODULE_1_vue__["default"]({
 /***/ })
 
 },[458]);
-//# sourceMappingURL=app.4c3314d80570927b3cb6.js.map
+//# sourceMappingURL=app.0853bb495e64fc6a5c21.js.map
